@@ -190,6 +190,7 @@ import Conjectures.CircularInsertionDegree47
 import Conjectures.CircularInsertionDegree51
 import Conjectures.CircularInsertionDegree55
 import Conjectures.CircularInsertionDegree59
+import Conjectures.CircularTableRowBlocks
 import Conjectures.CircularTableColoring
 import Conjectures.DukesRevstackAlternation
 import Conjectures.DukesRevstackDegree
