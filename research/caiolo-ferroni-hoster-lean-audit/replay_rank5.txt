@@ -1,0 +1,12 @@
+Replaying all 9 local project modules imported by Conjectures.CaioloFerroniHoster, including that root (prefix Conjectures)
+replaying Conjectures.CaioloFerroniHosterSubspaces
+replaying Conjectures.CaioloFerroniHosterFlagPolynomials
+replaying Conjectures.CaioloFerroniHoster
+replaying Conjectures.CaioloFerroniHosterGraphs
+replaying Conjectures.CaioloFerroniHosterMatroid
+replaying Conjectures.CaioloFerroniHosterFlags
+replaying Conjectures.CaioloFerroniHosterFlagPolynomialsBasic
+replaying Conjectures.CaioloFerroniHosterArithmetic
+replaying Conjectures.CaioloFerroniHosterCertificate
+PASS: the entire local import closure of Conjectures.CaioloFerroniHoster completed the pinned kernel replay
+lake env python3 ../scripts/replay_lean.py --root   5.70s user 7.65s system 98% cpu 13.580 total
