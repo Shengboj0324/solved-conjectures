@@ -32,6 +32,23 @@ Neither polynomial splits over the reals.
   then completes the square and shows the augmented polynomial has a
   strictly positive quartic factor.
 
+## Kernel-level statement
+
+`counterexample_family` is stated for `matroidDualChow` and `matroidDualAugmented`, the
+rank-five chain expansions of Propositions 4.6–4.7. [The kernel-link module](../../lean/Conjectures/CaioloFerroniHosterKernelLink.lean)
+proves that these equal the recursive invariants `Ranks.dualChow` and `Ranks.dualAug` for every
+rank-five matroid on a finite projective point type. It first identifies the recursive flag
+h-numbers with the inclusion–exclusion transform of the flat-flag counts
+(`KernelLink.beta_eq_signed`). The rank development identifies those invariants with the
+kernel definitions of the paper (`Ranks.dualChow_eq_kernel`, `Ranks.dualAug_eq_kernel`).
+`KernelLink.counterexample_family_kernel` therefore gives the q ≥ 17 theorem for every
+function satisfying the CFH kernel equations (Definitions 2.4, 2.7, 2.8, 3.1 and Theorem 2.3).
+Before this module, only the unspecified bound of `Ranks.counterexamples` was stated at kernel level.
+
+The strict target verifier passed for the 21-module closure: 1409 owned declarations, four
+required endpoints, only `propext`, `Classical.choice` and `Quot.sound`, and stock-kernel replay.
+[Receipt](../../docs/verification/cfh-kernel-link-20261126/receipt.json)
+
 ## Replay
 
 With the pinned Lean 4.35.0 toolchain, run from the `lean/` directory.
@@ -39,6 +56,8 @@ With the pinned Lean 4.35.0 toolchain, run from the `lean/` directory.
 ```sh
 lake build Conjectures.CaioloFerroniHoster
 lake env python3 ../scripts/replay_lean.py --root Conjectures.CaioloFerroniHoster
+lake build Conjectures.CaioloFerroniHosterKernelLink
+lake env python3 ../scripts/replay_lean.py --root Conjectures.CaioloFerroniHosterKernelLink
 ```
 
 The [dedicated GitHub Actions workflow](https://github.com/1337isnot1337/solved-conjectures/actions/workflows/lean-cfh.yml)

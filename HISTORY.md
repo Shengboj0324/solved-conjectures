@@ -1,5 +1,9 @@
 # History
 
+## 2026-11-26 — Caiolo–Ferroni–Hoster kernel-level Lean statement
+
+A new [Lean module](lean/Conjectures/CaioloFerroniHosterKernelLink.lean) proves that the rank-five chain formulas of the existing counterexample equal the recursive dual Chow invariants of the rank-threshold development. Those invariants were already identified with the CFH kernel definitions. The explicit bound q ≥ 17 now holds for the kernel-defined dual Chow and dual right augmented Chow functions. The [publication audit](results/caiolo-ferroni-hoster/AUDIT.md) no longer calls the result non-Lean-verified. The verification level, attribution and conjecture count are unchanged. [Receipt](docs/verification/cfh-kernel-link-20261126/receipt.json)
+
 ## 2026-11-26 — Erdős–Gyárfás point-degree spectrum conjecture
 
 Erdős and Gyárfás asked whether abstract linear spaces can realize all but a square-root number of the possible point degrees. Counting pairs between points of low and high degree proves that at least one seventeenth of the order is missing. The same bound answers their separate question about real planar point sets. [Proof](results/erdos-gyarfas-point-degree-spectrum/PROOF.md) · [Source and independent review](results/erdos-gyarfas-point-degree-spectrum/AUDIT.md).

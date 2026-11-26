@@ -537,6 +537,7 @@ import Conjectures.CaioloFerroniHosterRankBounds
 import Conjectures.CaioloFerroniHosterRankWitness
 import Conjectures.CaioloFerroniHosterRankBridge
 import Conjectures.CaioloFerroniHosterRanks
+import Conjectures.CaioloFerroniHosterKernelLink
 import Conjectures.JuhnkeAlternating
 import Conjectures.JuhnkeCompositions
 import Conjectures.JuhnkeConjecture

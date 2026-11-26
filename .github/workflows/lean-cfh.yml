@@ -61,6 +61,15 @@ jobs:
           --require CaioloFerroniHoster.Ranks.augmented_eq_Fstar
           --require CaioloFerroniHoster.Ranks.exists_kernel_functions
           --out .candidate-artifacts/caiolo-ferroni-hoster/ranks
+      - name: Check the kernel-level rank-five closure
+        run: >-
+          python3 scripts/verify_lean_target.py
+          --root Conjectures.CaioloFerroniHosterKernelLink
+          --require CaioloFerroniHoster.KernelLink.counterexample_family_kernel
+          --require CaioloFerroniHoster.KernelLink.matroidDualChow_eq
+          --require CaioloFerroniHoster.KernelLink.matroidDualAugmented_eq
+          --require CaioloFerroniHoster.KernelLink.beta_eq_signed
+          --out .candidate-artifacts/caiolo-ferroni-hoster/kernel-link
       - uses: actions/upload-artifact@v4
         with:
           name: caiolo-ferroni-hoster

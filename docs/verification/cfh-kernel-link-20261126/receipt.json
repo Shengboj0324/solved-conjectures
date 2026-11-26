@@ -1,0 +1,425 @@
+{
+  "schema": "target-complete-closure-verification-v1",
+  "started_at": "2026-11-26T09:59:12.575699+00:00",
+  "finished_at": "2026-11-26T10:01:23.936412+00:00",
+  "root": "Conjectures.CaioloFerroniHosterKernelLink",
+  "project_modules": [
+    "Conjectures.CaioloFerroniHoster",
+    "Conjectures.CaioloFerroniHosterArithmetic",
+    "Conjectures.CaioloFerroniHosterCertificate",
+    "Conjectures.CaioloFerroniHosterFlagPolynomials",
+    "Conjectures.CaioloFerroniHosterFlagPolynomialsBasic",
+    "Conjectures.CaioloFerroniHosterFlags",
+    "Conjectures.CaioloFerroniHosterGraphs",
+    "Conjectures.CaioloFerroniHosterKernelLink",
+    "Conjectures.CaioloFerroniHosterMatroid",
+    "Conjectures.CaioloFerroniHosterRankBounds",
+    "Conjectures.CaioloFerroniHosterRankBridge",
+    "Conjectures.CaioloFerroniHosterRankCoalesce",
+    "Conjectures.CaioloFerroniHosterRankFlags",
+    "Conjectures.CaioloFerroniHosterRankFlats",
+    "Conjectures.CaioloFerroniHosterRankGamma",
+    "Conjectures.CaioloFerroniHosterRankGraphs",
+    "Conjectures.CaioloFerroniHosterRankPositivity",
+    "Conjectures.CaioloFerroniHosterRankRoots",
+    "Conjectures.CaioloFerroniHosterRankWitness",
+    "Conjectures.CaioloFerroniHosterRanks",
+    "Conjectures.CaioloFerroniHosterSubspaces"
+  ],
+  "required_endpoints": [
+    "CaioloFerroniHoster.KernelLink.counterexample_family_kernel",
+    "CaioloFerroniHoster.KernelLink.matroidDualChow_eq",
+    "CaioloFerroniHoster.KernelLink.matroidDualAugmented_eq",
+    "CaioloFerroniHoster.KernelLink.beta_eq_signed"
+  ],
+  "source_sha256": {
+    "lean/Conjectures/CaioloFerroniHoster.lean": "243d002fa6601565e89e46c85a89ce04cd5efe101502aa76d41652772599d824",
+    "lean/Conjectures/CaioloFerroniHosterArithmetic.lean": "13ec4ec9201dd759815e5c67280e747ac13d03cf45192955a5b1770d1820e1a3",
+    "lean/Conjectures/CaioloFerroniHosterCertificate.lean": "ec602a723f325265bafe4d4fdf6f51ba06640d8f85964603e98fb83bf089984a",
+    "lean/Conjectures/CaioloFerroniHosterFlagPolynomials.lean": "d1ca38d2917588d37528edd2e10ed2dd1d3576a1970eedd9816f908f5f146826",
+    "lean/Conjectures/CaioloFerroniHosterFlagPolynomialsBasic.lean": "29befd8e931f6ad84049408b18939948283415fa102354c1027e9ee9260e44a4",
+    "lean/Conjectures/CaioloFerroniHosterFlags.lean": "e06180fbb87c71fa8d794358e6881c0e72b4833792cfc5d1b98c5c70c534c3b8",
+    "lean/Conjectures/CaioloFerroniHosterGraphs.lean": "020cd63a85091cba5accb355c846995803b55711d629a921541877f92f4b7975",
+    "lean/Conjectures/CaioloFerroniHosterKernelLink.lean": "5fba00a5e57a1ae0d55f842222f358ef5c45d5840ebf9ff335c9962f7c8b3bcb",
+    "lean/Conjectures/CaioloFerroniHosterMatroid.lean": "95a528148a1702784fd04aad50a46ad76b5301577308fb522d3144ca78db424b",
+    "lean/Conjectures/CaioloFerroniHosterRankBounds.lean": "c7160692c829d78b71be7cb82babbb839dd7c22d90bac500c896f2a7730e8c2f",
+    "lean/Conjectures/CaioloFerroniHosterRankBridge.lean": "e4569a01a375ff4a6b80ca9686e093cc99fb88d56c3932897942bf40624fa629",
+    "lean/Conjectures/CaioloFerroniHosterRankCoalesce.lean": "a84081a8056ce85c4ece4aa22a97d80c4232e61f5d6e8a2b7021d760686f7096",
+    "lean/Conjectures/CaioloFerroniHosterRankFlags.lean": "0c23c798adfeda6e62ea7e4bde2a34d7aa3d1a1eee0ed59056a9419ae7263c53",
+    "lean/Conjectures/CaioloFerroniHosterRankFlats.lean": "63167a77e02768dff9015ddbe05e880e0d488b8e849955b8f723767a2b96198c",
+    "lean/Conjectures/CaioloFerroniHosterRankGamma.lean": "f8ef19891bf9f5e59b0df5d7c9650130ad1b7f1893f96090ef8a882d8e69e172",
+    "lean/Conjectures/CaioloFerroniHosterRankGraphs.lean": "8c6f9a6576acf3cb26f00eac3532928a8da7b92ed6f3530b2a575aaba3740c5a",
+    "lean/Conjectures/CaioloFerroniHosterRankPositivity.lean": "d6b68ca65e84bc921b1585cf75dd1d4cf5d44bb9cfc3c3e15e3b5e1c9c446cb0",
+    "lean/Conjectures/CaioloFerroniHosterRankRoots.lean": "06e071caa137413054a7044eaad2481bb88618418db10113e042fdb1844add97",
+    "lean/Conjectures/CaioloFerroniHosterRankWitness.lean": "4ff83d5b9c3289bdcd97b734ed5a1ae906d6b5751394ed56e4c60b9c4e70805c",
+    "lean/Conjectures/CaioloFerroniHosterRanks.lean": "09e94561a07a564345796ec7669a4b5efe93d522d08b612ea755955fbe0fafe3",
+    "lean/Conjectures/CaioloFerroniHosterSubspaces.lean": "23a24cd8f05624cbce4a122383d072e1e8135ad1e4859645c537b94cbf396fc0"
+  },
+  "input_sha256": {
+    "lean/Conjectures/CaioloFerroniHoster.lean": "243d002fa6601565e89e46c85a89ce04cd5efe101502aa76d41652772599d824",
+    "lean/Conjectures/CaioloFerroniHosterArithmetic.lean": "13ec4ec9201dd759815e5c67280e747ac13d03cf45192955a5b1770d1820e1a3",
+    "lean/Conjectures/CaioloFerroniHosterCertificate.lean": "ec602a723f325265bafe4d4fdf6f51ba06640d8f85964603e98fb83bf089984a",
+    "lean/Conjectures/CaioloFerroniHosterFlagPolynomials.lean": "d1ca38d2917588d37528edd2e10ed2dd1d3576a1970eedd9816f908f5f146826",
+    "lean/Conjectures/CaioloFerroniHosterFlagPolynomialsBasic.lean": "29befd8e931f6ad84049408b18939948283415fa102354c1027e9ee9260e44a4",
+    "lean/Conjectures/CaioloFerroniHosterFlags.lean": "e06180fbb87c71fa8d794358e6881c0e72b4833792cfc5d1b98c5c70c534c3b8",
+    "lean/Conjectures/CaioloFerroniHosterGraphs.lean": "020cd63a85091cba5accb355c846995803b55711d629a921541877f92f4b7975",
+    "lean/Conjectures/CaioloFerroniHosterKernelLink.lean": "5fba00a5e57a1ae0d55f842222f358ef5c45d5840ebf9ff335c9962f7c8b3bcb",
+    "lean/Conjectures/CaioloFerroniHosterMatroid.lean": "95a528148a1702784fd04aad50a46ad76b5301577308fb522d3144ca78db424b",
+    "lean/Conjectures/CaioloFerroniHosterRankBounds.lean": "c7160692c829d78b71be7cb82babbb839dd7c22d90bac500c896f2a7730e8c2f",
+    "lean/Conjectures/CaioloFerroniHosterRankBridge.lean": "e4569a01a375ff4a6b80ca9686e093cc99fb88d56c3932897942bf40624fa629",
+    "lean/Conjectures/CaioloFerroniHosterRankCoalesce.lean": "a84081a8056ce85c4ece4aa22a97d80c4232e61f5d6e8a2b7021d760686f7096",
+    "lean/Conjectures/CaioloFerroniHosterRankFlags.lean": "0c23c798adfeda6e62ea7e4bde2a34d7aa3d1a1eee0ed59056a9419ae7263c53",
+    "lean/Conjectures/CaioloFerroniHosterRankFlats.lean": "63167a77e02768dff9015ddbe05e880e0d488b8e849955b8f723767a2b96198c",
+    "lean/Conjectures/CaioloFerroniHosterRankGamma.lean": "f8ef19891bf9f5e59b0df5d7c9650130ad1b7f1893f96090ef8a882d8e69e172",
+    "lean/Conjectures/CaioloFerroniHosterRankGraphs.lean": "8c6f9a6576acf3cb26f00eac3532928a8da7b92ed6f3530b2a575aaba3740c5a",
+    "lean/Conjectures/CaioloFerroniHosterRankPositivity.lean": "d6b68ca65e84bc921b1585cf75dd1d4cf5d44bb9cfc3c3e15e3b5e1c9c446cb0",
+    "lean/Conjectures/CaioloFerroniHosterRankRoots.lean": "06e071caa137413054a7044eaad2481bb88618418db10113e042fdb1844add97",
+    "lean/Conjectures/CaioloFerroniHosterRankWitness.lean": "4ff83d5b9c3289bdcd97b734ed5a1ae906d6b5751394ed56e4c60b9c4e70805c",
+    "lean/Conjectures/CaioloFerroniHosterRanks.lean": "09e94561a07a564345796ec7669a4b5efe93d522d08b612ea755955fbe0fafe3",
+    "lean/Conjectures/CaioloFerroniHosterSubspaces.lean": "23a24cd8f05624cbce4a122383d072e1e8135ad1e4859645c537b94cbf396fc0",
+    "lean/lean-toolchain": "ca5f1f601d34c49079e38d7e7041eb0f2a9c227fbc1df0f404820069a052330c",
+    "lean/lake-manifest.json": "02e7d705d4ea86c9cfdc22f5eceb2b5bbe5a2c14806c1f3b0f6f1c251c6f2953",
+    "lean/lakefile.toml": "609df590851cb55d2d2c52fd2037e463273a1a69d3c766a00d486cf81163a089",
+    "scripts/audit_lean_all_owned.py": "53c289baad523164bbef5561910fcdc44bc40efba2b8efe8e7212c30db3a663f",
+    "scripts/replay_lean.py": "ca27aa5f65ad92200842b797e39abf218b19403ae1f83996f7dc4b4d96970e85",
+    "scripts/verify_lean_target.py": "78f83c010458a176183863d3273b0ce7bd547f8000c13cf220e5c02cb96ae065"
+  },
+  "lean_toolchain": "leanprover/lean4:v4.35.0",
+  "manifest_sha256": "02e7d705d4ea86c9cfdc22f5eceb2b5bbe5a2c14806c1f3b0f6f1c251c6f2953",
+  "commands": [
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "<repo>/lean/.lake/build/lib/lean/Conjectures/CaioloFerroniHosterArithmetic.olean",
+        "Conjectures/CaioloFerroniHosterArithmetic.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.CaioloFerroniHosterArithmetic.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "<repo>/lean/.lake/build/lib/lean/Conjectures/CaioloFerroniHosterFlagPolynomialsBasic.olean",
+        "Conjectures/CaioloFerroniHosterFlagPolynomialsBasic.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.CaioloFerroniHosterFlagPolynomialsBasic.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "<repo>/lean/.lake/build/lib/lean/Conjectures/CaioloFerroniHosterFlagPolynomials.olean",
+        "Conjectures/CaioloFerroniHosterFlagPolynomials.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.CaioloFerroniHosterFlagPolynomials.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "<repo>/lean/.lake/build/lib/lean/Conjectures/CaioloFerroniHosterCertificate.olean",
+        "Conjectures/CaioloFerroniHosterCertificate.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.CaioloFerroniHosterCertificate.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "<repo>/lean/.lake/build/lib/lean/Conjectures/CaioloFerroniHosterMatroid.olean",
+        "Conjectures/CaioloFerroniHosterMatroid.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.CaioloFerroniHosterMatroid.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "<repo>/lean/.lake/build/lib/lean/Conjectures/CaioloFerroniHosterSubspaces.olean",
+        "Conjectures/CaioloFerroniHosterSubspaces.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.CaioloFerroniHosterSubspaces.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "<repo>/lean/.lake/build/lib/lean/Conjectures/CaioloFerroniHosterFlags.olean",
+        "Conjectures/CaioloFerroniHosterFlags.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.CaioloFerroniHosterFlags.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "<repo>/lean/.lake/build/lib/lean/Conjectures/CaioloFerroniHosterGraphs.olean",
+        "Conjectures/CaioloFerroniHosterGraphs.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.CaioloFerroniHosterGraphs.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "<repo>/lean/.lake/build/lib/lean/Conjectures/CaioloFerroniHoster.olean",
+        "Conjectures/CaioloFerroniHoster.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.CaioloFerroniHoster.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "<repo>/lean/.lake/build/lib/lean/Conjectures/CaioloFerroniHosterRankCoalesce.olean",
+        "Conjectures/CaioloFerroniHosterRankCoalesce.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.CaioloFerroniHosterRankCoalesce.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "<repo>/lean/.lake/build/lib/lean/Conjectures/CaioloFerroniHosterRankFlags.olean",
+        "Conjectures/CaioloFerroniHosterRankFlags.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.CaioloFerroniHosterRankFlags.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "<repo>/lean/.lake/build/lib/lean/Conjectures/CaioloFerroniHosterRankGraphs.olean",
+        "Conjectures/CaioloFerroniHosterRankGraphs.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.CaioloFerroniHosterRankGraphs.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "<repo>/lean/.lake/build/lib/lean/Conjectures/CaioloFerroniHosterRankBounds.olean",
+        "Conjectures/CaioloFerroniHosterRankBounds.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.CaioloFerroniHosterRankBounds.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "<repo>/lean/.lake/build/lib/lean/Conjectures/CaioloFerroniHosterRankGamma.olean",
+        "Conjectures/CaioloFerroniHosterRankGamma.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.CaioloFerroniHosterRankGamma.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "<repo>/lean/.lake/build/lib/lean/Conjectures/CaioloFerroniHosterRankPositivity.olean",
+        "Conjectures/CaioloFerroniHosterRankPositivity.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.CaioloFerroniHosterRankPositivity.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "<repo>/lean/.lake/build/lib/lean/Conjectures/CaioloFerroniHosterRankFlats.olean",
+        "Conjectures/CaioloFerroniHosterRankFlats.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.CaioloFerroniHosterRankFlats.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "<repo>/lean/.lake/build/lib/lean/Conjectures/CaioloFerroniHosterRankRoots.olean",
+        "Conjectures/CaioloFerroniHosterRankRoots.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.CaioloFerroniHosterRankRoots.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "<repo>/lean/.lake/build/lib/lean/Conjectures/CaioloFerroniHosterRankWitness.olean",
+        "Conjectures/CaioloFerroniHosterRankWitness.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.CaioloFerroniHosterRankWitness.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "<repo>/lean/.lake/build/lib/lean/Conjectures/CaioloFerroniHosterRankBridge.olean",
+        "Conjectures/CaioloFerroniHosterRankBridge.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.CaioloFerroniHosterRankBridge.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "<repo>/lean/.lake/build/lib/lean/Conjectures/CaioloFerroniHosterRanks.olean",
+        "Conjectures/CaioloFerroniHosterRanks.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.CaioloFerroniHosterRanks.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "<repo>/lean/.lake/build/lib/lean/Conjectures/CaioloFerroniHosterKernelLink.olean",
+        "Conjectures/CaioloFerroniHosterKernelLink.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.CaioloFerroniHosterKernelLink.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "<repo>/local-review/cfh-lean-audit/kernel-link-artifacts/TargetAudit.lean"
+      ],
+      "exit_code": 0,
+      "log": "audit.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "python3",
+        "<repo>/scripts/replay_lean.py",
+        "--root",
+        "Conjectures.CaioloFerroniHosterKernelLink"
+      ],
+      "exit_code": 0,
+      "log": "replay.log"
+    }
+  ],
+  "all_owned_audit": {
+    "allowed_axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "declarations": 1409,
+    "modules": 21,
+    "private_declarations": 427,
+    "raw_declarations": 1409,
+    "required": 4,
+    "tag": "passed",
+    "theorems": 1069
+  },
+  "full_repository_gate": "not run by this target-scoped helper",
+  "status": "PASS"
+}

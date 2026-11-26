@@ -276,6 +276,8 @@ lake build Conjectures.CaioloFerroniHoster
 lake env python3 ../scripts/replay_lean.py --root Conjectures.CaioloFerroniHoster
 lake build Conjectures.CaioloFerroniHosterRanks
 lake env python3 ../scripts/replay_lean.py --root Conjectures.CaioloFerroniHosterRanks
+lake build Conjectures.CaioloFerroniHosterKernelLink
+lake env python3 ../scripts/replay_lean.py --root Conjectures.CaioloFerroniHosterKernelLink
 ```
 
 [Source correspondence and axiom audit](../results/caiolo-ferroni-hoster/LEAN_REVIEW.md)
