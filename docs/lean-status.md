@@ -1,5 +1,17 @@
 # Lean verification status
 
+## Gyárfás’s construction at every order
+
+For every order from 16, Lean constructs noncollinear rational points in the real plane, proves optimal maximum degree multiplicity two and determines the entire interval of distinct degrees. [Lean theorem](../lean/Conjectures/GyarfasPlanarUniform.lean) · [Kernel receipt](verification/lean-gyarfas-planar-uniform-20261126/receipt.json).
+
+## Gyárfás’s planar degree-repetition problem at order 16
+
+Lean constructs 16 noncollinear rational points in the real affine plane and proves that every spanned-line degree occurs at most twice. Degree 9 occurs twice. This answers the original existence question. The extension to every order from 16 and its exact count of distinct degrees have a written proof. [Lean theorem](../lean/Conjectures/GyarfasPlanarWitness.lean) · [Kernel receipt](verification/lean-gyarfas-planar-sixteen-20261126/receipt.json).
+
+## Forward insertions in the three-block circular-index construction
+
+Lean verifies the one- and three-block exclusions for all labelled small forward insertions, the classification of two-interval supports, connectivity of the infinite family, and both partial-block graphs with their exact indices. [Lean sources](../lean/Conjectures/CircularThreeBlockAdditional.lean) · [Receipt](verification/lean-circular-forward-insertions-20261126/receipt.json).
+
 ## The two truncated-square covering examples
 
 Lean proves the exact Lebesgue areas and maximal four-shape covering scales of the parallelogram and rational pentagon, and the strict comparisons with the source’s trapezoid formula. The first comparison also holds near the boundary for every first truncation leg. Identifying this scale with symplectic capacity and proving the full strict bound for every convex body remain open in Lean. [Proof](../lean/Conjectures/MeylenderThalmaierPentagonArea.lean) · [Receipt](verification/lean-truncated-square-covers-20261126/receipt.json).

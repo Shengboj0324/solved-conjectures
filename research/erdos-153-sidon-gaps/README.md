@@ -16,6 +16,9 @@
 - [Two-endpoint budget](TWO-ENDPOINT-BUDGET.md). Sharing the available endpoint density mass between both ends gives an asymptotic lower bound of $22.13$.
 - [Logarithmic whole-span upper bound](LOGARITHMIC-UPPER.md). For every large $n$ there is a genuine integer Sidon set of size $n$ and diameter $O(n^2)$ with mean square gap $O(\log n)$ on the whole span, including both endpoints. This supersedes the [earlier $O(\log^2 n)$ bound](WHOLE-SPAN-UPPER.md). The unit-residue window tail is squared by using independently randomized affine maps in two adjacent source rows.
 
+- [Gap moments](GAP-MOMENTS.md). The construction has bounded whole-span moments of order $1<r<2$, and its square cost is necessarily logarithmic for every choice of its digits. This rules out a constant-cost square bound within that construction.
+- [Weak Sidon lifts](WEAK-SIDON-LIFTS.md). The conjecture is unchanged if only off-diagonal uniqueness is required, because a binary tag preserves all points and bounded squared cost. A fixed tag alphabet also handles bounded-degeneracy all-distinct collisions, but fails on some capacity-two product sets.
+
 The [finite arithmetic checker](check_lattice_identities.py) checks the lag identity, diagonal terms, integer convex gap cost, interval clipping, and the marked identity on small examples. It is not used as evidence for the asymptotic steps. No Lean work was performed in this campaign.
 
 ## Prior work and current limits

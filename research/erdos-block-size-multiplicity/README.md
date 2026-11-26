@@ -16,3 +16,5 @@ A pairwise balanced design on $n$ points has proper blocks of size at least two,
 The research question is whether general designs can spread their block sizes across a range of order $\sqrt n$ without leaving a size with excessive multiplicity. The [restriction theorem](restriction.md) reduces the all-orders conjecture to any sequence of orders with bounded consecutive ratios. It also repairs the prime-selection step in Zribi’s conditional construction. Constructing the required designs or codes remains open.
 
 [Point symmetry](symmetry.md) prevents any point-transitive design itself from meeting the proposed bound. At prime-power orders such a design has a size occurring at least a constant times $v^{3/4}$.
+
+The [window criterion](windows.md) shows that the conjecture is equivalent to constructing designs with average multiplicity $O(\sqrt v)$ on consecutive square-to-square intervals of sizes. Around $\sqrt v$, a single size can then occur $O(v^{3/4})$ times, provided the entire interval meets the same total bound. An exact-order restriction smooths all the intervals simultaneously.
