@@ -1,0 +1,14 @@
+import Conjectures.CaioloFerroniHoster
+import Conjectures.CaioloFerroniHosterRanks
+
+#print axioms CaioloFerroniHoster.counterexample_family
+#print axioms CaioloFerroniHoster.Ranks.kernel_realRooted_iff
+#print axioms CaioloFerroniHoster.Ranks.dualChow_realRooted_iff
+#print axioms CaioloFerroniHoster.Ranks.counterexamples
+#print axioms CaioloFerroniHoster.Ranks.dualChow_negRooted_of_rank_le_four
+#print axioms CaioloFerroniHoster.Ranks.dualAug_negRooted_of_rank_le_three
+#check @CaioloFerroniHoster.counterexample_family
+#check @CaioloFerroniHoster.Ranks.kernel_realRooted_iff
+#check @CaioloFerroniHoster.Ranks.dualAug_negRooted_of_rank_le_three
+#print CaioloFerroniHoster.Ranks.realChow
+#print CaioloFerroniHoster.Ranks.realAug
