@@ -228,6 +228,18 @@ modules=(
   Conjectures.CircularInsertionDegree53
   Conjectures.CircularInsertionDegree54
   Conjectures.CircularInsertionStoredBases
+  Conjectures.HeimNeuhauserPlanePartitionIndices000To031
+  Conjectures.HeimNeuhauserPlanePartitionIndices032To063
+  Conjectures.HeimNeuhauserPlanePartitionIndices064To095
+  Conjectures.HeimNeuhauserPlanePartitionIndices096To119
+  Conjectures.HeimNeuhauserPlanePartitionIndices120To143
+  Conjectures.HeimNeuhauserPlanePartitionIndices144To163
+  Conjectures.HeimNeuhauserPlanePartitionIndices164To183
+  Conjectures.HeimNeuhauserPlanePartitionIndices184To199
+  Conjectures.HeimNeuhauserPlanePartitionIndices200To214
+  Conjectures.HeimNeuhauserPlanePartitionIndices215To229
+  Conjectures.HeimNeuhauserPlanePartitionIndices230To239
+  Conjectures.HeimNeuhauserPlanePartitionIndices240To250
   Conjectures.HeimNeuhauserPlanePartition
   Conjectures.HeimNeuhauserPlanePartitionBoundary
   Conjectures.HeimNeuhauserPlanePartitionCertificate
@@ -242,18 +254,6 @@ modules=(
   Conjectures.HeimNeuhauserPlanePartitionFourierCentral
   Conjectures.HeimNeuhauserPlanePartitionFourierSign
   Conjectures.HeimNeuhauserPlanePartitionGeometricDamping
-  Conjectures.HeimNeuhauserPlanePartitionIndices000To031
-  Conjectures.HeimNeuhauserPlanePartitionIndices032To063
-  Conjectures.HeimNeuhauserPlanePartitionIndices064To095
-  Conjectures.HeimNeuhauserPlanePartitionIndices096To119
-  Conjectures.HeimNeuhauserPlanePartitionIndices120To143
-  Conjectures.HeimNeuhauserPlanePartitionIndices144To163
-  Conjectures.HeimNeuhauserPlanePartitionIndices164To183
-  Conjectures.HeimNeuhauserPlanePartitionIndices184To199
-  Conjectures.HeimNeuhauserPlanePartitionIndices200To214
-  Conjectures.HeimNeuhauserPlanePartitionIndices215To229
-  Conjectures.HeimNeuhauserPlanePartitionIndices230To239
-  Conjectures.HeimNeuhauserPlanePartitionIndices240To250
   Conjectures.HeimNeuhauserPlanePartitionInversion
   Conjectures.HeimNeuhauserPlanePartitionLargeRadius
   Conjectures.HeimNeuhauserPlanePartitionMiddleGrid
