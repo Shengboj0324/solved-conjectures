@@ -2,6 +2,11 @@
 # Rebuild sources, audit every project theorem's axioms, then replay the kernel.
 set -euo pipefail
 export LEAN_NUM_THREADS=1
+# Lean's worker threads each get a glibc malloc arena, and memory freed in one arena
+# is not reused by another. Large certificate modules then exceed the -M4500 cap on
+# Linux although each proof is small. One arena that returns freed blocks keeps them
+# under the cap. macOS ignores this variable.
+export GLIBC_TUNABLES="${GLIBC_TUNABLES:-glibc.malloc.arena_max=1:glibc.malloc.mmap_threshold=131072:glibc.malloc.trim_threshold=131072}"
 cd "$(dirname "${BASH_SOURCE[0]}")/../lean"
 modules=(
   Conjectures.GyarfasPlanarAxisDegrees
