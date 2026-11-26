@@ -1,0 +1,218 @@
+{
+  "schema": "target-complete-closure-verification-v1",
+  "started_at": "2026-11-26T11:39:43.866960+00:00",
+  "finished_at": "2026-11-26T11:41:12.732305+00:00",
+  "root": "Conjectures.ZhangDeletion",
+  "project_modules": [
+    "Conjectures.Loneliness",
+    "Conjectures.LonelinessCertificate",
+    "Conjectures.LonelinessContinuity",
+    "Conjectures.LonelinessMax",
+    "Conjectures.LonelinessPairBridge",
+    "Conjectures.LonelinessRational",
+    "Conjectures.ZhangDeletion"
+  ],
+  "required_endpoints": [
+    "ZhangDeletion.boundary_coprime",
+    "ZhangDeletion.coprime_in_window",
+    "ZhangDeletion.coprime_strict_window",
+    "ZhangDeletion.residue_ne_one",
+    "ZhangDeletion.residue_ne_zero",
+    "ZhangDeletion.residue_ne_last",
+    "ZhangDeletion.inverse_witness",
+    "ZhangDeletion.modular_witness",
+    "ZhangDeletion.distance_bound",
+    "ZhangDeletion.modular_lower",
+    "ZhangDeletion.small_deletion_strict",
+    "ZhangDeletion.large_deletion_lower",
+    "ZhangDeletion.question84",
+    "ZhangDeletion.large_deletion_upper",
+    "ZhangDeletion.large_deletion_exact",
+    "ZhangDeletion.leastDenominator_spec",
+    "ZhangDeletion.leastDenominator_minimal",
+    "ZhangDeletion.small_deletion_lower",
+    "ZhangDeletion.opposite_residue",
+    "ZhangDeletion.denominator_bound",
+    "ZhangDeletion.double_residue",
+    "ZhangDeletion.retained_double_bound",
+    "ZhangDeletion.positive_residues_denominator",
+    "ZhangDeletion.opposite_last_to_one",
+    "ZhangDeletion.inverse_is_removed",
+    "ZhangDeletion.signed_inverse_coprime",
+    "ZhangDeletion.signed_denominator_bound",
+    "ZhangDeletion.double_residue_negative",
+    "ZhangDeletion.signed_double_bound",
+    "ZhangDeletion.high_residue_certificate",
+    "ZhangDeletion.mem_speeds",
+    "ZhangDeletion.speeds_card",
+    "ZhangDeletion.rational_upper",
+    "ZhangDeletion.small_deletion_upper",
+    "ZhangDeletion.small_deletion_exact"
+  ],
+  "source_sha256": {
+    "lean/Conjectures/Loneliness.lean": "fee48a4b788c9b570f1edf4400fc929066227f65b86633fb5b9b331d85a07fce",
+    "lean/Conjectures/LonelinessCertificate.lean": "7eccb4390fe8a11a0447a4c69e187d74665dfd31c8e59b8b068f3a7bcb78a99d",
+    "lean/Conjectures/LonelinessContinuity.lean": "449d8c2ea53227bd7e6b03fa137d267646de2bc0ba179e2500254b51a2b4b7ae",
+    "lean/Conjectures/LonelinessMax.lean": "db988be330f37e6ec119204b24738bc9daa7eff40f86bcd8845ce164612ec4b9",
+    "lean/Conjectures/LonelinessPairBridge.lean": "eb4326c07d8695b97b4874e08b15f902338491769d85f77a5b1bd926b09e5435",
+    "lean/Conjectures/LonelinessRational.lean": "8125c580202f3fa6b33e1297d2b4fc628b4bb5397860892c0c4b0cbdbd733684",
+    "lean/Conjectures/ZhangDeletion.lean": "91004bbe87d7e9fde0729cd4f9e6077f427e9f4f359c4fb0ef3aacdfe6fa884a"
+  },
+  "input_sha256": {
+    "lean/Conjectures/Loneliness.lean": "fee48a4b788c9b570f1edf4400fc929066227f65b86633fb5b9b331d85a07fce",
+    "lean/Conjectures/LonelinessCertificate.lean": "7eccb4390fe8a11a0447a4c69e187d74665dfd31c8e59b8b068f3a7bcb78a99d",
+    "lean/Conjectures/LonelinessContinuity.lean": "449d8c2ea53227bd7e6b03fa137d267646de2bc0ba179e2500254b51a2b4b7ae",
+    "lean/Conjectures/LonelinessMax.lean": "db988be330f37e6ec119204b24738bc9daa7eff40f86bcd8845ce164612ec4b9",
+    "lean/Conjectures/LonelinessPairBridge.lean": "eb4326c07d8695b97b4874e08b15f902338491769d85f77a5b1bd926b09e5435",
+    "lean/Conjectures/LonelinessRational.lean": "8125c580202f3fa6b33e1297d2b4fc628b4bb5397860892c0c4b0cbdbd733684",
+    "lean/Conjectures/ZhangDeletion.lean": "91004bbe87d7e9fde0729cd4f9e6077f427e9f4f359c4fb0ef3aacdfe6fa884a",
+    "lean/lean-toolchain": "ca5f1f601d34c49079e38d7e7041eb0f2a9c227fbc1df0f404820069a052330c",
+    "lean/lake-manifest.json": "02e7d705d4ea86c9cfdc22f5eceb2b5bbe5a2c14806c1f3b0f6f1c251c6f2953",
+    "lean/lakefile.toml": "609df590851cb55d2d2c52fd2037e463273a1a69d3c766a00d486cf81163a089",
+    "scripts/audit_lean_all_owned.py": "53c289baad523164bbef5561910fcdc44bc40efba2b8efe8e7212c30db3a663f",
+    "scripts/replay_lean.py": "ff396676b7d4cb19200cc2b84b6a709ff50f45e5f02fb77074a0a6861eb15a1c",
+    "scripts/verify_lean_target.py": "10d8d27c2709659c5318ef6a9fd7a28dde89f7ec46d92386a417caca5949b008"
+  },
+  "lean_toolchain": "leanprover/lean4:v4.35.0",
+  "manifest_sha256": "02e7d705d4ea86c9cfdc22f5eceb2b5bbe5a2c14806c1f3b0f6f1c251c6f2953",
+  "commands": [
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/cinna/solved-landing-lean-research/lean/.lake/build/lib/lean/Conjectures/Loneliness.olean",
+        "Conjectures/Loneliness.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.Loneliness.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/cinna/solved-landing-lean-research/lean/.lake/build/lib/lean/Conjectures/LonelinessContinuity.olean",
+        "Conjectures/LonelinessContinuity.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.LonelinessContinuity.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/cinna/solved-landing-lean-research/lean/.lake/build/lib/lean/Conjectures/LonelinessRational.olean",
+        "Conjectures/LonelinessRational.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.LonelinessRational.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/cinna/solved-landing-lean-research/lean/.lake/build/lib/lean/Conjectures/LonelinessMax.olean",
+        "Conjectures/LonelinessMax.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.LonelinessMax.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/cinna/solved-landing-lean-research/lean/.lake/build/lib/lean/Conjectures/LonelinessCertificate.olean",
+        "Conjectures/LonelinessCertificate.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.LonelinessCertificate.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/cinna/solved-landing-lean-research/lean/.lake/build/lib/lean/Conjectures/LonelinessPairBridge.olean",
+        "Conjectures/LonelinessPairBridge.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.LonelinessPairBridge.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/cinna/solved-landing-lean-research/lean/.lake/build/lib/lean/Conjectures/ZhangDeletion.olean",
+        "Conjectures/ZhangDeletion.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.ZhangDeletion.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "/home/cinna/.local/state/solved-landing-lean/research/TargetAudit.lean"
+      ],
+      "exit_code": 0,
+      "log": "audit.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "python3",
+        "/home/cinna/solved-landing-lean-research/scripts/replay_lean.py",
+        "--root",
+        "Conjectures.ZhangDeletion"
+      ],
+      "exit_code": 0,
+      "log": "replay.log"
+    }
+  ],
+  "all_owned_audit": {
+    "allowed_axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "declarations": 352,
+    "modules": 7,
+    "private_declarations": 10,
+    "raw_declarations": 352,
+    "required": 35,
+    "tag": "passed",
+    "theorems": 296
+  },
+  "full_repository_gate": "not run by this target-scoped helper",
+  "status": "PASS"
+}

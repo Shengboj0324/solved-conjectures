@@ -1,0 +1,421 @@
+{
+  "schema": "target-complete-closure-verification-v1",
+  "started_at": "2026-11-26T13:44:33.595646+00:00",
+  "finished_at": "2026-11-26T13:55:11.572056+00:00",
+  "root": "Conjectures.MallikDegreeWitness",
+  "project_modules": [
+    "Conjectures.MallikDegreeCounterfamily",
+    "Conjectures.MallikDegreeCounts",
+    "Conjectures.MallikDegreeEdgeMatchings",
+    "Conjectures.MallikDegreeExtendable",
+    "Conjectures.MallikDegreeFamily",
+    "Conjectures.MallikDegreeGraphs",
+    "Conjectures.MallikDegreeHall",
+    "Conjectures.MallikDegreeHighDeletion",
+    "Conjectures.MallikDegreeLiteral",
+    "Conjectures.MallikDegreeLowDeletion",
+    "Conjectures.MallikDegreeObstruction",
+    "Conjectures.MallikDegreePerfect",
+    "Conjectures.MallikDegreeRelabel",
+    "Conjectures.MallikDegreeSimpleGraph",
+    "Conjectures.MallikDegreeSubgraphs",
+    "Conjectures.MallikDegreeTheorems",
+    "Conjectures.MallikDegreeWitness"
+  ],
+  "required_endpoints": [
+    "MallikDegree.marked_card",
+    "MallikDegree.family_minimal",
+    "MallikDegree.exact_counts",
+    "MallikDegree.exact_gap",
+    "MallikDegree.violates_degree_bound",
+    "MallikDegree.all_even_orders",
+    "MallikDegree.order_sixteen",
+    "MallikDegree.high_degree",
+    "MallikDegree.low_degree",
+    "MallikDegree.family_edges",
+    "MallikDegree.family_degree_count",
+    "MallikDegree.strict_deficit",
+    "MallikDegree.mem_tupleEdges",
+    "MallikDegree.tupleEdges_card",
+    "MallikDegree.tupleEdges_matching",
+    "MallikDegree.tupleEdges_surjective",
+    "MallikDegree.extends_iff_every_matching",
+    "MallikDegree.family_connected",
+    "MallikDegree.family_extendable",
+    "MallikDegree.family_symm",
+    "MallikDegree.exists_mem_sum",
+    "MallikDegree.family_neighbors",
+    "MallikDegree.high_subset_count",
+    "MallikDegree.family_expands",
+    "MallikDegree.mem_neighbors",
+    "MallikDegree.mem_occupied",
+    "MallikDegree.occupied_card",
+    "MallikDegree.indexEquiv_val",
+    "MallikDegree.residual_hall",
+    "MallikDegree.extends_of_expansion",
+    "MallikDegree.delete_high_diagonal",
+    "MallikDegree.graph_extendable_iff",
+    "MallikDegree.graph_minimal_of_minimal",
+    "MallikDegree.avoid_low",
+    "MallikDegree.delete_low_diagonal",
+    "MallikDegree.lowSwitch_apply",
+    "MallikDegree.highSwitch_apply",
+    "MallikDegree.delete_low_high",
+    "MallikDegree.delete_high_low",
+    "MallikDegree.obstruction",
+    "MallikDegree.isolated_after_matching",
+    "MallikDegree.extends_transpose",
+    "MallikDegree.perfectSubgraph_perfect",
+    "MallikDegree.le_spanning_of_pairs",
+    "MallikDegree.permutation_of_perfect",
+    "MallikDegree.relabel_extends",
+    "MallikDegree.relabel_extendable",
+    "MallikDegree.relabel_minimal",
+    "MallikDegree.graph_bipartite",
+    "MallikDegree.graph_deleted",
+    "MallikDegree.graph_degree_left",
+    "MallikDegree.graph_degree_right",
+    "MallikDegree.graph_degree_count",
+    "MallikDegree.graph_edges_symmetric",
+    "MallikDegree.subOfEdges_matching",
+    "MallikDegree.mem_edgePairs",
+    "MallikDegree.pairs_of_edges",
+    "MallikDegree.edgePairs_matching",
+    "MallikDegree.edgePairs_card",
+    "MallikDegree.literal_counts",
+    "MallikDegree.minimal_counterexample",
+    "MallikDegree.every_even_order",
+    "MallikDegree.smallest_member",
+    "MallikDegree.gap_at_first_order",
+    "MallikDegree.comparison_range",
+    "MallikDegree.literal_rows",
+    "MallikDegree.search_minimal",
+    "MallikDegree.search_count"
+  ],
+  "source_sha256": {
+    "lean/Conjectures/MallikDegreeCounterfamily.lean": "9d3c8f4f30a99b42c3edd48ceabc62e706dda8d386e5b295155d039957fef7e5",
+    "lean/Conjectures/MallikDegreeCounts.lean": "c6e0638a070df5671b745fc25c92efcf3c94ecc859ca8bc2d48d008a462dffe2",
+    "lean/Conjectures/MallikDegreeEdgeMatchings.lean": "6f8bdfd2f093335958f3b7e060e360398dbb96c678ccb6fb656d4eaaf7429eef",
+    "lean/Conjectures/MallikDegreeExtendable.lean": "302c6274c9d60eae9813de431d49210b6b6693ca67e55b1a4d5ad2f73e9d72b9",
+    "lean/Conjectures/MallikDegreeFamily.lean": "8bbed0e3e98dd6d701f8507570d63a716f0e21d1baef3c97ff9bd9ca0c815e04",
+    "lean/Conjectures/MallikDegreeGraphs.lean": "3ad5d8a388560c2536c80c9a493e8384f63e8ae8cf7d8b2c4b883b6b799ce8db",
+    "lean/Conjectures/MallikDegreeHall.lean": "4721708d73c230a839dd22291b8b1dbf706c66868ad26cea1fe2928562a0ce96",
+    "lean/Conjectures/MallikDegreeHighDeletion.lean": "7e8fc0ba04f30c9a473e07b08043ecebe9d063791b7c7b91716d9f659e2b1ff3",
+    "lean/Conjectures/MallikDegreeLiteral.lean": "de298c2b0ff9c26ce3a72dd91eeb0f8a629a72ab657e2be3449884d47fffed23",
+    "lean/Conjectures/MallikDegreeLowDeletion.lean": "d8932c195a82a02ef714c5d38c7eb2b820d8a7cf6e9fc08b657686437c2bb5de",
+    "lean/Conjectures/MallikDegreeObstruction.lean": "3a40c3a3dfbe0042da4dc56f60fd0c95d094ca909ca81be7554b7f966f526666",
+    "lean/Conjectures/MallikDegreePerfect.lean": "f51cb1a8b65a444e5f6b6830f61b375186b7fffc7dd7f750cb701b8cdae9e984",
+    "lean/Conjectures/MallikDegreeRelabel.lean": "434343e5e847331274827edfbcbce05501259061f40e4e1cc1eaaccc01b02361",
+    "lean/Conjectures/MallikDegreeSimpleGraph.lean": "e81c85ad85370605971b5888494c78e7844fa6c6012400504abfe370f9c62a4d",
+    "lean/Conjectures/MallikDegreeSubgraphs.lean": "bb02921c93bd136c470c1c77effdb306236533e91306988e3bd323384ea63809",
+    "lean/Conjectures/MallikDegreeTheorems.lean": "d4b41507eab026510b419bcb425c379b441192b84e3ffa0f5d49da3045f8c48a",
+    "lean/Conjectures/MallikDegreeWitness.lean": "d24fe5bc827478c81030f04732067fe7f7140a8e8c129f10d799d71b42235c51"
+  },
+  "input_sha256": {
+    "lean/Conjectures/MallikDegreeCounterfamily.lean": "9d3c8f4f30a99b42c3edd48ceabc62e706dda8d386e5b295155d039957fef7e5",
+    "lean/Conjectures/MallikDegreeCounts.lean": "c6e0638a070df5671b745fc25c92efcf3c94ecc859ca8bc2d48d008a462dffe2",
+    "lean/Conjectures/MallikDegreeEdgeMatchings.lean": "6f8bdfd2f093335958f3b7e060e360398dbb96c678ccb6fb656d4eaaf7429eef",
+    "lean/Conjectures/MallikDegreeExtendable.lean": "302c6274c9d60eae9813de431d49210b6b6693ca67e55b1a4d5ad2f73e9d72b9",
+    "lean/Conjectures/MallikDegreeFamily.lean": "8bbed0e3e98dd6d701f8507570d63a716f0e21d1baef3c97ff9bd9ca0c815e04",
+    "lean/Conjectures/MallikDegreeGraphs.lean": "3ad5d8a388560c2536c80c9a493e8384f63e8ae8cf7d8b2c4b883b6b799ce8db",
+    "lean/Conjectures/MallikDegreeHall.lean": "4721708d73c230a839dd22291b8b1dbf706c66868ad26cea1fe2928562a0ce96",
+    "lean/Conjectures/MallikDegreeHighDeletion.lean": "7e8fc0ba04f30c9a473e07b08043ecebe9d063791b7c7b91716d9f659e2b1ff3",
+    "lean/Conjectures/MallikDegreeLiteral.lean": "de298c2b0ff9c26ce3a72dd91eeb0f8a629a72ab657e2be3449884d47fffed23",
+    "lean/Conjectures/MallikDegreeLowDeletion.lean": "d8932c195a82a02ef714c5d38c7eb2b820d8a7cf6e9fc08b657686437c2bb5de",
+    "lean/Conjectures/MallikDegreeObstruction.lean": "3a40c3a3dfbe0042da4dc56f60fd0c95d094ca909ca81be7554b7f966f526666",
+    "lean/Conjectures/MallikDegreePerfect.lean": "f51cb1a8b65a444e5f6b6830f61b375186b7fffc7dd7f750cb701b8cdae9e984",
+    "lean/Conjectures/MallikDegreeRelabel.lean": "434343e5e847331274827edfbcbce05501259061f40e4e1cc1eaaccc01b02361",
+    "lean/Conjectures/MallikDegreeSimpleGraph.lean": "e81c85ad85370605971b5888494c78e7844fa6c6012400504abfe370f9c62a4d",
+    "lean/Conjectures/MallikDegreeSubgraphs.lean": "bb02921c93bd136c470c1c77effdb306236533e91306988e3bd323384ea63809",
+    "lean/Conjectures/MallikDegreeTheorems.lean": "d4b41507eab026510b419bcb425c379b441192b84e3ffa0f5d49da3045f8c48a",
+    "lean/Conjectures/MallikDegreeWitness.lean": "d24fe5bc827478c81030f04732067fe7f7140a8e8c129f10d799d71b42235c51",
+    "lean/lean-toolchain": "ca5f1f601d34c49079e38d7e7041eb0f2a9c227fbc1df0f404820069a052330c",
+    "lean/lake-manifest.json": "02e7d705d4ea86c9cfdc22f5eceb2b5bbe5a2c14806c1f3b0f6f1c251c6f2953",
+    "lean/lakefile.toml": "609df590851cb55d2d2c52fd2037e463273a1a69d3c766a00d486cf81163a089",
+    "scripts/audit_lean_all_owned.py": "53c289baad523164bbef5561910fcdc44bc40efba2b8efe8e7212c30db3a663f",
+    "scripts/replay_lean.py": "ff396676b7d4cb19200cc2b84b6a709ff50f45e5f02fb77074a0a6861eb15a1c",
+    "scripts/verify_lean_target.py": "10d8d27c2709659c5318ef6a9fd7a28dde89f7ec46d92386a417caca5949b008"
+  },
+  "lean_toolchain": "leanprover/lean4:v4.35.0",
+  "manifest_sha256": "02e7d705d4ea86c9cfdc22f5eceb2b5bbe5a2c14806c1f3b0f6f1c251c6f2953",
+  "commands": [
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/cinna/solved-mallik-extendability-research/lean/.lake/build/lib/lean/Conjectures/MallikDegreeGraphs.olean",
+        "Conjectures/MallikDegreeGraphs.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.MallikDegreeGraphs.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/cinna/solved-mallik-extendability-research/lean/.lake/build/lib/lean/Conjectures/MallikDegreeFamily.olean",
+        "Conjectures/MallikDegreeFamily.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.MallikDegreeFamily.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/cinna/solved-mallik-extendability-research/lean/.lake/build/lib/lean/Conjectures/MallikDegreeHall.olean",
+        "Conjectures/MallikDegreeHall.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.MallikDegreeHall.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/cinna/solved-mallik-extendability-research/lean/.lake/build/lib/lean/Conjectures/MallikDegreeExtendable.olean",
+        "Conjectures/MallikDegreeExtendable.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.MallikDegreeExtendable.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/cinna/solved-mallik-extendability-research/lean/.lake/build/lib/lean/Conjectures/MallikDegreeObstruction.olean",
+        "Conjectures/MallikDegreeObstruction.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.MallikDegreeObstruction.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/cinna/solved-mallik-extendability-research/lean/.lake/build/lib/lean/Conjectures/MallikDegreeHighDeletion.olean",
+        "Conjectures/MallikDegreeHighDeletion.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.MallikDegreeHighDeletion.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/cinna/solved-mallik-extendability-research/lean/.lake/build/lib/lean/Conjectures/MallikDegreeLowDeletion.olean",
+        "Conjectures/MallikDegreeLowDeletion.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.MallikDegreeLowDeletion.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/cinna/solved-mallik-extendability-research/lean/.lake/build/lib/lean/Conjectures/MallikDegreeCounts.olean",
+        "Conjectures/MallikDegreeCounts.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.MallikDegreeCounts.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/cinna/solved-mallik-extendability-research/lean/.lake/build/lib/lean/Conjectures/MallikDegreeSimpleGraph.olean",
+        "Conjectures/MallikDegreeSimpleGraph.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.MallikDegreeSimpleGraph.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/cinna/solved-mallik-extendability-research/lean/.lake/build/lib/lean/Conjectures/MallikDegreeEdgeMatchings.olean",
+        "Conjectures/MallikDegreeEdgeMatchings.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.MallikDegreeEdgeMatchings.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/cinna/solved-mallik-extendability-research/lean/.lake/build/lib/lean/Conjectures/MallikDegreeCounterfamily.olean",
+        "Conjectures/MallikDegreeCounterfamily.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.MallikDegreeCounterfamily.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/cinna/solved-mallik-extendability-research/lean/.lake/build/lib/lean/Conjectures/MallikDegreeSubgraphs.olean",
+        "Conjectures/MallikDegreeSubgraphs.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.MallikDegreeSubgraphs.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/cinna/solved-mallik-extendability-research/lean/.lake/build/lib/lean/Conjectures/MallikDegreePerfect.olean",
+        "Conjectures/MallikDegreePerfect.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.MallikDegreePerfect.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/cinna/solved-mallik-extendability-research/lean/.lake/build/lib/lean/Conjectures/MallikDegreeLiteral.olean",
+        "Conjectures/MallikDegreeLiteral.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.MallikDegreeLiteral.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/cinna/solved-mallik-extendability-research/lean/.lake/build/lib/lean/Conjectures/MallikDegreeTheorems.olean",
+        "Conjectures/MallikDegreeTheorems.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.MallikDegreeTheorems.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/cinna/solved-mallik-extendability-research/lean/.lake/build/lib/lean/Conjectures/MallikDegreeRelabel.olean",
+        "Conjectures/MallikDegreeRelabel.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.MallikDegreeRelabel.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/cinna/solved-mallik-extendability-research/lean/.lake/build/lib/lean/Conjectures/MallikDegreeWitness.olean",
+        "Conjectures/MallikDegreeWitness.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.MallikDegreeWitness.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "/home/cinna/.local/state/solved-mallik-extendability/research/TargetAudit.lean"
+      ],
+      "exit_code": 0,
+      "log": "audit.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "python3",
+        "/home/cinna/solved-mallik-extendability-research/scripts/replay_lean.py",
+        "--root",
+        "Conjectures.MallikDegreeWitness"
+      ],
+      "exit_code": 0,
+      "log": "replay.log"
+    }
+  ],
+  "all_owned_audit": {
+    "allowed_axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "declarations": 211,
+    "modules": 17,
+    "private_declarations": 11,
+    "raw_declarations": 211,
+    "required": 68,
+    "tag": "passed",
+    "theorems": 164
+  },
+  "full_repository_gate": "not run by this target-scoped helper",
+  "status": "PASS"
+}

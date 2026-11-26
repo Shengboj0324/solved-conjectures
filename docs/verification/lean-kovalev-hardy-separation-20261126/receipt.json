@@ -1,0 +1,118 @@
+{
+  "schema": "target-complete-closure-verification-v1",
+  "started_at": "2026-11-26T12:05:12.793507+00:00",
+  "finished_at": "2026-11-26T12:06:34.840005+00:00",
+  "root": "Conjectures.KovalevHardySeparation",
+  "project_modules": [
+    "Conjectures.KovalevHardySeparation",
+    "Conjectures.KovalevRationalCertificate"
+  ],
+  "required_endpoints": [
+    "KovalevRationalCertificate.pi_comparison",
+    "KovalevRationalCertificate.log320_comparison",
+    "KovalevRationalCertificate.gamma_comparison",
+    "KovalevRationalCertificate.L_lower_comparison",
+    "KovalevRationalCertificate.L_upper_comparison",
+    "KovalevRationalCertificate.root_comparison",
+    "KovalevRationalCertificate.k_difference_positive",
+    "KovalevRationalCertificate.a_comparison",
+    "KovalevRationalCertificate.b_comparison",
+    "KovalevRationalCertificate.dimension_threshold",
+    "KovalevRationalCertificate.quartic_exact",
+    "KovalevRationalCertificate.gap_exact",
+    "KovalevRationalCertificate.gap_positive",
+    "KovalevHardySeparation.pointwise_lower",
+    "KovalevHardySeparation.chi_square_threshold",
+    "KovalevHardySeparation.gradient_fourth",
+    "KovalevHardySeparation.strict_separation",
+    "KovalevHardySeparation.gradient_separation",
+    "KovalevHardySeparation.normalized_fourth_moment",
+    "KovalevHardySeparation.lower_inequality_fails"
+  ],
+  "source_sha256": {
+    "lean/Conjectures/KovalevHardySeparation.lean": "5c61b66541505cefba28c2fda15cca0c97633414dd95ced13cb6fcb6e52ac40f",
+    "lean/Conjectures/KovalevRationalCertificate.lean": "00794299efcd7355f8c1ed71bb2f2cb98184a231bb81c475fe0cf9000dfc957a"
+  },
+  "input_sha256": {
+    "lean/Conjectures/KovalevHardySeparation.lean": "5c61b66541505cefba28c2fda15cca0c97633414dd95ced13cb6fcb6e52ac40f",
+    "lean/Conjectures/KovalevRationalCertificate.lean": "00794299efcd7355f8c1ed71bb2f2cb98184a231bb81c475fe0cf9000dfc957a",
+    "lean/lean-toolchain": "ca5f1f601d34c49079e38d7e7041eb0f2a9c227fbc1df0f404820069a052330c",
+    "lean/lake-manifest.json": "02e7d705d4ea86c9cfdc22f5eceb2b5bbe5a2c14806c1f3b0f6f1c251c6f2953",
+    "lean/lakefile.toml": "609df590851cb55d2d2c52fd2037e463273a1a69d3c766a00d486cf81163a089",
+    "scripts/audit_lean_all_owned.py": "53c289baad523164bbef5561910fcdc44bc40efba2b8efe8e7212c30db3a663f",
+    "scripts/replay_lean.py": "ff396676b7d4cb19200cc2b84b6a709ff50f45e5f02fb77074a0a6861eb15a1c",
+    "scripts/verify_lean_target.py": "10d8d27c2709659c5318ef6a9fd7a28dde89f7ec46d92386a417caca5949b008"
+  },
+  "lean_toolchain": "leanprover/lean4:v4.35.0",
+  "manifest_sha256": "02e7d705d4ea86c9cfdc22f5eceb2b5bbe5a2c14806c1f3b0f6f1c251c6f2953",
+  "commands": [
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/cinna/solved-kovalev-rational-research/lean/.lake/build/lib/lean/Conjectures/KovalevRationalCertificate.olean",
+        "Conjectures/KovalevRationalCertificate.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.KovalevRationalCertificate.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/cinna/solved-kovalev-rational-research/lean/.lake/build/lib/lean/Conjectures/KovalevHardySeparation.olean",
+        "Conjectures/KovalevHardySeparation.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.KovalevHardySeparation.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "/home/cinna/.local/state/solved-kovalev-rational/research/TargetAudit.lean"
+      ],
+      "exit_code": 0,
+      "log": "audit.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "python3",
+        "/home/cinna/solved-kovalev-rational-research/scripts/replay_lean.py",
+        "--root",
+        "Conjectures.KovalevHardySeparation"
+      ],
+      "exit_code": 0,
+      "log": "replay.log"
+    }
+  ],
+  "all_owned_audit": {
+    "allowed_axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "declarations": 85,
+    "modules": 2,
+    "private_declarations": 0,
+    "raw_declarations": 85,
+    "required": 20,
+    "tag": "passed",
+    "theorems": 51
+  },
+  "full_repository_gate": "not run by this target-scoped helper",
+  "status": "PASS"
+}

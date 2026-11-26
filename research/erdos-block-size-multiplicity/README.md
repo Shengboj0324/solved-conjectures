@@ -18,3 +18,13 @@ The research question is whether general designs can spread their block sizes ac
 [Point symmetry](symmetry.md) prevents any point-transitive design itself from meeting the proposed bound. At prime-power orders such a design has a size occurring at least a constant times $v^{3/4}$.
 
 The [window criterion](windows.md) shows that the conjecture is equivalent to constructing designs with average multiplicity $O(\sqrt v)$ on consecutive square-to-square intervals of sizes. Around $\sqrt v$, a single size can then occur $O(v^{3/4})$ times, provided the entire interval meets the same total bound. An exact-order restriction smooths all the intervals simultaneously.
+
+The [limiting block-size theorem](profiles.md) gives a universal lower coefficient of three. Any sequence achieving this coefficient must have asymptotically uniform block sizes after normalization by the square root of the order. Its normalized point degrees concentrate at three halves. The proof also constrains any other bounded coefficient.
+
+The [prime-plane obstruction](prime-planes.md) rules out every restriction of a prime-order Desarguesian plane. At least one size occurs $\Omega(v^{5/7})$ times, uniformly over all primes and all densities. A separate variance estimate gives $\Omega(v^{3/4})$ whenever $v\ge32(q+1)$ in any plane of order $q$.
+
+Using Lewko's 2026 incidence theorem, the same [prime-plane analysis](prime-planes.md) gives the sharp order $\Theta(v^{3/4})$ for the best configuration in this entire model, including when the prime varies with $v$. The matching upper bound comes from the classical plane-restriction construction.
+
+The [field-representability obstruction](field-obstruction.md) gives an absolute power gap $M\gg v^{1/2+\epsilon}$ over **all fields**, even when the characteristic and extension degree vary. Its [inverse lemma](small-projections.md) recovers a dense finite subplane from many small coordinate projections. External points contribute at most one incidence each to the extensions of that subplane's lines. The general abstract-design question is still open.
+
+The [arithmetic regularity obstruction](regularity.md) gives a $v^{3/4-o(1)}$ lower bound for every point-transitive design and quantifies the replication irregularity required of a general square-root construction.

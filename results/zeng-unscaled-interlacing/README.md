@@ -8,7 +8,7 @@ Jiang Zeng asks whether consecutive original rows of his two-parameter Narayana 
 r_{n+1,i}<r_{n,i}<q^2r_{n+1,i+1}.
 ```
 
-The argument factors the coefficients into simple dilations and uses the reciprocal symmetry of each original row. Independent mathematical review is requested in the tracking issue. [Version 2, closing question 1](https://arxiv.org/abs/2610.28691v2) · [Source audit](sources.md) · [Issue 792](https://github.com/1337isnot1337/solved-conjectures/issues/792)
+The argument factors the coefficients into simple dilations and uses the reciprocal symmetry of each original row. The independent review checked the infinite-product and strictness steps, reran the signed remainder checks, and certified another 176 indexed inequalities by rational root isolation. [Review receipt](https://github.com/1337isnot1337/solved-conjectures/issues/792#issuecomment-7192093300) [Version 2, closing question 1](https://arxiv.org/abs/2610.28691v2) · [Source audit](sources.md) · [Issue 792](https://github.com/1337isnot1337/solved-conjectures/issues/792)
 
 Run `python3 results/zeng-unscaled-interlacing/check.py` from the repository root. Exact signed polynomial remainders test both strict interlacings, including the factor $q^2$, with rational parameters. [Verifier](check.py)
 

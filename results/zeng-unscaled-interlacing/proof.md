@@ -44,10 +44,10 @@ We will also need (3) when the initial separation is weak. One can perturb the r
 
 ## Separation of the source polynomials
 
-Let $\left[{n\atop k}\right]_q=(q;q)_n/((q;q)_k(q;q)_{n-k})$ and form
+Write the Gaussian binomial coefficient as $G_{n,k}=(q;q)_n/((q;q)_k(q;q)_{n-k})$ and form
 
 ```math
-U_n(t)=\sum_{k=0}^n q^{k(k-1)}\left[{n\atop k}\right]_q t^k.
+U_n(t)=\sum_{k=0}^n q^{k(k-1)}G_{n,k} t^k.
 ```
 
 The Gaussian Pascal recurrence gives $U_{n+1}(t)=U_n(t)+q^n t U_n(qt)$, with $U_1(t)=1+t$. If $U_n$ has strictly separated root magnitudes $r_1,\ldots,r_n$, the next polynomial has one root magnitude in each of $(0,r_1)$, $(r_{i-1}/q,r_i)$ for $2\le i\le n$, and $(r_n/q,\infty)$. At $r_i$ its value has the sign of $-U_n(-qr_i)$, and at $r_i/q$ it has the sign of $U_n(-r_i/q)$. At infinity its sign at negative arguments is $(-1)^{n+1}$. These intervals prove strict separation by induction.

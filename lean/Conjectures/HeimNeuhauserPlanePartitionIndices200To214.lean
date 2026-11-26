@@ -4,6 +4,8 @@ import Conjectures.HeimNeuhauserPlanePartitionCertificate
 
 namespace PlanePartition
 
+-- Release each completed kernel decision before elaborating the next certificate.
+set_option Elab.async false
 set_option maxRecDepth 20000
 set_option maxHeartbeats 3000000
 

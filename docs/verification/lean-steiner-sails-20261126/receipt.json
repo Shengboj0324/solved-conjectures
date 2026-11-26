@@ -1,0 +1,375 @@
+{
+  "schema": "target-complete-closure-verification-v1",
+  "started_at": "2026-11-26T13:12:30.368182+00:00",
+  "finished_at": "2026-11-26T13:20:13.786096+00:00",
+  "root": "Conjectures.SteinerSailTheorems",
+  "project_modules": [
+    "Conjectures.SteinerSailCount",
+    "Conjectures.SteinerSailCover",
+    "Conjectures.SteinerSailDegrees",
+    "Conjectures.SteinerSailGeometry",
+    "Conjectures.SteinerSailMixed",
+    "Conjectures.SteinerSailOpposite",
+    "Conjectures.SteinerSailPacking",
+    "Conjectures.SteinerSailPackingLemma",
+    "Conjectures.SteinerSailParity",
+    "Conjectures.SteinerSailPointCounts",
+    "Conjectures.SteinerSailShape",
+    "Conjectures.SteinerSailSpokes",
+    "Conjectures.SteinerSailSystem",
+    "Conjectures.SteinerSailTheorems"
+  ],
+  "required_endpoints": [
+    "SteinerSail.System.monochromatic_bound",
+    "SteinerSail.System.exists_monochromatic",
+    "SteinerSail.System.outside_card",
+    "SteinerSail.System.total_sails",
+    "SteinerSail.System.density_bound",
+    "SteinerSail.System.opposite_cover",
+    "SteinerSail.System.intersection_bound",
+    "SteinerSail.System.witness_capacity",
+    "SteinerSail.System.opposite_count",
+    "SteinerSail.sum_incident_cards",
+    "SteinerSail.System.through_incident",
+    "SteinerSail.System.neighbor_colors_disjoint",
+    "SteinerSail.System.neighbor_colors_union",
+    "SteinerSail.System.degree_sum_point",
+    "SteinerSail.System.degree_sum_color",
+    "SteinerSail.System.block_count",
+    "SteinerSail.System.variance_nonneg",
+    "SteinerSail.System.degree_spread",
+    "SteinerSail.System.distinct_spokes",
+    "SteinerSail.System.spoke_block_spec",
+    "SteinerSail.System.transversal_not_spoke",
+    "SteinerSail.System.spoke_blocks_card",
+    "SteinerSail.System.sail_blocks_card",
+    "SteinerSail.System.vertices_card",
+    "SteinerSail.System.vertex_iff",
+    "SteinerSail.System.spokes_three_iff",
+    "SteinerSail.System.center_degree",
+    "SteinerSail.System.noncenter_degree",
+    "SteinerSail.System.unique_sail",
+    "SteinerSail.System.inside_spokes",
+    "SteinerSail.System.inside_sum",
+    "SteinerSail.System.sum_inside_products",
+    "SteinerSail.System.frequency_eq",
+    "SteinerSail.System.inside_product",
+    "SteinerSail.System.mixed_spoke_count",
+    "SteinerSail.System.through_total",
+    "SteinerSail.System.twice_incident",
+    "SteinerSail.System.spokes_subtype",
+    "SteinerSail.System.opposite_witness",
+    "SteinerSail.System.odd_card",
+    "SteinerSail.System.class_spec",
+    "SteinerSail.System.largest_class",
+    "SteinerSail.System.monochromatic_packing",
+    "SteinerSail.System.linear_packing",
+    "SteinerSail.finite_packing",
+    "SteinerSail.opposite_array",
+    "SteinerSail.spoke_identity",
+    "SteinerSail.sail_bound_of_counts",
+    "SteinerSail.positive_from_84",
+    "SteinerSail.System.center_transversals",
+    "SteinerSail.System.other_transversals",
+    "SteinerSail.System.point_incidence",
+    "SteinerSail.System.vertex_union",
+    "SteinerSail.System.spokes_intersection",
+    "SteinerSail.System.transversal_intersection",
+    "SteinerSail.System.all_spokes",
+    "SteinerSail.System.all_blocks_card",
+    "SteinerSail.System.outside_spokes",
+    "SteinerSail.System.twice_spokes",
+    "SteinerSail.System.odd_count",
+    "SteinerSail.System.join_spec",
+    "SteinerSail.System.join_eq",
+    "SteinerSail.System.join_comm",
+    "SteinerSail.System.neighbors_union",
+    "SteinerSail.System.blocks_disjoint_erased",
+    "SteinerSail.System.neighbor_degree",
+    "SteinerSail.System.spokes_le",
+    "SteinerSail.System.incident_spokes",
+    "SteinerSail.System.actual_sail_from_84",
+    "SteinerSail.System.density_fraction",
+    "SteinerSail.System.eventually_density",
+    "SteinerSail.System.fixed_disjoint_union",
+    "SteinerSail.System.eventually_packing"
+  ],
+  "source_sha256": {
+    "lean/Conjectures/SteinerSailCount.lean": "b944e601ccdbf61af96f141378ee8f1aab7ee1056d9451dd4479ca778ee89e14",
+    "lean/Conjectures/SteinerSailCover.lean": "e8d14511be6a24010405b162250c7663221dd55e236c2672f1107bcbd3b80e5b",
+    "lean/Conjectures/SteinerSailDegrees.lean": "08f0f3f9f5afe942d41b7e2dcbc5ed6da64be51c5755ae2294a177d8a7743ad2",
+    "lean/Conjectures/SteinerSailGeometry.lean": "e07bb53dcdbc25eed0f899ec276f2b22f6806e771a83cfe0b9016e40f774a96f",
+    "lean/Conjectures/SteinerSailMixed.lean": "3058bbbe2f672e338da172b6ebcdfb31cd3a41606e61f2f2951f8b075ac82123",
+    "lean/Conjectures/SteinerSailOpposite.lean": "ab330f5feae940af0ce7dbb47b403609ecb0b32901b159d66908c16d52746e7b",
+    "lean/Conjectures/SteinerSailPacking.lean": "5600b43d489da9275060a9417ba99aea9f34ab746eab3521a8590a56cb3bcdf3",
+    "lean/Conjectures/SteinerSailPackingLemma.lean": "f87f101abebca34d858c3b59168e03370fdb07e5e539a8d709a819da749dd75b",
+    "lean/Conjectures/SteinerSailParity.lean": "d01c1ae18149f705feb6ea6cad79206d7ac777e8e7ac727ce78d780c1f5f178f",
+    "lean/Conjectures/SteinerSailPointCounts.lean": "06118101627ea8fe92ba0e20f27e266bd045936b5018bfb421ee7082dde86ee2",
+    "lean/Conjectures/SteinerSailShape.lean": "08d7a0b3763ba0f5d3f5bd4b634be0ffdf9b68ddff8b08e69594a4ff8a807751",
+    "lean/Conjectures/SteinerSailSpokes.lean": "1db86c0c5fe97a26ccfd9338a03f22ef245c9c7a93f7fe47fd0c9e03a8647691",
+    "lean/Conjectures/SteinerSailSystem.lean": "3cabe92b8ea5ca99211e2081461c405f816b0c673f374a10351d607d64802e2a",
+    "lean/Conjectures/SteinerSailTheorems.lean": "e67ed2e2fc50f0a22556ee2ca0c5adcf78a7984130e4ec9aaf5cd38f2027579e"
+  },
+  "input_sha256": {
+    "lean/Conjectures/SteinerSailCount.lean": "b944e601ccdbf61af96f141378ee8f1aab7ee1056d9451dd4479ca778ee89e14",
+    "lean/Conjectures/SteinerSailCover.lean": "e8d14511be6a24010405b162250c7663221dd55e236c2672f1107bcbd3b80e5b",
+    "lean/Conjectures/SteinerSailDegrees.lean": "08f0f3f9f5afe942d41b7e2dcbc5ed6da64be51c5755ae2294a177d8a7743ad2",
+    "lean/Conjectures/SteinerSailGeometry.lean": "e07bb53dcdbc25eed0f899ec276f2b22f6806e771a83cfe0b9016e40f774a96f",
+    "lean/Conjectures/SteinerSailMixed.lean": "3058bbbe2f672e338da172b6ebcdfb31cd3a41606e61f2f2951f8b075ac82123",
+    "lean/Conjectures/SteinerSailOpposite.lean": "ab330f5feae940af0ce7dbb47b403609ecb0b32901b159d66908c16d52746e7b",
+    "lean/Conjectures/SteinerSailPacking.lean": "5600b43d489da9275060a9417ba99aea9f34ab746eab3521a8590a56cb3bcdf3",
+    "lean/Conjectures/SteinerSailPackingLemma.lean": "f87f101abebca34d858c3b59168e03370fdb07e5e539a8d709a819da749dd75b",
+    "lean/Conjectures/SteinerSailParity.lean": "d01c1ae18149f705feb6ea6cad79206d7ac777e8e7ac727ce78d780c1f5f178f",
+    "lean/Conjectures/SteinerSailPointCounts.lean": "06118101627ea8fe92ba0e20f27e266bd045936b5018bfb421ee7082dde86ee2",
+    "lean/Conjectures/SteinerSailShape.lean": "08d7a0b3763ba0f5d3f5bd4b634be0ffdf9b68ddff8b08e69594a4ff8a807751",
+    "lean/Conjectures/SteinerSailSpokes.lean": "1db86c0c5fe97a26ccfd9338a03f22ef245c9c7a93f7fe47fd0c9e03a8647691",
+    "lean/Conjectures/SteinerSailSystem.lean": "3cabe92b8ea5ca99211e2081461c405f816b0c673f374a10351d607d64802e2a",
+    "lean/Conjectures/SteinerSailTheorems.lean": "e67ed2e2fc50f0a22556ee2ca0c5adcf78a7984130e4ec9aaf5cd38f2027579e",
+    "lean/lean-toolchain": "ca5f1f601d34c49079e38d7e7041eb0f2a9c227fbc1df0f404820069a052330c",
+    "lean/lake-manifest.json": "02e7d705d4ea86c9cfdc22f5eceb2b5bbe5a2c14806c1f3b0f6f1c251c6f2953",
+    "lean/lakefile.toml": "609df590851cb55d2d2c52fd2037e463273a1a69d3c766a00d486cf81163a089",
+    "scripts/audit_lean_all_owned.py": "53c289baad523164bbef5561910fcdc44bc40efba2b8efe8e7212c30db3a663f",
+    "scripts/replay_lean.py": "ff396676b7d4cb19200cc2b84b6a709ff50f45e5f02fb77074a0a6861eb15a1c",
+    "scripts/verify_lean_target.py": "10d8d27c2709659c5318ef6a9fd7a28dde89f7ec46d92386a417caca5949b008"
+  },
+  "lean_toolchain": "leanprover/lean4:v4.35.0",
+  "manifest_sha256": "02e7d705d4ea86c9cfdc22f5eceb2b5bbe5a2c14806c1f3b0f6f1c251c6f2953",
+  "commands": [
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/cinna/solved-steiner-sails-research/lean/.lake/build/lib/lean/Conjectures/SteinerSailPackingLemma.olean",
+        "Conjectures/SteinerSailPackingLemma.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.SteinerSailPackingLemma.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/cinna/solved-steiner-sails-research/lean/.lake/build/lib/lean/Conjectures/SteinerSailSystem.olean",
+        "Conjectures/SteinerSailSystem.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.SteinerSailSystem.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/cinna/solved-steiner-sails-research/lean/.lake/build/lib/lean/Conjectures/SteinerSailDegrees.olean",
+        "Conjectures/SteinerSailDegrees.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.SteinerSailDegrees.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/cinna/solved-steiner-sails-research/lean/.lake/build/lib/lean/Conjectures/SteinerSailParity.olean",
+        "Conjectures/SteinerSailParity.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.SteinerSailParity.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/cinna/solved-steiner-sails-research/lean/.lake/build/lib/lean/Conjectures/SteinerSailMixed.olean",
+        "Conjectures/SteinerSailMixed.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.SteinerSailMixed.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/cinna/solved-steiner-sails-research/lean/.lake/build/lib/lean/Conjectures/SteinerSailSpokes.olean",
+        "Conjectures/SteinerSailSpokes.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.SteinerSailSpokes.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/cinna/solved-steiner-sails-research/lean/.lake/build/lib/lean/Conjectures/SteinerSailOpposite.olean",
+        "Conjectures/SteinerSailOpposite.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.SteinerSailOpposite.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/cinna/solved-steiner-sails-research/lean/.lake/build/lib/lean/Conjectures/SteinerSailCover.olean",
+        "Conjectures/SteinerSailCover.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.SteinerSailCover.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/cinna/solved-steiner-sails-research/lean/.lake/build/lib/lean/Conjectures/SteinerSailCount.olean",
+        "Conjectures/SteinerSailCount.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.SteinerSailCount.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/cinna/solved-steiner-sails-research/lean/.lake/build/lib/lean/Conjectures/SteinerSailGeometry.olean",
+        "Conjectures/SteinerSailGeometry.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.SteinerSailGeometry.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/cinna/solved-steiner-sails-research/lean/.lake/build/lib/lean/Conjectures/SteinerSailPointCounts.olean",
+        "Conjectures/SteinerSailPointCounts.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.SteinerSailPointCounts.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/cinna/solved-steiner-sails-research/lean/.lake/build/lib/lean/Conjectures/SteinerSailPacking.olean",
+        "Conjectures/SteinerSailPacking.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.SteinerSailPacking.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/cinna/solved-steiner-sails-research/lean/.lake/build/lib/lean/Conjectures/SteinerSailShape.olean",
+        "Conjectures/SteinerSailShape.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.SteinerSailShape.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/cinna/solved-steiner-sails-research/lean/.lake/build/lib/lean/Conjectures/SteinerSailTheorems.olean",
+        "Conjectures/SteinerSailTheorems.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.SteinerSailTheorems.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "/home/cinna/.local/state/solved-steiner-sails/research/TargetAudit.lean"
+      ],
+      "exit_code": 0,
+      "log": "audit.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "python3",
+        "/home/cinna/solved-steiner-sails-research/scripts/replay_lean.py",
+        "--root",
+        "Conjectures.SteinerSailTheorems"
+      ],
+      "exit_code": 0,
+      "log": "replay.log"
+    }
+  ],
+  "all_owned_audit": {
+    "allowed_axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "declarations": 191,
+    "modules": 14,
+    "private_declarations": 1,
+    "raw_declarations": 191,
+    "required": 73,
+    "tag": "passed",
+    "theorems": 160
+  },
+  "full_repository_gate": "not run by this target-scoped helper",
+  "status": "PASS"
+}

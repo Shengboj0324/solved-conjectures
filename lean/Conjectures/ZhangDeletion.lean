@@ -9,7 +9,7 @@ namespace ZhangDeletion
 
 /-- In the boundary case, the first admissible denominator is already coprime. -/
 theorem boundary_coprime (r : ℕ) : Nat.Coprime (3 * r + 1) r := by
-  simpa [Nat.add_comm] using (Nat.coprime_mul_right_add_left 1 r 3).2 (Nat.coprime_one_left r)
+  simp [Nat.add_comm]
 
 theorem coprime_in_window (n r : ℕ) (hn : 1 ≤ n) (hr : 0 < r) :
     ∃ d, n + r ≤ d ∧ d ≤ n + 2*r - 1 ∧ Nat.Coprime d r := by
@@ -70,7 +70,7 @@ theorem residue_ne_last (D j r v : ℕ) (hj : Nat.Coprime D j)
 
 theorem inverse_witness (D r : ℕ) (hD : 1 < D) (hr : Nat.Coprime r D) :
     ∃ j, j < D ∧ Nat.Coprime D j ∧ (r*j) % D = 1 := by
-  letI : NeZero D := ⟨by omega⟩
+  let : NeZero D := ⟨by omega⟩
   let j := ((r : ZMod D)⁻¹).val
   refine ⟨j, ZMod.val_lt _, ?_, ?_⟩
   · have he := ZMod.mul_val_inv hr
@@ -187,7 +187,7 @@ theorem large_deletion_lower (n r : ℕ) (hn : 3 ≤ n) (hr : 1 ≤ r)
           have hvEq : v = r + (v-r) := by omega
           have hvmod : v % r = v-r := by
             conv_lhs => rw [hvEq]
-            simp [Nat.add_mod, Nat.mod_eq_of_lt hv2]
+            simp [Nat.mod_eq_of_lt hv2]
           rw [hvmod]
           omega
       have hb := distance_bound r v 1 1 (by omega) (by simpa using hmod.1) (by simpa using hmod.2)
@@ -270,7 +270,7 @@ theorem opposite_residue (p r j : ℕ) (hp : 1 < p) (hr : r < p)
     omega
   have hm := congrArg (fun x : ℕ => x % p) he
   rw [Nat.add_mod, h] at hm
-  simp only [Nat.mul_mod_right, Nat.zero_mod] at hm
+  simp only [Nat.mul_mod_right] at hm
   have hlt := Nat.mod_lt ((p-r)*j) (by omega : 0 < p)
   have hlt2 : ((p-r)*j)%p + 1 ≤ p := by omega
   by_cases heq : ((p-r)*j)%p + 1 < p
@@ -284,7 +284,7 @@ theorem denominator_bound (n r p j : ℕ) (hn : 3 ≤ n) (hr : 1 ≤ r)
     (hretained : ∀ v, 1 ≤ v → v < n → v ≠ r →
       2 ≤ (v*j)%p ∧ (v*j)%p + 2 ≤ p) : n+r ≤ p := by
   have hrl : r < p := by omega
-  have hp1 : 1 < p := by omega
+  have hp1 : 1 < p := (lt_of_lt_of_le (by decide : 1 < 3) hn).trans_le (by omega)
   have hlast := opposite_residue p r j hp1 hrl hunit
   by_contra h
   have hpr : 1 ≤ p-r := by omega
@@ -345,8 +345,10 @@ theorem inverse_is_removed (n r p j : ℕ) (hn : 3 ≤ n) (hr : 1 ≤ r)
     (hretained : ∀ v, 1 ≤ v → v < n → v ≠ r →
       2 ≤ (v*j)%p ∧ (v*j)%p + 2 ≤ p) :
     (r*j)%p = 1 ∨ (r*j)%p = p-1 := by
-  have hp2 : 2 < p := by omega
-  obtain ⟨a, hap, _, haj⟩ := inverse_witness p j (by omega) hj.symm
+  have two_le : 2 ≤ 2*r := by simpa using Nat.mul_le_mul_left 2 hr
+  have hp2 : 2 < p := ((two_le.trans hsmall).trans_lt
+    (Nat.sub_lt (lt_of_lt_of_le (by decide : 0 < 3) hn) (by decide : 0 < 1))).trans_le hp
+  obtain ⟨a, hap, _, haj⟩ := inverse_witness p j (lt_trans (by decide : 1 < 2) hp2) hj.symm
   have haj' : (a*j)%p = 1 := by simpa [Nat.mul_comm] using haj
   have ha : 1 ≤ a := by
     by_contra h

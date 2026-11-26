@@ -2,7 +2,7 @@
 """Exact finite checks of the two constructions; the proof covers all sizes."""
 
 from itertools import product
-from math import gcd, lcm
+from math import gcd, lcm, prod
 
 
 def test_radix():
@@ -61,6 +61,56 @@ def test_bilinear():
     return count
 
 
+
+def prime_powers(n):
+    base = 2
+    while n > 1:
+        p = 1
+        while n % base == 0:
+            p *= base
+            n //= base
+        if p > 1:
+            yield base, p
+        base += 1
+
+
+def test_multicoordinate():
+    count = 0
+    for c in ((-6, 10, 15), (4, 6, -9), (2, -2, 3, 3), (1, 1, -1, 1, 1)):
+        g = gcd(*c)
+        b = sorted(abs(x)//g for x in c)
+        h = len(b)
+        M = lcm(*b)
+        low_moduli = [1]*h
+        for prime, power in prime_powers(M):
+            index = next(i for i,d in enumerate(b) if d % prime)
+            low_moduli[index] *= power
+        for J in (1, 2) if M <= 6 else (1,):
+            high = 1 << J
+            for D in range(high):
+                U = [[0]]*(h-2) + [subsets(D), subsets((high-1)^D)]
+                q = lcm(*(m*len(bits) for m,bits in zip(low_moduli,U)))
+                radices = [q//(m*len(bits)) for m,bits in zip(low_moduli,U)]
+                T = prod(radices)
+                weights = [prod(radices[:i]) for i in range(h)]
+                sets = [
+                    {M//m*d + M//coefficient*(weight*x+T*y)
+                     for d,x,y in product(range(m),range(radix),bits)}
+                    for m,coefficient,weight,radix,bits
+                    in zip(low_moduli,b,weights,radices,U)
+                ]
+                assert all(len(S) == q and min(S) == 0 for S in sets)
+                assert len({sum(x*y for x,y in zip(b,point))
+                            for point in product(*sets)}) == q**h
+                for i, S in enumerate(sets):
+                    assert max(S) == (
+                        M//low_moduli[i]*(low_moduli[i]-1)
+                        + M//b[i]*(weights[i]*(radices[i]-1)+T*max(U[i])))
+                count += 1
+    return count
+
+
 if __name__ == "__main__":
-    print(f"Verified {test_radix()} unrestricted positional systems and "
-          f"{test_bilinear()} bilinear balancing fixtures.")
+    print(f"Verified {test_radix()} unrestricted positional systems, "
+          f"{test_bilinear()} bilinear fixtures, and "
+          f"{test_multicoordinate()} higher-arity balancing fixtures.")

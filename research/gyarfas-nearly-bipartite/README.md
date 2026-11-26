@@ -1,0 +1,11 @@
+# Gyárfás’s nearly bipartite graph conjecture
+
+A finite graph is nearly bipartite if every set of $2t$ vertices contains $t$ independent vertices. Gyárfás conjectured that deleting at most five vertices always makes such a graph bipartite. His grid example needs five. His Theorem 1 characterizes the class by two forbidden subgraphs, a pair of vertex-disjoint odd cycles and a subdivision of $K_4$ whose six branch paths all have odd length. Write $\tau(G)$ for the minimum number of vertices meeting all odd cycles. [Original paper, Conjecture 1 and Theorem 1](https://www.combinatorics.org/ojs/index.php/eljc/article/view/v4i1r8) · [Author’s account, §3.5](https://users.renyi.hu/~gyarfas/Cikkek/ar2erdos.pdf) · [Research issue #808](https://github.com/1337isnot1337/solved-conjectures/issues/808).
+
+The Erdős–Hajnal question with a general additive independent-set deficit was answered by Reed with a bound depending on the deficit. Gyárfás reports that Molloy and Reed believed they could obtain five but had not worked out the details. Searches of the original paper, later author account, Reed’s theorem, signed-graph decomposition literature, projective-plane width literature and repository claims found no completed proof of the five-vertex conjecture. [Reed, *Mangoes and Blueberries*](https://doi.org/10.1007/s004930050056) · [Gyárfás, p. 7](https://users.renyi.hu/~gyarfas/Cikkek/ar2erdos.pdf).
+
+The [projective reduction](core.md) retains the parities of paths in an actual subgraph of a hypothetical counterexample. The strong condition on each individual branch path prevents replacing it without proof by a statement about signs of cycles alone. The five-vertex bound remains open here.
+
+The [finite obstruction theorem](finite.md) bounds a counterexample to the five-vertex conjecture, if one exists, by 330 vertices. More generally it gives a quadratic bound for every transversal threshold at least six. The argument lifts a minor-minimal projective embedding into an actual subgraph before shortening paths.
+
+The [Möbius grid theorem](grids.md) proves the conjecture for arbitrary subdivisions of a rectangular Möbius grid, the family from the original sharp example. A short certificate covers every parity switching on its six-by-six subgrid.

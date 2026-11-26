@@ -28,54 +28,45 @@ For $r\ge v/u$, the largest step is $s_h$: for $i<h$ the ratio $s_h/s_i=(b_i/v)r
 
 Nathanson’s §3 already illustrates ordinary mixed radix with special weights. Here the base is chosen from a fixed divisibility progression and each coordinate's step absorbs its prescribed coefficient. The positional-number-system principle itself is classical.
 
-## Removing the smallest-coefficient loss
+## A sharper general lower bound and the exact bilinear limit
 
-In fact the lower constant improves to $(v/g_0)^{1/h}$, where $g_0=\gcd_i|c_i|$. Divide the form by $g_0$ and reflect negative-coordinate sets in the interval $[1,N]$, neither of which changes injectivity. Write the resulting positive coefficients as $b_i$, now of gcd one, put $v=\max b_i=b_h$, and put $M=\operatorname{lcm}_i b_i$.
-
-Assign each maximal prime power dividing $M$ to a coordinate whose coefficient is coprime to that prime; the gcd-one condition ensures a choice. Let $M_i$ be the product of the prime powers assigned to coordinate $i$. These products are pairwise coprime, their product is $M$, and $\gcd(b_i,M_i)=1$. Empty products equal one.
-
-Take $q$ an arbitrarily large multiple of $M$, put $r_i=q/M_i$ and $R_i=\prod_{j<i}r_j$, and use, before translating to positive integers,
+Let $u\le v$ be the two largest absolute coefficients, counting multiplicity, and let $g_0=\gcd_i |c_i|$. The lower constant in fact satisfies
 \[
- A_i=\left\{\frac{M}{M_i}d_i+\frac{M}{b_i}R_i x_i:
-                0\le d_i<M_i,\ 0\le x_i<r_i\right\}.
+ \liminf_{N\to\infty}\frac{F_\varphi(N)^h}{N}\ge\frac{u+v}{g_0}.
 \]
-The residue of the weighted output modulo $M_i$ recovers $d_i$, because all other contributions are multiples of $M_i$ and $b_i M/M_i$ is invertible there. For $M_i=1$ the digit is predetermined. In particular each coordinate map is also injective in its own digits. Once the low contributions are subtracted, division by $M$ gives $\sum_i R_i x_i$, with unique mixed-radix digits $x_i$. Each coordinate has size $M_i r_i=q$ and the weighted representation is unique.
+Any multiplicity-one system satisfies
+\[
+ F_\varphi(N)^h\le\frac{\sum_i |c_i|}{g_0}(N-1)+1.
+\]
+This follows because the distinct outputs lie in a single residue class modulo $g_0$ in an interval of length at most $(N-1)\sum_i |c_i|$. In arity two the bounds agree asymptotically.
 
-The low term in each coordinate is bounded in terms of the fixed form. All high contributions for $i<h$ have size $O_\varphi(q^{h-1})$, and for $i=h$ the high contribution is at most $M R_h r_h/v=q^h/v$. Therefore all coordinate sets, translated by one and reflected as needed, lie in $[1,N]$ if $q^h\le v(N-K)$, for a sufficiently large fixed $K$ and all large $N$. The multiples of $M$ have bounded spacing. Restoring the gcd gives the claimed stronger lower constant.
+For the lower bound, divide the coefficients by $g_0$ and reduce negative coefficients to positive ones by reflecting the corresponding coordinate sets in $[1,N]$. Neither operation changes the number of representations. Relabel so that the normalized positive coefficients $b_i$ have $b_{h-1}=u/g_0$ and $b_h=v/g_0$. Put $M=\operatorname{lcm}_i b_i$. Assign each maximal prime power dividing $M$ to any coordinate whose coefficient is coprime to that prime, which is possible by the gcd-one condition. Let $M_i$ be the product of the prime powers assigned to $i$ (empty products equal one). Their product is $M$, they are pairwise coprime, and $\gcd(b_i,M_i)=1$.
 
-## A sharp bilinear consequence
+Fix $J\ge1$ and $0\le D<2^J$. In the two last coordinates, let $U_{h-1}$ consist of all subset sums of the binary place values present in $D$, and let $U_h$ use the complementary bit positions among $0,\ldots,J-1$. Set $U_i=\{0\}$ for the other coordinates and $P_i=|U_i|$. Every integer in $[0,2^J-1]$ uniquely determines all upper digits $y_i\in U_i$ by the bits it uses. Also $\prod_i P_i=2^J$, $\max U_{h-1}=D$ and $\max U_h=2^J-1-D$.
 
-When $h=2$, the limit is in fact
+For arbitrarily large integers $q$ divisible by each $M_i P_i$, let $r_i=q/(M_i P_i)$, $R_i=\prod_{j<i}r_j$, and $T=\prod_i r_i=q^h/(M2^J)$. Use the coordinate sets
+\[
+ A_i=\left\{\frac{M}{M_i}d_i+\frac{M}{b_i}(R_i x_i+T y_i):
+ 0\le d_i<M_i,\quad 0\le x_i<r_i,\quad y_i\in U_i\right\}.
+\]
+All steps are integral. The residue of the weighted output modulo $M_i$ recovers $d_i$, since all other coordinates contribute zero and $b_i(M/M_i)$ is invertible there. If $M_i=1$ the digit is predetermined. Subtract the known low contributions and divide by $M$. The result is
+\[
+ \sum_i R_i x_i+T\sum_i y_i.
+\]
+Its remainder modulo $T$ recovers the mixed-radix digits $x_i$, and its quotient recovers all binary upper digits. This proves unique representation. It also proves that each coordinate map is injective: if two triples of digits gave the same coordinate value, fixing all other digits would give an equal output for distinct digit tuples. Thus each coordinate has $M_i r_i P_i=q$ elements.
+
+For fixed $J$, the $d_i$ contribution has bounded size, and each lower mixed-radix contribution for $i<h$ is $O_{\varphi,J}(q^{h-1})$. In coordinate $h$, the largest lower mixed-radix contribution equals $(M/b_h)(T-R_h)$. Combining it with the binary contributions gives
+\[
+ \operatorname{diam}(A_{h-1})
+   =\frac{D}{2^J b_{h-1}}q^h+O_{\varphi,J}(q^{h-1}),\qquad
+ \operatorname{diam}(A_h)
+   =\frac{2^J-D}{2^J b_h}q^h+O_{\varphi,J}(q^{h-1}).
+\]
+The other diameters are $O_{\varphi,J}(q^{h-1})$. Both formulae use $MT=q^h/2^J$ and the fact that the minima are zero. Translate each set by one before reflecting the negative coordinates.
+
+Write $\beta$ for the larger of the two leading diameter coefficients. For every fixed $\eta>0$ and all large $N$, the largest allowed $q$ at most $((N-1)/(\beta+\eta))^{1/h}$ gives all coordinate sets in $[1,N]$. The rounding loss is bounded because the allowed $q$ form a fixed arithmetic progression. Hence $\liminf F_\varphi(N)^h/N\ge1/(\beta+\eta)$. Let $\eta\downarrow0$ and approximate $b_{h-1}/(b_{h-1}+b_h)$ by $D/2^J$. Then $\beta$ tends to $1/(b_{h-1}+b_h)$ and the stated bound follows. In particular, for $h=2$,
 \[
  \lim_{N\to\infty}\frac{F_\varphi(N)^2}{N}
-   =\frac{|c_1|+|c_2|}{\gcd(|c_1|,|c_2|)}.
+ =\frac{|c_1|+|c_2|}{\gcd(|c_1|,|c_2|)}.
 \]
-More generally, writing $g_0=\gcd_i b_i$, any multiplicity-one system satisfies $q^h\le (\sum_i b_i/g_0)(N-1)+1$: its outputs lie in a single residue class modulo $g_0$ in an interval of length at most $(N-1)\sum_i b_i$. This proves the upper bound for the displayed bilinear limit.
-
-For the lower bound, divide by the gcd and replace negative coefficients by positive ones via the reflection $x\mapsto N+1-x$ on the affected coordinates. Write the resulting coprime coefficients as $u,v>0$ and put $M=uv$. Fix $J\ge1$ and an integer $D$ with $0\le D<2^J$. Let $U$ be the set of binary sums of subsets of the bit positions present in $D$, and let $V$ use the complementary positions in $0,\ldots,J-1$. Then every number in $[0,2^J-1]$ has exactly one representation $x+y$ with $x\in U,y\in V$. Put $P=|U|$ and $Q=|V|$; $PQ=2^J$, $\max U=D$, and $\max V=2^J-1-D$.
-
-Let $q$ run over multiples of $\operatorname{lcm}(vP,uQ)$ and put $a=q/(vP)$ and $b=q/(uQ)$. Use the coordinate sets
-\[
- \begin{split}
- A&=\{d+v(i+abx): 0\le d<v,\ 0\le i<a,\ x\in U\},\\
- B&=\{e+u(aj+aby): 0\le e<u,\ 0\le j<b,\ y\in V\}.
- \end{split}
-\]
-Each set has size $q$: first recover $d$ modulo $v$ or $e$ modulo $u$ respectively, then recover the lower and upper digits in the quotient. A value of $uA+vB$ has the form
-\[
- ud+ve+M(i+aj+ab(x+y)).
-\]
-Its residue modulo $v$ recovers $d$, and modulo $u$ recovers $e$ (including the trivial one-choice case of a modulus equal to one). Subtract $ud+ve$ and divide by $M$. Reduction modulo $a$ recovers $i$; division by $a$ and reduction modulo $b$ recovers $j$; the remaining quotient recovers $x+y$, which determines $x,y$. This proves injectivity.
-
-Since $Mab=q^2/2^J$, the diameters are
-\[
- \operatorname{diam}(A)=\frac{D}{2^J u}q^2+O_{u,v,J}(q),\qquad
- \operatorname{diam}(B)=\frac{2^J-D}{2^J v}q^2+O_{u,v,J}(q).
-\]
-Indeed their exact maxima are $v-1+v(a-1+abD)$ and $u-1+u(a(b-1)+ab(2^J-1-D))$; both minima are zero. Translate by one to make the sets positive. Let
-\[
- \beta=\max\left\{\frac{D}{2^J u},\frac{2^J-D}{2^J v}\right\}.
-\]
-For any fixed $\eta>0$, the largest allowed $q$ no larger than $\sqrt{(N-1)/(\beta+\eta)}$ gives both diameters at most $N-1$ for all large $N$. The loss from the multiple-of condition is bounded independently of $N$. Thus $\liminf F_\varphi(N)^2/N\ge1/(\beta+\eta)$. First let $\eta\downarrow0$, then choose $D/2^J$ tending to $u/(u+v)$. This gives $\liminf\ge u+v$ as desired. Undo the gcd normalization and any sign reflections.
-
-The bilinear calculation is a supplementary theorem, not a restriction of the solution of §6. No exact higher-arity leading constant is claimed.
+No exact higher-arity leading constant is claimed. The resolution of the posed questions is for all arities.

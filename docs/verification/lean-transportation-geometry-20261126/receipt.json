@@ -1,0 +1,481 @@
+{
+  "schema": "target-complete-closure-verification-v1",
+  "started_at": "2026-11-26T14:17:36.397538+00:00",
+  "finished_at": "2026-11-26T14:28:46.017203+00:00",
+  "root": "Conjectures.TransportationLatticeHull",
+  "project_modules": [
+    "Conjectures.TransportationBadColumn",
+    "Conjectures.TransportationBinomial",
+    "Conjectures.TransportationComplexRoots",
+    "Conjectures.TransportationDirections",
+    "Conjectures.TransportationEhrhartCount",
+    "Conjectures.TransportationGrouping",
+    "Conjectures.TransportationLaguerre",
+    "Conjectures.TransportationLattice",
+    "Conjectures.TransportationLatticeHull",
+    "Conjectures.TransportationPolynomial",
+    "Conjectures.TransportationPolytope",
+    "Conjectures.TransportationRootCount",
+    "Conjectures.TransportationRows",
+    "Conjectures.TransportationSeries",
+    "Conjectures.TransportationSlots",
+    "Conjectures.TransportationTables",
+    "Conjectures.TransportationTheorems",
+    "Conjectures.TransportationTwelveRoots",
+    "Conjectures.TransportationVertices"
+  ],
+  "required_endpoints": [
+    "TransportationEhrhart.row_split",
+    "TransportationEhrhart.packOthers_sum",
+    "TransportationEhrhart.restoreRow_at",
+    "TransportationEhrhart.restoreRow_other",
+    "TransportationEhrhart.restore_from_row",
+    "TransportationEhrhart.bad_card",
+    "TransportationEhrhart.overlap_sum",
+    "TransportationEhrhart.basis_split",
+    "TransportationEhrhart.choose_nested",
+    "TransportationEhrhart.inner_basis",
+    "TransportationEhrhart.shifted_choose_product",
+    "TransportationEhrhart.square_binomial_series",
+    "TransportationEhrhart.complex_root_accounting",
+    "TransportationEhrhart.twelve_nonreal_roots",
+    "TransportationEhrhart.directions_homogeneous",
+    "TransportationEhrhart.homogeneous_coordinates_zero",
+    "TransportationEhrhart.direction_injective",
+    "TransportationEhrhart.two_entries_le",
+    "TransportationEhrhart.overflow_unique",
+    "TransportationEhrhart.bad_of_overflow",
+    "TransportationEhrhart.other_card",
+    "TransportationEhrhart.total_pairs",
+    "TransportationEhrhart.good_bad_partition",
+    "TransportationEhrhart.table_count_succ",
+    "TransportationEhrhart.table_count_zero",
+    "TransportationEhrhart.table_count",
+    "TransportationEhrhart.mem_fiber",
+    "TransportationEhrhart.sum_over_labels",
+    "TransportationEhrhart.normalized_slot_sum",
+    "TransportationEhrhart.expanded_stochastic",
+    "TransportationEhrhart.group_expansion",
+    "TransportationEhrhart.laguerre_mul",
+    "TransportationEhrhart.splits_laguerre_nonneg",
+    "TransportationEhrhart.tableReal_fits",
+    "TransportationEhrhart.integer_fits",
+    "TransportationEhrhart.ehrhart_eq_table",
+    "TransportationEhrhart.integer_points_numerator",
+    "TransportationEhrhart.permutation_cast",
+    "TransportationEhrhart.integral_generator",
+    "TransportationEhrhart.finite_integral_hull",
+    "TransportationEhrhart.integral_hull_counterexample",
+    "TransportationEhrhart.numerator_twelve",
+    "TransportationEhrhart.certificate_values",
+    "TransportationEhrhart.certificate_negative",
+    "TransportationEhrhart.twelve_not_real_rooted",
+    "TransportationEhrhart.rowMargin_scale",
+    "TransportationEhrhart.capacity_scale",
+    "TransportationEhrhart.sum_rowMargin_one",
+    "TransportationEhrhart.positiveTable_mem",
+    "TransportationEhrhart.every_cell_positive",
+    "TransportationEhrhart.fits_smul",
+    "TransportationEhrhart.mem_dilate",
+    "TransportationEhrhart.nonsplit_loses_two",
+    "TransportationEhrhart.root_in_sign_interval",
+    "TransportationEhrhart.count_sign_intervals",
+    "TransportationEhrhart.row_card",
+    "TransportationEhrhart.atMost_card",
+    "TransportationEhrhart.entry_le",
+    "TransportationEhrhart.insertAt_self",
+    "TransportationEhrhart.insertAt_other",
+    "TransportationEhrhart.sum_away",
+    "TransportationEhrhart.sum_insertAt",
+    "TransportationEhrhart.shifted_coefficient",
+    "TransportationEhrhart.count_add_correction",
+    "TransportationEhrhart.real_count_formula",
+    "TransportationEhrhart.series_identity",
+    "TransportationEhrhart.ehrhart_numerator",
+    "TransportationEhrhart.fiber_count",
+    "TransportationEhrhart.row_slots",
+    "TransportationEhrhart.column_slots",
+    "TransportationEhrhart.row_slots_pos",
+    "TransportationEhrhart.column_slots_pos",
+    "TransportationEhrhart.grouped_row",
+    "TransportationEhrhart.grouped_column",
+    "TransportationEhrhart.regroup_mem",
+    "TransportationEhrhart.polytope_as_image",
+    "TransportationEhrhart.all_capacities",
+    "TransportationEhrhart.total_capacity",
+    "TransportationEhrhart.top_admissible",
+    "TransportationEhrhart.full_column",
+    "TransportationEhrhart.bottom_total",
+    "TransportationEhrhart.numerator_characterization",
+    "TransportationEhrhart.transportation_counterexample",
+    "TransportationEhrhart.cut_increasing",
+    "TransportationEhrhart.cut_signs",
+    "TransportationEhrhart.twelve_degree",
+    "TransportationEhrhart.twelve_real_roots",
+    "TransportationEhrhart.base_admissible",
+    "TransportationEhrhart.moved_admissible",
+    "TransportationEhrhart.base_mem",
+    "TransportationEhrhart.moved_mem",
+    "TransportationEhrhart.elementary_coordinate",
+    "TransportationEhrhart.direction_surjective",
+    "TransportationEhrhart.affine_dimension"
+  ],
+  "source_sha256": {
+    "lean/Conjectures/TransportationBadColumn.lean": "8fa0db97548ebed57246ca4edb1ec9f57dad993c5274a96333ca7a269e2f8a9a",
+    "lean/Conjectures/TransportationBinomial.lean": "ee6502dfd0c4efd93e5a814e830ce947118554e35066fbb90f88b9d8a87930a6",
+    "lean/Conjectures/TransportationComplexRoots.lean": "3e99e4a83dbf5e6a9a3b28a2d20083fb931ed5a2a126b41094e314a15676b512",
+    "lean/Conjectures/TransportationDirections.lean": "b50bfea2cbe91e7419d3c456e1b12c342342ad45e27068fdb7db71b764f27d90",
+    "lean/Conjectures/TransportationEhrhartCount.lean": "fe5a79501b831122bb5f0737032298610a48ceae0927d39f474096fb43929933",
+    "lean/Conjectures/TransportationGrouping.lean": "e2d82256da6d09290359d711a4973b0c277e7ce4eb2b2378518e2eee15f641c3",
+    "lean/Conjectures/TransportationLaguerre.lean": "55f9168a01b1cc6212b0883d46ffee59d29b0068493eb53ef0cdd09de5e1d98f",
+    "lean/Conjectures/TransportationLattice.lean": "f54f2fe7ae611ad608f30936eddf2f663dd916ffb9299e342892bf17d9a15b4e",
+    "lean/Conjectures/TransportationLatticeHull.lean": "79c7a0816c0629c059adeb8c9aa269c4d7c60cd0b7eb23119dd6a12f4213487b",
+    "lean/Conjectures/TransportationPolynomial.lean": "b7d193ab9b0a7b93f965151d20ba7df7f9699dd5558405ced112d72f9cadbc1d",
+    "lean/Conjectures/TransportationPolytope.lean": "48cfa7babcee2fb2e5aa38752a5b1d3758e2badcfb5591c40d206e5f1d6dba9d",
+    "lean/Conjectures/TransportationRootCount.lean": "b62558a6100d93e2b484d803fd420c9e063bb1cfaf2fbcc7e9a7d98e5bceaa86",
+    "lean/Conjectures/TransportationRows.lean": "7ac7006ce815cd989de351dee34517abb696ea0361e3b10c9b200dd038cd27d8",
+    "lean/Conjectures/TransportationSeries.lean": "a896f1598bca5a4924ecd7b0d3686826a2632026522ee8eddca735d9df96730e",
+    "lean/Conjectures/TransportationSlots.lean": "4bfd4c95724884c3a44ecf7e79541519f714b02b44ef87e252c70a26d5ae4c88",
+    "lean/Conjectures/TransportationTables.lean": "5f5748e3b0a359b2529002ba330b2e1cc3f5c3275a3745c69f564b7c07c71772",
+    "lean/Conjectures/TransportationTheorems.lean": "6458936e191c3ec44ca3e088a7839c440de7e129cbba715fe5aff708539c48ea",
+    "lean/Conjectures/TransportationTwelveRoots.lean": "94a3839a47d2505b1efe1a2dff907cae924f08645eef5487cf667cf5861fead7",
+    "lean/Conjectures/TransportationVertices.lean": "c934951e9e8ff23bdfcb38d541079462a7539e9f6e0dfe9306749dfdeaa8d00f"
+  },
+  "input_sha256": {
+    "lean/Conjectures/TransportationBadColumn.lean": "8fa0db97548ebed57246ca4edb1ec9f57dad993c5274a96333ca7a269e2f8a9a",
+    "lean/Conjectures/TransportationBinomial.lean": "ee6502dfd0c4efd93e5a814e830ce947118554e35066fbb90f88b9d8a87930a6",
+    "lean/Conjectures/TransportationComplexRoots.lean": "3e99e4a83dbf5e6a9a3b28a2d20083fb931ed5a2a126b41094e314a15676b512",
+    "lean/Conjectures/TransportationDirections.lean": "b50bfea2cbe91e7419d3c456e1b12c342342ad45e27068fdb7db71b764f27d90",
+    "lean/Conjectures/TransportationEhrhartCount.lean": "fe5a79501b831122bb5f0737032298610a48ceae0927d39f474096fb43929933",
+    "lean/Conjectures/TransportationGrouping.lean": "e2d82256da6d09290359d711a4973b0c277e7ce4eb2b2378518e2eee15f641c3",
+    "lean/Conjectures/TransportationLaguerre.lean": "55f9168a01b1cc6212b0883d46ffee59d29b0068493eb53ef0cdd09de5e1d98f",
+    "lean/Conjectures/TransportationLattice.lean": "f54f2fe7ae611ad608f30936eddf2f663dd916ffb9299e342892bf17d9a15b4e",
+    "lean/Conjectures/TransportationLatticeHull.lean": "79c7a0816c0629c059adeb8c9aa269c4d7c60cd0b7eb23119dd6a12f4213487b",
+    "lean/Conjectures/TransportationPolynomial.lean": "b7d193ab9b0a7b93f965151d20ba7df7f9699dd5558405ced112d72f9cadbc1d",
+    "lean/Conjectures/TransportationPolytope.lean": "48cfa7babcee2fb2e5aa38752a5b1d3758e2badcfb5591c40d206e5f1d6dba9d",
+    "lean/Conjectures/TransportationRootCount.lean": "b62558a6100d93e2b484d803fd420c9e063bb1cfaf2fbcc7e9a7d98e5bceaa86",
+    "lean/Conjectures/TransportationRows.lean": "7ac7006ce815cd989de351dee34517abb696ea0361e3b10c9b200dd038cd27d8",
+    "lean/Conjectures/TransportationSeries.lean": "a896f1598bca5a4924ecd7b0d3686826a2632026522ee8eddca735d9df96730e",
+    "lean/Conjectures/TransportationSlots.lean": "4bfd4c95724884c3a44ecf7e79541519f714b02b44ef87e252c70a26d5ae4c88",
+    "lean/Conjectures/TransportationTables.lean": "5f5748e3b0a359b2529002ba330b2e1cc3f5c3275a3745c69f564b7c07c71772",
+    "lean/Conjectures/TransportationTheorems.lean": "6458936e191c3ec44ca3e088a7839c440de7e129cbba715fe5aff708539c48ea",
+    "lean/Conjectures/TransportationTwelveRoots.lean": "94a3839a47d2505b1efe1a2dff907cae924f08645eef5487cf667cf5861fead7",
+    "lean/Conjectures/TransportationVertices.lean": "c934951e9e8ff23bdfcb38d541079462a7539e9f6e0dfe9306749dfdeaa8d00f",
+    "lean/lean-toolchain": "ca5f1f601d34c49079e38d7e7041eb0f2a9c227fbc1df0f404820069a052330c",
+    "lean/lake-manifest.json": "02e7d705d4ea86c9cfdc22f5eceb2b5bbe5a2c14806c1f3b0f6f1c251c6f2953",
+    "lean/lakefile.toml": "609df590851cb55d2d2c52fd2037e463273a1a69d3c766a00d486cf81163a089",
+    "scripts/audit_lean_all_owned.py": "53c289baad523164bbef5561910fcdc44bc40efba2b8efe8e7212c30db3a663f",
+    "scripts/replay_lean.py": "ff396676b7d4cb19200cc2b84b6a709ff50f45e5f02fb77074a0a6861eb15a1c",
+    "scripts/verify_lean_target.py": "10d8d27c2709659c5318ef6a9fd7a28dde89f7ec46d92386a417caca5949b008"
+  },
+  "lean_toolchain": "leanprover/lean4:v4.35.0",
+  "manifest_sha256": "02e7d705d4ea86c9cfdc22f5eceb2b5bbe5a2c14806c1f3b0f6f1c251c6f2953",
+  "commands": [
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/cinna/solved-alexandersson-transportation-research/lean/.lake/build/lib/lean/Conjectures/TransportationGrouping.olean",
+        "Conjectures/TransportationGrouping.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.TransportationGrouping.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/cinna/solved-alexandersson-transportation-research/lean/.lake/build/lib/lean/Conjectures/TransportationRows.olean",
+        "Conjectures/TransportationRows.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.TransportationRows.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/cinna/solved-alexandersson-transportation-research/lean/.lake/build/lib/lean/Conjectures/TransportationTables.olean",
+        "Conjectures/TransportationTables.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.TransportationTables.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/cinna/solved-alexandersson-transportation-research/lean/.lake/build/lib/lean/Conjectures/TransportationPolytope.olean",
+        "Conjectures/TransportationPolytope.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.TransportationPolytope.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/cinna/solved-alexandersson-transportation-research/lean/.lake/build/lib/lean/Conjectures/TransportationSlots.olean",
+        "Conjectures/TransportationSlots.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.TransportationSlots.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/cinna/solved-alexandersson-transportation-research/lean/.lake/build/lib/lean/Conjectures/TransportationDirections.olean",
+        "Conjectures/TransportationDirections.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.TransportationDirections.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/cinna/solved-alexandersson-transportation-research/lean/.lake/build/lib/lean/Conjectures/TransportationBadColumn.olean",
+        "Conjectures/TransportationBadColumn.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.TransportationBadColumn.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/cinna/solved-alexandersson-transportation-research/lean/.lake/build/lib/lean/Conjectures/TransportationEhrhartCount.olean",
+        "Conjectures/TransportationEhrhartCount.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.TransportationEhrhartCount.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/cinna/solved-alexandersson-transportation-research/lean/.lake/build/lib/lean/Conjectures/TransportationBinomial.olean",
+        "Conjectures/TransportationBinomial.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.TransportationBinomial.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/cinna/solved-alexandersson-transportation-research/lean/.lake/build/lib/lean/Conjectures/TransportationLaguerre.olean",
+        "Conjectures/TransportationLaguerre.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.TransportationLaguerre.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/cinna/solved-alexandersson-transportation-research/lean/.lake/build/lib/lean/Conjectures/TransportationPolynomial.olean",
+        "Conjectures/TransportationPolynomial.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.TransportationPolynomial.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/cinna/solved-alexandersson-transportation-research/lean/.lake/build/lib/lean/Conjectures/TransportationSeries.olean",
+        "Conjectures/TransportationSeries.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.TransportationSeries.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/cinna/solved-alexandersson-transportation-research/lean/.lake/build/lib/lean/Conjectures/TransportationLattice.olean",
+        "Conjectures/TransportationLattice.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.TransportationLattice.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/cinna/solved-alexandersson-transportation-research/lean/.lake/build/lib/lean/Conjectures/TransportationVertices.olean",
+        "Conjectures/TransportationVertices.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.TransportationVertices.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/cinna/solved-alexandersson-transportation-research/lean/.lake/build/lib/lean/Conjectures/TransportationRootCount.olean",
+        "Conjectures/TransportationRootCount.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.TransportationRootCount.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/cinna/solved-alexandersson-transportation-research/lean/.lake/build/lib/lean/Conjectures/TransportationTwelveRoots.olean",
+        "Conjectures/TransportationTwelveRoots.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.TransportationTwelveRoots.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/cinna/solved-alexandersson-transportation-research/lean/.lake/build/lib/lean/Conjectures/TransportationComplexRoots.olean",
+        "Conjectures/TransportationComplexRoots.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.TransportationComplexRoots.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/cinna/solved-alexandersson-transportation-research/lean/.lake/build/lib/lean/Conjectures/TransportationTheorems.olean",
+        "Conjectures/TransportationTheorems.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.TransportationTheorems.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/cinna/solved-alexandersson-transportation-research/lean/.lake/build/lib/lean/Conjectures/TransportationLatticeHull.olean",
+        "Conjectures/TransportationLatticeHull.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.TransportationLatticeHull.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "/home/cinna/.local/state/solved-alexandersson-transportation/research/TargetAudit.lean"
+      ],
+      "exit_code": 0,
+      "log": "audit.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "python3",
+        "/home/cinna/solved-alexandersson-transportation-research/scripts/replay_lean.py",
+        "--root",
+        "Conjectures.TransportationLatticeHull"
+      ],
+      "exit_code": 0,
+      "log": "replay.log"
+    }
+  ],
+  "all_owned_audit": {
+    "allowed_axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "declarations": 319,
+    "modules": 19,
+    "private_declarations": 5,
+    "raw_declarations": 319,
+    "required": 94,
+    "tag": "passed",
+    "theorems": 258
+  },
+  "full_repository_gate": "not run by this target-scoped helper",
+  "status": "PASS"
+}

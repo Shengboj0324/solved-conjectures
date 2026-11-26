@@ -1,0 +1,297 @@
+{
+  "schema": "target-complete-closure-verification-v1",
+  "started_at": "2026-11-26T10:44:05.018479+00:00",
+  "finished_at": "2026-11-26T10:45:04.424145+00:00",
+  "root": "Conjectures.ErdosGyarfasSpectrumTheorems",
+  "project_modules": [
+    "Conjectures.ErdosGyarfasSpectrumArithmetic",
+    "Conjectures.ErdosGyarfasSpectrumBound",
+    "Conjectures.ErdosGyarfasSpectrumComparison",
+    "Conjectures.ErdosGyarfasSpectrumExtremal",
+    "Conjectures.ErdosGyarfasSpectrumIncidence",
+    "Conjectures.ErdosGyarfasSpectrumPlane",
+    "Conjectures.ErdosGyarfasSpectrumRealDegrees",
+    "Conjectures.ErdosGyarfasSpectrumRepresentatives",
+    "Conjectures.ErdosGyarfasSpectrumTheorems",
+    "Conjectures.ErdosGyarfasSpectrumTotals",
+    "Conjectures.GyarfasPlanarLines"
+  ],
+  "required_endpoints": [
+    "ErdosGyarfasSpectrum.half_bound",
+    "ErdosGyarfasSpectrum.spectrum_bound",
+    "ErdosGyarfasSpectrum.degree_deficit",
+    "ErdosGyarfasSpectrum.total_slack",
+    "ErdosGyarfasSpectrum.two_set_comparison",
+    "ErdosGyarfasSpectrum.pair_space",
+    "ErdosGyarfasSpectrum.mem_systems",
+    "ErdosGyarfasSpectrum.extremal_attained",
+    "ErdosGyarfasSpectrum.extremal_bound",
+    "ErdosGyarfasSpectrum.no_sqrt_deficit",
+    "ErdosGyarfasSpectrum.comparison_sqrt",
+    "ErdosGyarfasSpectrum.amount_eq",
+    "ErdosGyarfasSpectrum.degree_eq",
+    "ErdosGyarfasSpectrum.amount_erase",
+    "ErdosGyarfasSpectrum.pair_sum",
+    "ErdosGyarfasSpectrum.partners",
+    "ErdosGyarfasSpectrum.partners_inside",
+    "ErdosGyarfasSpectrum.sum_incidences",
+    "ErdosGyarfasSpectrum.mixed_pairs",
+    "ErdosGyarfasSpectrum.internal_pairs",
+    "ErdosGyarfasSpectrum.mem_trace",
+    "ErdosGyarfasSpectrum.mem_planarLines",
+    "ErdosGyarfasSpectrum.common_line",
+    "ErdosGyarfasSpectrum.collinear_lineSet",
+    "ErdosGyarfasSpectrum.plane_space",
+    "ErdosGyarfasSpectrum.trace_spans",
+    "ErdosGyarfasSpectrum.trace_injective",
+    "ErdosGyarfasSpectrum.planar_degree",
+    "ErdosGyarfasSpectrum.real_degree_bound",
+    "ErdosGyarfasSpectrum.degrees_lt_order",
+    "ErdosGyarfasSpectrum.representative_sets",
+    "ErdosGyarfasSpectrum.le_extremal",
+    "ErdosGyarfasSpectrum.eventually_linear_deficit",
+    "ErdosGyarfasSpectrum.no_near_full_spectrum",
+    "ErdosGyarfasSpectrum.collinear_degree_one",
+    "ErdosGyarfasSpectrum.real_positive_proportion",
+    "ErdosGyarfasSpectrum.ambient_amount",
+    "ErdosGyarfasSpectrum.low_total_lines",
+    "ErdosGyarfasSpectrum.point_deficit",
+    "ErdosGyarfasSpectrum.high_total_lines",
+    "ErdosGyarfasSpectrum.degree_lt",
+    "ErdosGyarfasSpectrum.degree_pos",
+    "ErdosGyarfasSpectrum.amounts_le_size",
+    "GyarfasPlanar.locus_injective",
+    "GyarfasPlanar.spanned_line",
+    "GyarfasPlanar.card_spannedLines"
+  ],
+  "source_sha256": {
+    "lean/Conjectures/ErdosGyarfasSpectrumArithmetic.lean": "57216b3dc54a351d5f1266370f100cd949eed1b9af8c943db281754bb693ab06",
+    "lean/Conjectures/ErdosGyarfasSpectrumBound.lean": "2b053c6dcea19ad96abf1305eb08dcee5f0fa2ab42fc23e047c734182a65bf44",
+    "lean/Conjectures/ErdosGyarfasSpectrumComparison.lean": "9c69b91f2d35c51cb7e95bfae349a6dfc308806a0c622a3c1bb510a6c028f295",
+    "lean/Conjectures/ErdosGyarfasSpectrumExtremal.lean": "348d402450e555ee173cd7934022a5e9e89bc81099bfa770331e9fdbb2f37670",
+    "lean/Conjectures/ErdosGyarfasSpectrumIncidence.lean": "0d02e6abd382ef799d4dc8cc3953cfde5bef3dc895465463863fac9a5fb781c9",
+    "lean/Conjectures/ErdosGyarfasSpectrumPlane.lean": "cb4de1a989de275fbc61da016ac6115fdb747b6fcee84a078d4870cb8202479f",
+    "lean/Conjectures/ErdosGyarfasSpectrumRealDegrees.lean": "49ad861c0b1f341ab59ddaad30360fba485b7adbb7350a5eab0ed08d7e658e10",
+    "lean/Conjectures/ErdosGyarfasSpectrumRepresentatives.lean": "b166ed01732d8f14cde722eb94b90a12db67af76ee0943bf4619646634a982a2",
+    "lean/Conjectures/ErdosGyarfasSpectrumTheorems.lean": "4a379a9c8c9fcba83bc1ab4039cece4a9655724b179b199da5728d522ed4887c",
+    "lean/Conjectures/ErdosGyarfasSpectrumTotals.lean": "6a4102dbc527074c967160ab4d03b08882940cc3138ea4656a47b428b3e0ffc5",
+    "lean/Conjectures/GyarfasPlanarLines.lean": "1f5059a5668386de5f632fe5c93ba23ac60fc4d445e64e87fa755742a5d7a407"
+  },
+  "input_sha256": {
+    "lean/Conjectures/ErdosGyarfasSpectrumArithmetic.lean": "57216b3dc54a351d5f1266370f100cd949eed1b9af8c943db281754bb693ab06",
+    "lean/Conjectures/ErdosGyarfasSpectrumBound.lean": "2b053c6dcea19ad96abf1305eb08dcee5f0fa2ab42fc23e047c734182a65bf44",
+    "lean/Conjectures/ErdosGyarfasSpectrumComparison.lean": "9c69b91f2d35c51cb7e95bfae349a6dfc308806a0c622a3c1bb510a6c028f295",
+    "lean/Conjectures/ErdosGyarfasSpectrumExtremal.lean": "348d402450e555ee173cd7934022a5e9e89bc81099bfa770331e9fdbb2f37670",
+    "lean/Conjectures/ErdosGyarfasSpectrumIncidence.lean": "0d02e6abd382ef799d4dc8cc3953cfde5bef3dc895465463863fac9a5fb781c9",
+    "lean/Conjectures/ErdosGyarfasSpectrumPlane.lean": "cb4de1a989de275fbc61da016ac6115fdb747b6fcee84a078d4870cb8202479f",
+    "lean/Conjectures/ErdosGyarfasSpectrumRealDegrees.lean": "49ad861c0b1f341ab59ddaad30360fba485b7adbb7350a5eab0ed08d7e658e10",
+    "lean/Conjectures/ErdosGyarfasSpectrumRepresentatives.lean": "b166ed01732d8f14cde722eb94b90a12db67af76ee0943bf4619646634a982a2",
+    "lean/Conjectures/ErdosGyarfasSpectrumTheorems.lean": "4a379a9c8c9fcba83bc1ab4039cece4a9655724b179b199da5728d522ed4887c",
+    "lean/Conjectures/ErdosGyarfasSpectrumTotals.lean": "6a4102dbc527074c967160ab4d03b08882940cc3138ea4656a47b428b3e0ffc5",
+    "lean/Conjectures/GyarfasPlanarLines.lean": "1f5059a5668386de5f632fe5c93ba23ac60fc4d445e64e87fa755742a5d7a407",
+    "lean/lean-toolchain": "ca5f1f601d34c49079e38d7e7041eb0f2a9c227fbc1df0f404820069a052330c",
+    "lean/lake-manifest.json": "02e7d705d4ea86c9cfdc22f5eceb2b5bbe5a2c14806c1f3b0f6f1c251c6f2953",
+    "lean/lakefile.toml": "609df590851cb55d2d2c52fd2037e463273a1a69d3c766a00d486cf81163a089",
+    "scripts/audit_lean_all_owned.py": "53c289baad523164bbef5561910fcdc44bc40efba2b8efe8e7212c30db3a663f",
+    "scripts/replay_lean.py": "ff396676b7d4cb19200cc2b84b6a709ff50f45e5f02fb77074a0a6861eb15a1c",
+    "scripts/verify_lean_target.py": "10d8d27c2709659c5318ef6a9fd7a28dde89f7ec46d92386a417caca5949b008"
+  },
+  "lean_toolchain": "leanprover/lean4:v4.35.0",
+  "manifest_sha256": "02e7d705d4ea86c9cfdc22f5eceb2b5bbe5a2c14806c1f3b0f6f1c251c6f2953",
+  "commands": [
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/cinna/solved-degree-spectrum-research/lean/.lake/build/lib/lean/Conjectures/ErdosGyarfasSpectrumArithmetic.olean",
+        "Conjectures/ErdosGyarfasSpectrumArithmetic.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.ErdosGyarfasSpectrumArithmetic.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/cinna/solved-degree-spectrum-research/lean/.lake/build/lib/lean/Conjectures/ErdosGyarfasSpectrumIncidence.olean",
+        "Conjectures/ErdosGyarfasSpectrumIncidence.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.ErdosGyarfasSpectrumIncidence.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/cinna/solved-degree-spectrum-research/lean/.lake/build/lib/lean/Conjectures/ErdosGyarfasSpectrumTotals.olean",
+        "Conjectures/ErdosGyarfasSpectrumTotals.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.ErdosGyarfasSpectrumTotals.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/cinna/solved-degree-spectrum-research/lean/.lake/build/lib/lean/Conjectures/ErdosGyarfasSpectrumComparison.olean",
+        "Conjectures/ErdosGyarfasSpectrumComparison.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.ErdosGyarfasSpectrumComparison.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/cinna/solved-degree-spectrum-research/lean/.lake/build/lib/lean/Conjectures/ErdosGyarfasSpectrumRepresentatives.olean",
+        "Conjectures/ErdosGyarfasSpectrumRepresentatives.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.ErdosGyarfasSpectrumRepresentatives.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/cinna/solved-degree-spectrum-research/lean/.lake/build/lib/lean/Conjectures/ErdosGyarfasSpectrumBound.olean",
+        "Conjectures/ErdosGyarfasSpectrumBound.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.ErdosGyarfasSpectrumBound.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/cinna/solved-degree-spectrum-research/lean/.lake/build/lib/lean/Conjectures/ErdosGyarfasSpectrumExtremal.olean",
+        "Conjectures/ErdosGyarfasSpectrumExtremal.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.ErdosGyarfasSpectrumExtremal.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/cinna/solved-degree-spectrum-research/lean/.lake/build/lib/lean/Conjectures/GyarfasPlanarLines.olean",
+        "Conjectures/GyarfasPlanarLines.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.GyarfasPlanarLines.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/cinna/solved-degree-spectrum-research/lean/.lake/build/lib/lean/Conjectures/ErdosGyarfasSpectrumPlane.olean",
+        "Conjectures/ErdosGyarfasSpectrumPlane.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.ErdosGyarfasSpectrumPlane.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/cinna/solved-degree-spectrum-research/lean/.lake/build/lib/lean/Conjectures/ErdosGyarfasSpectrumRealDegrees.olean",
+        "Conjectures/ErdosGyarfasSpectrumRealDegrees.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.ErdosGyarfasSpectrumRealDegrees.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/cinna/solved-degree-spectrum-research/lean/.lake/build/lib/lean/Conjectures/ErdosGyarfasSpectrumTheorems.olean",
+        "Conjectures/ErdosGyarfasSpectrumTheorems.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.ErdosGyarfasSpectrumTheorems.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "/home/cinna/.local/state/solved-degree-spectrum/research/TargetAudit.lean"
+      ],
+      "exit_code": 0,
+      "log": "audit.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "python3",
+        "/home/cinna/solved-degree-spectrum-research/scripts/replay_lean.py",
+        "--root",
+        "Conjectures.ErdosGyarfasSpectrumTheorems"
+      ],
+      "exit_code": 0,
+      "log": "replay.log"
+    }
+  ],
+  "all_owned_audit": {
+    "allowed_axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "declarations": 159,
+    "modules": 11,
+    "private_declarations": 23,
+    "raw_declarations": 159,
+    "required": 46,
+    "tag": "passed",
+    "theorems": 130
+  },
+  "full_repository_gate": "not run by this target-scoped helper",
+  "status": "PASS"
+}
