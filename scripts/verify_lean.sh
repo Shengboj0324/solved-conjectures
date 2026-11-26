@@ -1204,6 +1204,7 @@ modules=(
   Conjectures.CaioloFerroniHosterRankWitness
   Conjectures.CaioloFerroniHosterRankBridge
   Conjectures.CaioloFerroniHosterRanks
+  Conjectures.CaioloFerroniHosterKernelLink
   Conjectures.JuhnkeAlternating
   Conjectures.JuhnkeCompositions
   Conjectures.JuhnkeConjecture

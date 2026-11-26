@@ -1,6 +1,6 @@
 # Internal publication audit (2026-11-24)
 
-**Disposition:** pass for the written disproof of the exact original statement; publication as an unrefereed, non-Lean-verified result is appropriate. No claim of external acceptance or exclusive priority.
+**Disposition:** pass for the written disproof of the exact original statement; publication as an unrefereed result is appropriate. This audit predates the Lean formalization; the result is now fully Lean-verified, see [LEAN_REVIEW.md](LEAN_REVIEW.md). No claim of external acceptance or exclusive priority.
 
 - Source: CFH [Theorem 4.9 and Conjecture 7.3](https://arxiv.org/html/2605.28474v1), read directly. In rank five the stable subsets for H* are drawn from {1,2,3}; F* uses {1,2,3,4}. The complements and powers in the gamma expansions agree. The original conjecture concerns every matroid, not merely uniform matroids.
 - Construction: differences of distinct linearized polynomials have at most q^3 roots, or q^2 when their top coefficients agree. Thus distinct coalescence blocks meet in rank at most three. The independent-four-set augmentation argument is valid: if every eligible element of an allowed basis yields a forbidden five-set, uniqueness forces all of those elements into one block, and the closure of the four-set is also in that block, contradicting the allowed basis. Lower flats and the hyperplane replacement counts follow. This checks existence and simplicity without assuming representability of the coalesced matroid.

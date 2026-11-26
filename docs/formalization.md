@@ -352,6 +352,14 @@ polynomial has one simple real root, −1. Both fail to split over the reals.
 `CaioloFerroniHoster.Ranks.dualChow_realRooted_iff` proves that dual Chow real-rootedness holds for all matroids of rank
 r exactly when r ≤ 4. [Scope and correspondence](../results/caiolo-ferroni-hoster/RANKS.md)
 
+`CaioloFerroniHoster.KernelLink.counterexample_family_kernel` states the q ≥ 17 theorem for the
+kernel-defined dual Chow and dual right augmented Chow functions (CFH Definitions 2.4, 2.7, 2.8, 3.1
+and Theorem 2.3). `matroidDualChow_eq` and `matroidDualAugmented_eq` prove that the rank-five chain
+formulas used by `counterexample_family` equal the recursive invariants of the rank development,
+which `Ranks.dualChow_eq_kernel` and `Ranks.dualAug_eq_kernel` identify with the kernel definitions.
+Before this link, only the unspecified bound of `Ranks.counterexamples` was kernel-level.
+[Theorem](../lean/Conjectures/CaioloFerroniHosterKernelLink.lean)
+
 ## Juhnke’s arbitrary-step lattice-path log-concavity conjecture
 
 `Juhnke.juhnke_conjecture` proves both original conclusions for the actual path counts in every dimension `d ≥ 2`. The representation is explicitly equivalent to ordered lists of positive east/north steps, with original start `(2,1)` and both original endpoints. The run decomposition, exact positive-composition counts, optional-cut polynomial, coefficient inequalities, translation, and unimodality are all proved. The 18-module closure contains no assumed enumeration or analytic theorem.
