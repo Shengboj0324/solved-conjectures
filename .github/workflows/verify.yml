@@ -14,6 +14,10 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: '3.12'
+      - name: Replay the even-grid domination-game counterexample
+        run: |
+          python3 results/fiscus-grid-game/verify_strategy.py
+          python3 results/fiscus-grid-game/check_minimax.py
       - name: Check the Erdős–Gyárfás point-degree spectrum inequality
         run: python3 results/erdos-gyarfas-point-degree-spectrum/verify.py
       - name: Count the incident lines in the Gyárfás planar construction

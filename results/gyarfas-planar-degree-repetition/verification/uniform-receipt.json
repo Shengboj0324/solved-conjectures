@@ -1,0 +1,344 @@
+{
+  "schema": "target-complete-closure-verification-v1",
+  "started_at": "2026-11-26T10:15:46.321268+00:00",
+  "finished_at": "2026-11-26T10:18:28.341833+00:00",
+  "root": "Conjectures.GyarfasPlanarUniform",
+  "project_modules": [
+    "Conjectures.GyarfasPlanarAxisDegrees",
+    "Conjectures.GyarfasPlanarConfiguration",
+    "Conjectures.GyarfasPlanarDirections",
+    "Conjectures.GyarfasPlanarLabels",
+    "Conjectures.GyarfasPlanarLines",
+    "Conjectures.GyarfasPlanarMultiplicity",
+    "Conjectures.GyarfasPlanarOffDegrees",
+    "Conjectures.GyarfasPlanarOptimal",
+    "Conjectures.GyarfasPlanarRational",
+    "Conjectures.GyarfasPlanarSecants",
+    "Conjectures.GyarfasPlanarSpectrum",
+    "Conjectures.GyarfasPlanarUniform",
+    "Conjectures.GyarfasPlanarWitness"
+  ],
+  "required_endpoints": [
+    "GyarfasPlanar.locus_injective",
+    "GyarfasPlanar.spanned_line",
+    "GyarfasPlanar.card_spannedLines",
+    "GyarfasPlanar.realPoint_injective",
+    "GyarfasPlanar.direction_realPoint",
+    "GyarfasPlanar.card_real_lines",
+    "GyarfasPlanar.multiplicity_real",
+    "GyarfasPlanar.axis_triangle_noncollinear",
+    "GyarfasPlanar.multiplicity_from_points",
+    "GyarfasPlanar.sixteen_count",
+    "GyarfasPlanar.sixteen_rational_multiplicity",
+    "GyarfasPlanar.sixteen_attains_two",
+    "GyarfasPlanar.sixteen_real",
+    "GyarfasPlanar.axis_value_count_low",
+    "GyarfasPlanar.axis_value_count_extra",
+    "GyarfasPlanar.axis_value_count_high",
+    "GyarfasPlanar.axis_degree",
+    "GyarfasPlanar.heights_mem",
+    "GyarfasPlanar.slot_injective",
+    "GyarfasPlanar.heights_as_slots",
+    "GyarfasPlanar.heights_card",
+    "GyarfasPlanar.configuration_card",
+    "GyarfasPlanar.configuration_noncollinear",
+    "GyarfasPlanar.off_directions",
+    "GyarfasPlanar.axis_directions",
+    "GyarfasPlanar.axis_degree_eq",
+    "GyarfasPlanar.off_overlap",
+    "GyarfasPlanar.off_degree_sum",
+    "GyarfasPlanar.configuration_labels",
+    "GyarfasPlanar.label_degree",
+    "GyarfasPlanar.label_injective",
+    "GyarfasPlanar.off_two_apart",
+    "GyarfasPlanar.mixed_equality",
+    "GyarfasPlanar.no_three_labels",
+    "GyarfasPlanar.uniform_multiplicity",
+    "GyarfasPlanar.merged_count",
+    "GyarfasPlanar.off_degree",
+    "GyarfasPlanar.positive_degree_lt",
+    "GyarfasPlanar.repeated_degree",
+    "GyarfasPlanar.uniform_real",
+    "GyarfasPlanar.every_order",
+    "GyarfasPlanar.off_fst_injective",
+    "GyarfasPlanar.off_injective",
+    "GyarfasPlanar.on_injective",
+    "GyarfasPlanar.off_fst_ne",
+    "GyarfasPlanar.off_ne_on",
+    "GyarfasPlanar.direction_swap",
+    "GyarfasPlanar.off_secant",
+    "GyarfasPlanar.axis_secant",
+    "GyarfasPlanar.off_secant_injective",
+    "GyarfasPlanar.at_off_axis_injective",
+    "GyarfasPlanar.shared_intercept",
+    "GyarfasPlanar.axis_collisions",
+    "GyarfasPlanar.spectrum_labels",
+    "GyarfasPlanar.spectrum_interval",
+    "GyarfasPlanar.spectrum_card",
+    "GyarfasPlanar.spectrum_error",
+    "GyarfasPlanar.every_order_with_spectrum"
+  ],
+  "source_sha256": {
+    "lean/Conjectures/GyarfasPlanarAxisDegrees.lean": "475432cf0dda9c01f9f21da2f2e4d5c19843535f1f963941f0adb1eafb64854c",
+    "lean/Conjectures/GyarfasPlanarConfiguration.lean": "f2fdb3986b992b5b85da3432148af9b6daf11abfb9b30c2c34a6413a00ebb26e",
+    "lean/Conjectures/GyarfasPlanarDirections.lean": "c89fc52de653fb41dd861e577c4070bbff30f94c16b5df17db8cf52e01b32734",
+    "lean/Conjectures/GyarfasPlanarLabels.lean": "cb0d3cf759aabb95aa4b775a5ee1f7863e3d6ad17a01e5cd845c637afc316d1c",
+    "lean/Conjectures/GyarfasPlanarLines.lean": "1f5059a5668386de5f632fe5c93ba23ac60fc4d445e64e87fa755742a5d7a407",
+    "lean/Conjectures/GyarfasPlanarMultiplicity.lean": "251f084402ec0f0f81c97a42ef1e4e845babb3fdb230c969709fbe21e7ccdb8d",
+    "lean/Conjectures/GyarfasPlanarOffDegrees.lean": "3efbd734bf6d2be5137d473b6e2afa812ecfb10350f3a846cce541b47bdd97ed",
+    "lean/Conjectures/GyarfasPlanarOptimal.lean": "e677671a5d84883011d85e10318144d529f761703eae7a8389dc977333618189",
+    "lean/Conjectures/GyarfasPlanarRational.lean": "eaf3f83475755af6c787971ff1519725e6a79a74af0f0e68add040c503e5d5ce",
+    "lean/Conjectures/GyarfasPlanarSecants.lean": "a8b1a174839f1fc863561f74c3fb1f80e8a89bffa775b4fd6ea5abeffb5d6b5c",
+    "lean/Conjectures/GyarfasPlanarSpectrum.lean": "294554b8226c3547cfd095848e3ba4c29356e2b38d8b914d8759e460fd908d5a",
+    "lean/Conjectures/GyarfasPlanarUniform.lean": "c1e15b93c3015126a734be6d9beb128d33023a833980f6d1650ab89190284809",
+    "lean/Conjectures/GyarfasPlanarWitness.lean": "1e797ba11a9e665d12a6d7a741aca8ddcdc77b2917810ff7e4003edaa7c43169"
+  },
+  "input_sha256": {
+    "lean/Conjectures/GyarfasPlanarAxisDegrees.lean": "475432cf0dda9c01f9f21da2f2e4d5c19843535f1f963941f0adb1eafb64854c",
+    "lean/Conjectures/GyarfasPlanarConfiguration.lean": "f2fdb3986b992b5b85da3432148af9b6daf11abfb9b30c2c34a6413a00ebb26e",
+    "lean/Conjectures/GyarfasPlanarDirections.lean": "c89fc52de653fb41dd861e577c4070bbff30f94c16b5df17db8cf52e01b32734",
+    "lean/Conjectures/GyarfasPlanarLabels.lean": "cb0d3cf759aabb95aa4b775a5ee1f7863e3d6ad17a01e5cd845c637afc316d1c",
+    "lean/Conjectures/GyarfasPlanarLines.lean": "1f5059a5668386de5f632fe5c93ba23ac60fc4d445e64e87fa755742a5d7a407",
+    "lean/Conjectures/GyarfasPlanarMultiplicity.lean": "251f084402ec0f0f81c97a42ef1e4e845babb3fdb230c969709fbe21e7ccdb8d",
+    "lean/Conjectures/GyarfasPlanarOffDegrees.lean": "3efbd734bf6d2be5137d473b6e2afa812ecfb10350f3a846cce541b47bdd97ed",
+    "lean/Conjectures/GyarfasPlanarOptimal.lean": "e677671a5d84883011d85e10318144d529f761703eae7a8389dc977333618189",
+    "lean/Conjectures/GyarfasPlanarRational.lean": "eaf3f83475755af6c787971ff1519725e6a79a74af0f0e68add040c503e5d5ce",
+    "lean/Conjectures/GyarfasPlanarSecants.lean": "a8b1a174839f1fc863561f74c3fb1f80e8a89bffa775b4fd6ea5abeffb5d6b5c",
+    "lean/Conjectures/GyarfasPlanarSpectrum.lean": "294554b8226c3547cfd095848e3ba4c29356e2b38d8b914d8759e460fd908d5a",
+    "lean/Conjectures/GyarfasPlanarUniform.lean": "c1e15b93c3015126a734be6d9beb128d33023a833980f6d1650ab89190284809",
+    "lean/Conjectures/GyarfasPlanarWitness.lean": "1e797ba11a9e665d12a6d7a741aca8ddcdc77b2917810ff7e4003edaa7c43169",
+    "lean/lean-toolchain": "ca5f1f601d34c49079e38d7e7041eb0f2a9c227fbc1df0f404820069a052330c",
+    "lean/lake-manifest.json": "02e7d705d4ea86c9cfdc22f5eceb2b5bbe5a2c14806c1f3b0f6f1c251c6f2953",
+    "lean/lakefile.toml": "609df590851cb55d2d2c52fd2037e463273a1a69d3c766a00d486cf81163a089",
+    "scripts/audit_lean_all_owned.py": "53c289baad523164bbef5561910fcdc44bc40efba2b8efe8e7212c30db3a663f",
+    "scripts/replay_lean.py": "ca27aa5f65ad92200842b797e39abf218b19403ae1f83996f7dc4b4d96970e85",
+    "scripts/verify_lean_target.py": "78f83c010458a176183863d3273b0ce7bd547f8000c13cf220e5c02cb96ae065"
+  },
+  "lean_toolchain": "leanprover/lean4:v4.35.0",
+  "manifest_sha256": "02e7d705d4ea86c9cfdc22f5eceb2b5bbe5a2c14806c1f3b0f6f1c251c6f2953",
+  "commands": [
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/cinna/solved-gyarfas-uniform-publication/lean/.lake/build/lib/lean/Conjectures/GyarfasPlanarLines.olean",
+        "Conjectures/GyarfasPlanarLines.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.GyarfasPlanarLines.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/cinna/solved-gyarfas-uniform-publication/lean/.lake/build/lib/lean/Conjectures/GyarfasPlanarRational.olean",
+        "Conjectures/GyarfasPlanarRational.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.GyarfasPlanarRational.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/cinna/solved-gyarfas-uniform-publication/lean/.lake/build/lib/lean/Conjectures/GyarfasPlanarWitness.olean",
+        "Conjectures/GyarfasPlanarWitness.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.GyarfasPlanarWitness.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/cinna/solved-gyarfas-uniform-publication/lean/.lake/build/lib/lean/Conjectures/GyarfasPlanarSecants.olean",
+        "Conjectures/GyarfasPlanarSecants.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.GyarfasPlanarSecants.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/cinna/solved-gyarfas-uniform-publication/lean/.lake/build/lib/lean/Conjectures/GyarfasPlanarConfiguration.olean",
+        "Conjectures/GyarfasPlanarConfiguration.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.GyarfasPlanarConfiguration.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/cinna/solved-gyarfas-uniform-publication/lean/.lake/build/lib/lean/Conjectures/GyarfasPlanarDirections.olean",
+        "Conjectures/GyarfasPlanarDirections.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.GyarfasPlanarDirections.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/cinna/solved-gyarfas-uniform-publication/lean/.lake/build/lib/lean/Conjectures/GyarfasPlanarAxisDegrees.olean",
+        "Conjectures/GyarfasPlanarAxisDegrees.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.GyarfasPlanarAxisDegrees.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/cinna/solved-gyarfas-uniform-publication/lean/.lake/build/lib/lean/Conjectures/GyarfasPlanarOffDegrees.olean",
+        "Conjectures/GyarfasPlanarOffDegrees.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.GyarfasPlanarOffDegrees.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/cinna/solved-gyarfas-uniform-publication/lean/.lake/build/lib/lean/Conjectures/GyarfasPlanarLabels.olean",
+        "Conjectures/GyarfasPlanarLabels.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.GyarfasPlanarLabels.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/cinna/solved-gyarfas-uniform-publication/lean/.lake/build/lib/lean/Conjectures/GyarfasPlanarMultiplicity.olean",
+        "Conjectures/GyarfasPlanarMultiplicity.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.GyarfasPlanarMultiplicity.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/cinna/solved-gyarfas-uniform-publication/lean/.lake/build/lib/lean/Conjectures/GyarfasPlanarOptimal.olean",
+        "Conjectures/GyarfasPlanarOptimal.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.GyarfasPlanarOptimal.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/cinna/solved-gyarfas-uniform-publication/lean/.lake/build/lib/lean/Conjectures/GyarfasPlanarSpectrum.olean",
+        "Conjectures/GyarfasPlanarSpectrum.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.GyarfasPlanarSpectrum.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/cinna/solved-gyarfas-uniform-publication/lean/.lake/build/lib/lean/Conjectures/GyarfasPlanarUniform.olean",
+        "Conjectures/GyarfasPlanarUniform.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.GyarfasPlanarUniform.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "/home/cinna/.local/state/solved-gyarfas-lean/uniform-main/TargetAudit.lean"
+      ],
+      "exit_code": 0,
+      "log": "audit.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "python3",
+        "/home/cinna/solved-gyarfas-uniform-publication/scripts/replay_lean.py",
+        "--root",
+        "Conjectures.GyarfasPlanarUniform",
+        "--per-module"
+      ],
+      "exit_code": 0,
+      "log": "replay.log"
+    }
+  ],
+  "all_owned_audit": {
+    "allowed_axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "declarations": 369,
+    "modules": 13,
+    "private_declarations": 121,
+    "raw_declarations": 369,
+    "required": 58,
+    "tag": "passed",
+    "theorems": 340
+  },
+  "full_repository_gate": "not run by this target-scoped helper",
+  "status": "PASS"
+}

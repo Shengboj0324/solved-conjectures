@@ -61,6 +61,7 @@ SOURCE_TITLES = {
     "docs/formalization.md": "Lean formalization guide",
 }
 STATUS_LABEL_SLUGS = {
+    "Fiscus–Hurlbert–Myzelev–Pence grid conjecture": "fiscus-grid-game",
     "Erdős–Gyárfás point-degree spectrum conjecture": "erdos-gyarfas-point-degree-spectrum",
     "Gyárfás’s planar degree-repetition problem": "gyarfas-planar-degree-repetition",
     "Shumyatsky’s conjugate prime-spectrum conjecture": "shumyatsky-conjugate-prime-spectrum",

@@ -1,5 +1,9 @@
 # History
 
+## 2026-11-26 — Fiscus–Hurlbert–Myzelev–Pence grid conjecture
+
+The first player can force a win on the 14-vertex ladder, contradicting the conjecture for all even rectangular grids. The written strategy matches every possible reply, with an independent exact minimax check. [Proof](results/fiscus-grid-game/PROOF.md) · [Audit](results/fiscus-grid-game/AUDIT.md) · [Issue #791](https://github.com/1337isnot1337/solved-conjectures/issues/791).
+
 ## 2026-11-26 — Caiolo–Ferroni–Hoster kernel-level Lean statement
 
 A new [Lean module](lean/Conjectures/CaioloFerroniHosterKernelLink.lean) proves that the rank-five chain formulas of the existing counterexample equal the recursive dual Chow invariants of the rank-threshold development. Those invariants were already identified with the CFH kernel definitions. The explicit bound q ≥ 17 now holds for the kernel-defined dual Chow and dual right augmented Chow functions. The [publication audit](results/caiolo-ferroni-hoster/AUDIT.md) no longer calls the result non-Lean-verified. The verification level, attribution and conjecture count are unchanged. [Receipt](docs/verification/cfh-kernel-link-20261126/receipt.json)
@@ -12,9 +16,15 @@ Erdős and Gyárfás asked whether abstract linear spaces can realize all but a 
 
 A product determinant and two triangular positivity criteria prove Wang and Yang's 2018 Conjecture 4.1 for every Fuss parameter. [Proof](results/wang-yang-fuss-narayana/proof.md) · [Source audit](results/wang-yang-fuss-narayana/sources.md) · [Issue 98](https://github.com/1337isnot1337/solved-conjectures/issues/98)
 
+## Forward insertions in the three-block circular-index construction
+
+Lean verifies the one- and three-block exclusions for all labelled small forward insertions, the classification of two-interval supports, connectivity of the infinite family, and both partial-block graphs with their exact indices. [Theorems and receipts](results/circular-index-upper-half-delta-3-mod-4/FORMALIZATION.md).
+
 ## 2026-11-26 — Gyárfás’s planar degree-repetition problem
 
 Gyárfás asked whether a real planar point set can have every point degree repeated at most twice. Rational coordinates now give such a set at every order at least 16 and yield asymptotically three quarters as many distinct degrees as points. [Proof](results/gyarfas-planar-degree-repetition/PROOF.md) · [Source and independent review](results/gyarfas-planar-degree-repetition/AUDIT.md).
+
+For every order from 16, Lean constructs noncollinear rational points in the real plane, proves optimal maximum degree multiplicity two and determines the entire interval of distinct degrees. [Theorems and receipts](results/gyarfas-planar-degree-repetition/FORMALIZATION.md).
 
 ## 2026-11-26 — Verify the two truncated-square covering comparisons
 

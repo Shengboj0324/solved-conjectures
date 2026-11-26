@@ -6,7 +6,7 @@
 
 **Contributor:** [@aadrianvv](https://github.com/aadrianvv).
 
-**Lean status:** partial. Lean proves Theorem A for every parameter from 15 and every permitted packing, checks all nine graphs of Proposition B and proves Corollary C for every eligible degree from 27. The additional exclusions for small cyclic constructions remain outside this receipt. [Sources and verification](FORMALIZATION.md).
+**Lean status:** full. Lean verifies Theorem A, Proposition B and Corollary C, as well as the ancillary connectivity, retained-block, support-classification and small-parameter claims. [Sources and verification](FORMALIZATION.md).
 
 Primary source: J. Mazák and F. Zrubák, *Circular chromatic index of small graphs*, [arXiv:2603.08822](https://arxiv.org/abs/2603.08822), Section 8 (the remark after Problem 7).
 
