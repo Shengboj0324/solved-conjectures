@@ -18,6 +18,8 @@ The separate Python check reproduces all 901 rational enclosures of the written 
 
 The strict build and stock-kernel replay covered 57 project modules. The axiom audit checked all 2,611 declarations, including 2,463 theorems and 1,898 private declarations. All 67 required endpoints passed. [Joint verification receipt](verification/lean-receipt.json).
 
+After the change to the recurrence checks, the same command was rerun locally on macOS. It covered 58 project modules and 2,642 declarations, including 2,486 theorems and 1,909 private declarations. All 67 endpoints passed, using only `propext`, `Classical.choice` and `Quot.sound`. [Rerun receipt](../../docs/verification/heim-neuhauser-fastsum-20261126/receipt.json).
+
 To repeat the verification from the repository root, run
 
 ```bash
