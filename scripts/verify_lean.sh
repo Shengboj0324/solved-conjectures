@@ -134,6 +134,7 @@ modules=(
   Conjectures.HeimNeuhauserPlanePartitionCertificate
   Conjectures.HeimNeuhauserPlanePartitionChecks
   Conjectures.HeimNeuhauserPlanePartitionData
+  Conjectures.HeimNeuhauserPlanePartitionFastSum
   Conjectures.HeimNeuhauserPlanePartitionFinite
   Conjectures.HeimNeuhauserPlanePartitionIndices000To031
   Conjectures.HeimNeuhauserPlanePartitionIndices032To063
