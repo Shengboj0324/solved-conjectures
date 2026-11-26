@@ -236,6 +236,7 @@ modules=(
   Conjectures.HeimNeuhauserPlanePartitionCosineInversion
   Conjectures.HeimNeuhauserPlanePartitionDampingBounds
   Conjectures.HeimNeuhauserPlanePartitionData
+  Conjectures.HeimNeuhauserPlanePartitionFastSum
   Conjectures.HeimNeuhauserPlanePartitionFinite
   Conjectures.HeimNeuhauserPlanePartitionFourier
   Conjectures.HeimNeuhauserPlanePartitionFourierCentral
