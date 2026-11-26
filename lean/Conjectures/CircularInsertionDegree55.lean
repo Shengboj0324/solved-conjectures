@@ -1,4 +1,5 @@
 import Conjectures.CircularTableColoring
+import Conjectures.CircularTableRowBlocks
 
 /-! The labelled 79-vertex graph from the 3-block construction at parameter 13. -/
 
@@ -170,20 +171,29 @@ private def degrees : Array ℕ := #[55, 55, 55, 55, 55, 55, 54, 54, 54, 55, 55,
 
 abbrev G := tableGraph 79 167 rows
 
-set_option maxRecDepth 24000 in
-set_option maxHeartbeats 16000000 in
-private theorem checked : ∀ v, ValidAt G 167 3 rows inverse v := by decide
+private def rowChecked (v : Fin 79) : Prop :=
+  ValidAt G 167 3 rows inverse v ∧ countedDegree G v = degrees[v.val]?.getD 0
 
-set_option maxRecDepth 24000 in
-set_option maxHeartbeats 12000000 in
-private theorem degree_table : ∀ v : Fin 79, countedDegree G v = degrees[v.val]?.getD 0 := by
-  decide
+set_option maxRecDepth 12000
+set_option maxHeartbeats 4000000
+
+private theorem block0 : rowBlock rowChecked 0 := by unfold rowBlock rowChecked; decide
+private theorem block1 : rowBlock rowChecked 1 := by unfold rowBlock rowChecked; decide
+private theorem block2 : rowBlock rowChecked 2 := by unfold rowBlock rowChecked; decide
+private theorem block3 : rowBlock rowChecked 3 := by unfold rowBlock rowChecked; decide
+private theorem block4 : rowBlock rowChecked 4 := by unfold rowBlock rowChecked; decide
+
+private theorem checkedRows (v : Fin 79) : rowChecked v := by
+  apply all_rows_of_blocks (v := v)
+  rintro ⟨b,hb⟩
+  change b<5 at hb
+  interval_cases b <;> first | exact block0 | exact block1 | exact block2 | exact block3 | exact block4
 
 set_option maxRecDepth 8000 in
 theorem exact_index_and_degree :
     (∀ v, G.degree v ≤ 55) ∧ G.degree 0 = 55 ∧
     circularChromaticIndex G = (167 : ℝ)/3 := by
   apply table_exact (d := 55) (e := 2171) (degrees := fun w => degrees[w.val]?.getD 0) 0
-    checked degree_table <;> decide
+    (fun v => (checkedRows v).1) (fun v => (checkedRows v).2) <;> decide
 
 end CircularIndex.Deleted.Degree55

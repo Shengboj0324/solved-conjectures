@@ -12,7 +12,7 @@ The two bounds agree in 14 cases. Six other graphs, of maximum degrees 10, 14, 1
 
 The same receipt covers eleven graphs built by inserting blocks of matchings. The source-data check compares every Lean table with the published JSON, covering 4,655 deleted-graph edges and 13,452 insertion-graph edges. It also checks the inverse tables and the insertion graphs’ degree tables. [One and two insertion blocks](../circular-index-upper-half-delta-2-mod-4/FORMALIZATION.md) · [Three insertion blocks](../circular-index-upper-half-delta-3-mod-4/FORMALIZATION.md) · [Source-data check](check_lean_data.py).
 
-The strict build and stock-kernel replay covered 34 project modules. The axiom audit checked all 802 declarations, including 601 theorems and 142 private declarations. All 70 required endpoints passed. [Joint verification receipt](verification/lean-receipt.json).
+Independent research and publication runs each strictly compiled and replayed 35 project modules. Each axiom audit covered 822 declarations, including 617 theorems, 158 private declarations and all 71 required endpoints. The six largest vertex tables that exceeded the package memory limit now use kernel-checked groups of sixteen vertices. [Joint verification receipt](verification/lean-receipt.json).
 
 Run these commands from the repository root to repeat the source-data comparison, strict source compilation, axiom audit and stock-kernel replay.
 

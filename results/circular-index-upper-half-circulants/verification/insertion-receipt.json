@@ -1,7 +1,7 @@
 {
   "schema": "target-complete-closure-verification-v1",
-  "started_at": "2026-11-26T07:36:55.109085+00:00",
-  "finished_at": "2026-11-26T08:12:39.994692+00:00",
+  "started_at": "2026-11-26T09:26:38.972312+00:00",
+  "finished_at": "2026-11-26T10:04:41.001164+00:00",
   "root": "Conjectures.CircularInsertionStoredBases",
   "project_modules": [
     "Conjectures.CircularDeletedColoring",
@@ -30,7 +30,8 @@
     "Conjectures.CircularInsertionDegree53",
     "Conjectures.CircularInsertionDegree54",
     "Conjectures.CircularInsertionStoredBases",
-    "Conjectures.CircularTableColoring"
+    "Conjectures.CircularTableColoring",
+    "Conjectures.CircularTableRowBlocks"
   ],
   "required_endpoints": [
     "CircularIndex.Deleted.Degree21.exact_index_and_degree",
@@ -49,7 +50,8 @@
     "CircularIndex.Deleted.Degree49.exact_index_and_degree",
     "CircularIndex.Deleted.Degree50.exact_index_and_degree",
     "CircularIndex.Deleted.Degree53.exact_index_and_degree",
-    "CircularIndex.Deleted.Degree54.exact_index_and_degree"
+    "CircularIndex.Deleted.Degree54.exact_index_and_degree",
+    "CircularIndex.Deleted.all_rows_of_blocks"
   ],
   "source_sha256": {
     "lean/Conjectures/CircularDeletedColoring.lean": "5fbceab158683bd36ab0de1a95bcc15cab555857918693e8998b2dfcade58379",
@@ -73,12 +75,13 @@
     "lean/Conjectures/CircularInsertionDegree42.lean": "e038d2d80f721c9e267fd6a5e8056cb717797836c105bd9f418b723265651297",
     "lean/Conjectures/CircularInsertionDegree45.lean": "5852ce640245cb32913230f310abe8e0cf3a5c3a4dd01abff3922c7437942974",
     "lean/Conjectures/CircularInsertionDegree46.lean": "229b1c0b1419c0dd1997743b3d7dd6167becd306b001d06b14ada915e8473878",
-    "lean/Conjectures/CircularInsertionDegree49.lean": "e5aeefa4ae6703ff95e3da3cd73b99823766a5a5ad272d9c9884d7d2cd0e8368",
-    "lean/Conjectures/CircularInsertionDegree50.lean": "cf12467e161c25e299895b799c9da2d5b054b5a14a2e812c33918caef7305a3e",
-    "lean/Conjectures/CircularInsertionDegree53.lean": "cc9a66607f2f0d2943267f88c86bef5365426c927493d1488a903ba6f0e7acc8",
+    "lean/Conjectures/CircularInsertionDegree49.lean": "c5322d1609aa6ef38e56df446a42f105226500dde75b7fbe67c715b52cea5b14",
+    "lean/Conjectures/CircularInsertionDegree50.lean": "3e9534be29aca3ed81c2bf0e4db0c2e61107629e12cbf21737bc808fe7aa08bf",
+    "lean/Conjectures/CircularInsertionDegree53.lean": "0063c1c5f1c652c333992afbe6d43922e4bff530e309118e951602e3cda5254c",
     "lean/Conjectures/CircularInsertionDegree54.lean": "4ac90800739749d147aac82af8d7a8d1124be74ed0d9c764f92b2541d5b8573d",
     "lean/Conjectures/CircularInsertionStoredBases.lean": "b3219e5830f3132ac340da7a89616e6b1ca09c0ba7dda37f93d17e94112bdc12",
-    "lean/Conjectures/CircularTableColoring.lean": "736623c8647f833a0795760b85712553ed336e1febcaabf897872d0900605958"
+    "lean/Conjectures/CircularTableColoring.lean": "736623c8647f833a0795760b85712553ed336e1febcaabf897872d0900605958",
+    "lean/Conjectures/CircularTableRowBlocks.lean": "cd1ead24c8c8676c5796afb9bca9ca1b3bb08b067a1ac4ff025e6024a314c3ec"
   },
   "input_sha256": {
     "lean/Conjectures/CircularDeletedColoring.lean": "5fbceab158683bd36ab0de1a95bcc15cab555857918693e8998b2dfcade58379",
@@ -102,12 +105,13 @@
     "lean/Conjectures/CircularInsertionDegree42.lean": "e038d2d80f721c9e267fd6a5e8056cb717797836c105bd9f418b723265651297",
     "lean/Conjectures/CircularInsertionDegree45.lean": "5852ce640245cb32913230f310abe8e0cf3a5c3a4dd01abff3922c7437942974",
     "lean/Conjectures/CircularInsertionDegree46.lean": "229b1c0b1419c0dd1997743b3d7dd6167becd306b001d06b14ada915e8473878",
-    "lean/Conjectures/CircularInsertionDegree49.lean": "e5aeefa4ae6703ff95e3da3cd73b99823766a5a5ad272d9c9884d7d2cd0e8368",
-    "lean/Conjectures/CircularInsertionDegree50.lean": "cf12467e161c25e299895b799c9da2d5b054b5a14a2e812c33918caef7305a3e",
-    "lean/Conjectures/CircularInsertionDegree53.lean": "cc9a66607f2f0d2943267f88c86bef5365426c927493d1488a903ba6f0e7acc8",
+    "lean/Conjectures/CircularInsertionDegree49.lean": "c5322d1609aa6ef38e56df446a42f105226500dde75b7fbe67c715b52cea5b14",
+    "lean/Conjectures/CircularInsertionDegree50.lean": "3e9534be29aca3ed81c2bf0e4db0c2e61107629e12cbf21737bc808fe7aa08bf",
+    "lean/Conjectures/CircularInsertionDegree53.lean": "0063c1c5f1c652c333992afbe6d43922e4bff530e309118e951602e3cda5254c",
     "lean/Conjectures/CircularInsertionDegree54.lean": "4ac90800739749d147aac82af8d7a8d1124be74ed0d9c764f92b2541d5b8573d",
     "lean/Conjectures/CircularInsertionStoredBases.lean": "b3219e5830f3132ac340da7a89616e6b1ca09c0ba7dda37f93d17e94112bdc12",
     "lean/Conjectures/CircularTableColoring.lean": "736623c8647f833a0795760b85712553ed336e1febcaabf897872d0900605958",
+    "lean/Conjectures/CircularTableRowBlocks.lean": "cd1ead24c8c8676c5796afb9bca9ca1b3bb08b067a1ac4ff025e6024a314c3ec",
     "lean/lean-toolchain": "ca5f1f601d34c49079e38d7e7041eb0f2a9c227fbc1df0f404820069a052330c",
     "lean/lake-manifest.json": "02e7d705d4ea86c9cfdc22f5eceb2b5bbe5a2c14806c1f3b0f6f1c251c6f2953",
     "lean/lakefile.toml": "609df590851cb55d2d2c52fd2037e463273a1a69d3c766a00d486cf81163a089",
@@ -126,7 +130,7 @@
         "-j1",
         "-DwarningAsError=true",
         "-o",
-        "/home/cinna/solved-circular-stored-main/lean/.lake/build/lib/lean/Conjectures/CircularIndexBase.olean",
+        "/home/cinna/.local/state/solved-circular-certificates/bounded-stored-main-src/lean/.lake/build/lib/lean/Conjectures/CircularIndexBase.olean",
         "Conjectures/CircularIndexBase.lean"
       ],
       "exit_code": 0,
@@ -140,7 +144,7 @@
         "-j1",
         "-DwarningAsError=true",
         "-o",
-        "/home/cinna/solved-circular-stored-main/lean/.lake/build/lib/lean/Conjectures/CircularIndexCirculant.olean",
+        "/home/cinna/.local/state/solved-circular-certificates/bounded-stored-main-src/lean/.lake/build/lib/lean/Conjectures/CircularIndexCirculant.olean",
         "Conjectures/CircularIndexCirculant.lean"
       ],
       "exit_code": 0,
@@ -154,7 +158,7 @@
         "-j1",
         "-DwarningAsError=true",
         "-o",
-        "/home/cinna/solved-circular-stored-main/lean/.lake/build/lib/lean/Conjectures/CircularIndexClassArithmetic.olean",
+        "/home/cinna/.local/state/solved-circular-certificates/bounded-stored-main-src/lean/.lake/build/lib/lean/Conjectures/CircularIndexClassArithmetic.olean",
         "Conjectures/CircularIndexClassArithmetic.lean"
       ],
       "exit_code": 0,
@@ -168,7 +172,7 @@
         "-j1",
         "-DwarningAsError=true",
         "-o",
-        "/home/cinna/solved-circular-stored-main/lean/.lake/build/lib/lean/Conjectures/CircularIndexColoring.olean",
+        "/home/cinna/.local/state/solved-circular-certificates/bounded-stored-main-src/lean/.lake/build/lib/lean/Conjectures/CircularIndexColoring.olean",
         "Conjectures/CircularIndexColoring.lean"
       ],
       "exit_code": 0,
@@ -182,7 +186,7 @@
         "-j1",
         "-DwarningAsError=true",
         "-o",
-        "/home/cinna/solved-circular-stored-main/lean/.lake/build/lib/lean/Conjectures/CircularIndexCounting.olean",
+        "/home/cinna/.local/state/solved-circular-certificates/bounded-stored-main-src/lean/.lake/build/lib/lean/Conjectures/CircularIndexCounting.olean",
         "Conjectures/CircularIndexCounting.lean"
       ],
       "exit_code": 0,
@@ -196,7 +200,7 @@
         "-j1",
         "-DwarningAsError=true",
         "-o",
-        "/home/cinna/solved-circular-stored-main/lean/.lake/build/lib/lean/Conjectures/CircularIndexReal.olean",
+        "/home/cinna/.local/state/solved-circular-certificates/bounded-stored-main-src/lean/.lake/build/lib/lean/Conjectures/CircularIndexReal.olean",
         "Conjectures/CircularIndexReal.lean"
       ],
       "exit_code": 0,
@@ -210,7 +214,7 @@
         "-j1",
         "-DwarningAsError=true",
         "-o",
-        "/home/cinna/solved-circular-stored-main/lean/.lake/build/lib/lean/Conjectures/CircularIndexOptimality.olean",
+        "/home/cinna/.local/state/solved-circular-certificates/bounded-stored-main-src/lean/.lake/build/lib/lean/Conjectures/CircularIndexOptimality.olean",
         "Conjectures/CircularIndexOptimality.lean"
       ],
       "exit_code": 0,
@@ -224,7 +228,7 @@
         "-j1",
         "-DwarningAsError=true",
         "-o",
-        "/home/cinna/solved-circular-stored-main/lean/.lake/build/lib/lean/Conjectures/CircularDeletedColoring.olean",
+        "/home/cinna/.local/state/solved-circular-certificates/bounded-stored-main-src/lean/.lake/build/lib/lean/Conjectures/CircularDeletedColoring.olean",
         "Conjectures/CircularDeletedColoring.lean"
       ],
       "exit_code": 0,
@@ -238,7 +242,7 @@
         "-j1",
         "-DwarningAsError=true",
         "-o",
-        "/home/cinna/solved-circular-stored-main/lean/.lake/build/lib/lean/Conjectures/CircularTableColoring.olean",
+        "/home/cinna/.local/state/solved-circular-certificates/bounded-stored-main-src/lean/.lake/build/lib/lean/Conjectures/CircularTableColoring.olean",
         "Conjectures/CircularTableColoring.lean"
       ],
       "exit_code": 0,
@@ -252,7 +256,7 @@
         "-j1",
         "-DwarningAsError=true",
         "-o",
-        "/home/cinna/solved-circular-stored-main/lean/.lake/build/lib/lean/Conjectures/CircularInsertionDegree21.olean",
+        "/home/cinna/.local/state/solved-circular-certificates/bounded-stored-main-src/lean/.lake/build/lib/lean/Conjectures/CircularInsertionDegree21.olean",
         "Conjectures/CircularInsertionDegree21.lean"
       ],
       "exit_code": 0,
@@ -266,7 +270,7 @@
         "-j1",
         "-DwarningAsError=true",
         "-o",
-        "/home/cinna/solved-circular-stored-main/lean/.lake/build/lib/lean/Conjectures/CircularInsertionDegree25.olean",
+        "/home/cinna/.local/state/solved-circular-certificates/bounded-stored-main-src/lean/.lake/build/lib/lean/Conjectures/CircularInsertionDegree25.olean",
         "Conjectures/CircularInsertionDegree25.lean"
       ],
       "exit_code": 0,
@@ -280,7 +284,7 @@
         "-j1",
         "-DwarningAsError=true",
         "-o",
-        "/home/cinna/solved-circular-stored-main/lean/.lake/build/lib/lean/Conjectures/CircularInsertionDegree26.olean",
+        "/home/cinna/.local/state/solved-circular-certificates/bounded-stored-main-src/lean/.lake/build/lib/lean/Conjectures/CircularInsertionDegree26.olean",
         "Conjectures/CircularInsertionDegree26.lean"
       ],
       "exit_code": 0,
@@ -294,7 +298,7 @@
         "-j1",
         "-DwarningAsError=true",
         "-o",
-        "/home/cinna/solved-circular-stored-main/lean/.lake/build/lib/lean/Conjectures/CircularInsertionDegree29.olean",
+        "/home/cinna/.local/state/solved-circular-certificates/bounded-stored-main-src/lean/.lake/build/lib/lean/Conjectures/CircularInsertionDegree29.olean",
         "Conjectures/CircularInsertionDegree29.lean"
       ],
       "exit_code": 0,
@@ -308,7 +312,7 @@
         "-j1",
         "-DwarningAsError=true",
         "-o",
-        "/home/cinna/solved-circular-stored-main/lean/.lake/build/lib/lean/Conjectures/CircularInsertionDegree30.olean",
+        "/home/cinna/.local/state/solved-circular-certificates/bounded-stored-main-src/lean/.lake/build/lib/lean/Conjectures/CircularInsertionDegree30.olean",
         "Conjectures/CircularInsertionDegree30.lean"
       ],
       "exit_code": 0,
@@ -322,7 +326,7 @@
         "-j1",
         "-DwarningAsError=true",
         "-o",
-        "/home/cinna/solved-circular-stored-main/lean/.lake/build/lib/lean/Conjectures/CircularInsertionDegree33.olean",
+        "/home/cinna/.local/state/solved-circular-certificates/bounded-stored-main-src/lean/.lake/build/lib/lean/Conjectures/CircularInsertionDegree33.olean",
         "Conjectures/CircularInsertionDegree33.lean"
       ],
       "exit_code": 0,
@@ -336,7 +340,7 @@
         "-j1",
         "-DwarningAsError=true",
         "-o",
-        "/home/cinna/solved-circular-stored-main/lean/.lake/build/lib/lean/Conjectures/CircularInsertionDegree34.olean",
+        "/home/cinna/.local/state/solved-circular-certificates/bounded-stored-main-src/lean/.lake/build/lib/lean/Conjectures/CircularInsertionDegree34.olean",
         "Conjectures/CircularInsertionDegree34.lean"
       ],
       "exit_code": 0,
@@ -350,7 +354,7 @@
         "-j1",
         "-DwarningAsError=true",
         "-o",
-        "/home/cinna/solved-circular-stored-main/lean/.lake/build/lib/lean/Conjectures/CircularInsertionDegree37.olean",
+        "/home/cinna/.local/state/solved-circular-certificates/bounded-stored-main-src/lean/.lake/build/lib/lean/Conjectures/CircularInsertionDegree37.olean",
         "Conjectures/CircularInsertionDegree37.lean"
       ],
       "exit_code": 0,
@@ -364,7 +368,7 @@
         "-j1",
         "-DwarningAsError=true",
         "-o",
-        "/home/cinna/solved-circular-stored-main/lean/.lake/build/lib/lean/Conjectures/CircularInsertionDegree38.olean",
+        "/home/cinna/.local/state/solved-circular-certificates/bounded-stored-main-src/lean/.lake/build/lib/lean/Conjectures/CircularInsertionDegree38.olean",
         "Conjectures/CircularInsertionDegree38.lean"
       ],
       "exit_code": 0,
@@ -378,7 +382,7 @@
         "-j1",
         "-DwarningAsError=true",
         "-o",
-        "/home/cinna/solved-circular-stored-main/lean/.lake/build/lib/lean/Conjectures/CircularInsertionDegree41.olean",
+        "/home/cinna/.local/state/solved-circular-certificates/bounded-stored-main-src/lean/.lake/build/lib/lean/Conjectures/CircularInsertionDegree41.olean",
         "Conjectures/CircularInsertionDegree41.lean"
       ],
       "exit_code": 0,
@@ -392,7 +396,7 @@
         "-j1",
         "-DwarningAsError=true",
         "-o",
-        "/home/cinna/solved-circular-stored-main/lean/.lake/build/lib/lean/Conjectures/CircularInsertionDegree42.olean",
+        "/home/cinna/.local/state/solved-circular-certificates/bounded-stored-main-src/lean/.lake/build/lib/lean/Conjectures/CircularInsertionDegree42.olean",
         "Conjectures/CircularInsertionDegree42.lean"
       ],
       "exit_code": 0,
@@ -406,7 +410,7 @@
         "-j1",
         "-DwarningAsError=true",
         "-o",
-        "/home/cinna/solved-circular-stored-main/lean/.lake/build/lib/lean/Conjectures/CircularInsertionDegree45.olean",
+        "/home/cinna/.local/state/solved-circular-certificates/bounded-stored-main-src/lean/.lake/build/lib/lean/Conjectures/CircularInsertionDegree45.olean",
         "Conjectures/CircularInsertionDegree45.lean"
       ],
       "exit_code": 0,
@@ -420,7 +424,7 @@
         "-j1",
         "-DwarningAsError=true",
         "-o",
-        "/home/cinna/solved-circular-stored-main/lean/.lake/build/lib/lean/Conjectures/CircularInsertionDegree46.olean",
+        "/home/cinna/.local/state/solved-circular-certificates/bounded-stored-main-src/lean/.lake/build/lib/lean/Conjectures/CircularInsertionDegree46.olean",
         "Conjectures/CircularInsertionDegree46.lean"
       ],
       "exit_code": 0,
@@ -434,7 +438,21 @@
         "-j1",
         "-DwarningAsError=true",
         "-o",
-        "/home/cinna/solved-circular-stored-main/lean/.lake/build/lib/lean/Conjectures/CircularInsertionDegree49.olean",
+        "/home/cinna/.local/state/solved-circular-certificates/bounded-stored-main-src/lean/.lake/build/lib/lean/Conjectures/CircularTableRowBlocks.olean",
+        "Conjectures/CircularTableRowBlocks.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.CircularTableRowBlocks.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/cinna/.local/state/solved-circular-certificates/bounded-stored-main-src/lean/.lake/build/lib/lean/Conjectures/CircularInsertionDegree49.olean",
         "Conjectures/CircularInsertionDegree49.lean"
       ],
       "exit_code": 0,
@@ -448,7 +466,7 @@
         "-j1",
         "-DwarningAsError=true",
         "-o",
-        "/home/cinna/solved-circular-stored-main/lean/.lake/build/lib/lean/Conjectures/CircularInsertionDegree50.olean",
+        "/home/cinna/.local/state/solved-circular-certificates/bounded-stored-main-src/lean/.lake/build/lib/lean/Conjectures/CircularInsertionDegree50.olean",
         "Conjectures/CircularInsertionDegree50.lean"
       ],
       "exit_code": 0,
@@ -462,7 +480,7 @@
         "-j1",
         "-DwarningAsError=true",
         "-o",
-        "/home/cinna/solved-circular-stored-main/lean/.lake/build/lib/lean/Conjectures/CircularInsertionDegree53.olean",
+        "/home/cinna/.local/state/solved-circular-certificates/bounded-stored-main-src/lean/.lake/build/lib/lean/Conjectures/CircularInsertionDegree53.olean",
         "Conjectures/CircularInsertionDegree53.lean"
       ],
       "exit_code": 0,
@@ -476,7 +494,7 @@
         "-j1",
         "-DwarningAsError=true",
         "-o",
-        "/home/cinna/solved-circular-stored-main/lean/.lake/build/lib/lean/Conjectures/CircularInsertionDegree54.olean",
+        "/home/cinna/.local/state/solved-circular-certificates/bounded-stored-main-src/lean/.lake/build/lib/lean/Conjectures/CircularInsertionDegree54.olean",
         "Conjectures/CircularInsertionDegree54.lean"
       ],
       "exit_code": 0,
@@ -490,7 +508,7 @@
         "-j1",
         "-DwarningAsError=true",
         "-o",
-        "/home/cinna/solved-circular-stored-main/lean/.lake/build/lib/lean/Conjectures/CircularInsertionStoredBases.olean",
+        "/home/cinna/.local/state/solved-circular-certificates/bounded-stored-main-src/lean/.lake/build/lib/lean/Conjectures/CircularInsertionStoredBases.olean",
         "Conjectures/CircularInsertionStoredBases.lean"
       ],
       "exit_code": 0,
@@ -503,7 +521,7 @@
         "lean",
         "-j1",
         "-DwarningAsError=true",
-        "/home/cinna/.local/state/solved-circular-certificates/main-stored/TargetAudit.lean"
+        "/home/cinna/.local/state/solved-circular-certificates/bounded-main-stored/TargetAudit.lean"
       ],
       "exit_code": 0,
       "log": "audit.log"
@@ -513,7 +531,7 @@
         "lake",
         "env",
         "python3",
-        "/home/cinna/solved-circular-stored-main/scripts/replay_lean.py",
+        "/home/cinna/.local/state/solved-circular-certificates/bounded-stored-main-src/scripts/replay_lean.py",
         "--root",
         "Conjectures.CircularInsertionStoredBases",
         "--per-module"
@@ -528,13 +546,13 @@
       "Classical.choice",
       "Quot.sound"
     ],
-    "declarations": 455,
-    "modules": 27,
-    "private_declarations": 70,
-    "raw_declarations": 455,
-    "required": 17,
+    "declarations": 474,
+    "modules": 28,
+    "private_declarations": 85,
+    "raw_declarations": 474,
+    "required": 18,
     "tag": "passed",
-    "theorems": 327
+    "theorems": 342
   },
   "full_repository_gate": "not run by this target-scoped helper",
   "status": "PASS"

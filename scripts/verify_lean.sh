@@ -188,6 +188,7 @@ modules=(
   Conjectures.CircularInsertionDegree51
   Conjectures.CircularInsertionDegree55
   Conjectures.CircularInsertionDegree59
+  Conjectures.CircularTableRowBlocks
   Conjectures.CircularTableColoring
   Conjectures.CurgusMascioniQuadratic
   Conjectures.FMPCylindric

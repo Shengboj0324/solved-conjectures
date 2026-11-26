@@ -6,7 +6,7 @@ Each certificate supplies an edge-colour table and the degree of every vertex. L
 
 ## Verification
 
-Two independent runs each strictly rebuilt and replayed 27 Lean project modules with the pinned stock kernel. Each axiom audit covered 455 declarations, including 327 theorems, 70 private declarations and all 17 named endpoints. The receipt includes the proof and verifier hashes and the names of all required endpoints. [Section 7.3 receipt](verification/insertion-receipt.json) · [Earlier regular-graph receipt](../../docs/verification/lean-named-20261121/circular-receipt.json).
+Independent research and publication runs each strictly compiled and replayed 28 project modules. Each axiom audit covered 474 declarations, including 342 theorems, 85 private declarations and all 18 required endpoints. The six largest vertex tables that exceeded the package memory limit now use kernel-checked groups of sixteen vertices. [Section 7.3 receipt](verification/insertion-receipt.json) · [Earlier regular-graph receipt](../../docs/verification/lean-named-20261121/circular-receipt.json).
 
 From the repository root, the original certificates and their transfer to Lean can be checked with these commands.
 

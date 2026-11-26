@@ -179,6 +179,7 @@ run_cmd do
     `MeylenderThalmaier.volume_parallelogram,
     `MeylenderThalmaier.volume_pentagon,
     `MeylenderThalmaier.volume_truncatedSquare,
+    `CircularIndex.Deleted.all_rows_of_blocks,
     `CircularIndex.Insertion.ThreeBlock.internal_exists,
     `CircularIndex.Insertion.ThreeBlock.internal_matching,
     `CircularIndex.Insertion.ThreeBlock.internal_avoids_holes,
