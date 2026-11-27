@@ -208,14 +208,45 @@ theorem active_zero : active 0 = Finset.univ := by decide
 
 theorem active_thirty : active 30 = {0} := by decide
 
+/-! The leaf hypotheses are decided in three ranges of ten stages each. One
+decision over all thirty stages exceeds the CI memory cap. -/
+
 set_option maxRecDepth 100000 in
+theorem leaf_conditions_part0 : ∀ i : Fin 30, i.val / 10 = 0 →
+    leaf i.val ∈ active i.val ∧ parent i.val ∈ active i.val ∧
+    Li.T.Adj (leaf i.val) (parent i.val) ∧
+    (∀ v ∈ active i.val, Li.T.Adj (leaf i.val) v → v = parent i.val) ∧
+    active (i.val + 1) = (active i.val).erase (leaf i.val) := by
+  decide
+
+set_option maxRecDepth 100000 in
+theorem leaf_conditions_part1 : ∀ i : Fin 30, i.val / 10 = 1 →
+    leaf i.val ∈ active i.val ∧ parent i.val ∈ active i.val ∧
+    Li.T.Adj (leaf i.val) (parent i.val) ∧
+    (∀ v ∈ active i.val, Li.T.Adj (leaf i.val) v → v = parent i.val) ∧
+    active (i.val + 1) = (active i.val).erase (leaf i.val) := by
+  decide
+
+set_option maxRecDepth 100000 in
+theorem leaf_conditions_part2 : ∀ i : Fin 30, i.val / 10 = 2 →
+    leaf i.val ∈ active i.val ∧ parent i.val ∈ active i.val ∧
+    Li.T.Adj (leaf i.val) (parent i.val) ∧
+    (∀ v ∈ active i.val, Li.T.Adj (leaf i.val) v → v = parent i.val) ∧
+    active (i.val + 1) = (active i.val).erase (leaf i.val) := by
+  decide
+
 /-- All leaf hypotheses concern the actual graph and the actual remaining vertices. -/
 theorem leaf_conditions : ∀ i : Fin 30,
     leaf i.val ∈ active i.val ∧ parent i.val ∈ active i.val ∧
     Li.T.Adj (leaf i.val) (parent i.val) ∧
     (∀ v ∈ active i.val, Li.T.Adj (leaf i.val) v → v = parent i.val) ∧
     active (i.val + 1) = (active i.val).erase (leaf i.val) := by
-  decide
+  intro i
+  have hi := i.isLt
+  rcases (by omega : i.val / 10 = 0 ∨ i.val / 10 = 1 ∨ i.val / 10 = 2) with h | h | h
+  · exact leaf_conditions_part0 i h
+  · exact leaf_conditions_part1 i h
+  · exact leaf_conditions_part2 i h
 
 set_option maxRecDepth 100000 in
 set_option maxHeartbeats 0 in

@@ -19,6 +19,21 @@ def residueCheck (num den m r : ℕ) (inv : ℕ → ℕ)
     (retained : Finset (Finset ℕ)) : Bool :=
   decide (∀ s∈coveredSupports m r inv, rowCheck num den m retained s=true)
 
+/-- A residue table of row size other than one can be checked in pieces. Each piece
+filters the bounded supports by the sum of their entries modulo `n`, so a kernel
+decision handles only part of the rows. -/
+theorem residueCheck_of_sum_chunks {num den m r : ℕ} {inv : ℕ → ℕ}
+    {retained : Finset (Finset ℕ)} (hr : r≠1) (n : ℕ) (hn : 0<n)
+    (h : ∀ i<n, ∀ s∈(boundedSupports m r).filter (fun s => s.sum id % n=i),
+      PairNormalized m inv s → rowCheck num den m retained s=true) :
+    residueCheck num den m r inv retained=true := by
+  unfold residueCheck coveredSupports normalizedSupports
+  rw [if_neg hr]
+  apply decide_eq_true
+  intro s hs
+  obtain ⟨hb,hp⟩ := Finset.mem_filter.mp hs
+  exact h _ (Nat.mod_lt _ hn) s (Finset.mem_filter.mpr ⟨hb,rfl⟩) hp
+
 theorem rowCheck_sound {num den m : ℕ} {retained : Finset (Finset ℕ)} {s : Finset ℕ}
     (h : rowCheck num den m retained s=true) :
     s∈retained ∨ HasRationalWitness num den m (s.sort (·≤·)) := by
