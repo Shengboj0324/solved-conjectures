@@ -1,0 +1,181 @@
+{
+  "schema": "target-complete-closure-verification-v1",
+  "started_at": "2026-11-26T10:26:15.661921+00:00",
+  "finished_at": "2026-11-26T10:28:29.788467+00:00",
+  "root": "Conjectures.FiscusGridCounterexample",
+  "project_modules": [
+    "Conjectures.FiscusGridCertificate",
+    "Conjectures.FiscusGridCounterexample",
+    "Conjectures.FiscusGridGame",
+    "Conjectures.FiscusGridMasks",
+    "Conjectures.FiscusGridSound",
+    "Conjectures.FiscusGridTable"
+  ],
+  "required_endpoints": [
+    "FiscusGrid.certificate",
+    "FiscusGrid.picked_empty",
+    "FiscusGrid.picked_one",
+    "FiscusGrid.first_wins",
+    "FiscusGrid.winning_openings",
+    "FiscusGrid.not_even_grid_conjecture",
+    "FiscusGrid.wins_iff",
+    "FiscusGrid.number_vertex",
+    "FiscusGrid.vertex_number",
+    "FiscusGrid.mem_picked",
+    "FiscusGrid.picked_insert",
+    "FiscusGrid.hood_closed",
+    "FiscusGrid.covered_iff",
+    "FiscusGrid.table_sound",
+    "FiscusGrid.consistent_spec"
+  ],
+  "source_sha256": {
+    "lean/Conjectures/FiscusGridCertificate.lean": "feb7dd7c24198721e4740b36d1ddb9e4176c0fea2ae2006428e9d12ff1120634",
+    "lean/Conjectures/FiscusGridCounterexample.lean": "2892aa14ca627943a963ed4acfc77cb143cb3319f99bd12df26c3949f152bdc9",
+    "lean/Conjectures/FiscusGridGame.lean": "0934d77e0376f92964f852c11d8c8f89192564b1f6bd23a56ca8bff9444d0d1d",
+    "lean/Conjectures/FiscusGridMasks.lean": "db3bf035a35a613212e81517c424c20eb99973692d4b3a5d4cc847c38e13f509",
+    "lean/Conjectures/FiscusGridSound.lean": "0fb71745101059a2ccda141980987553654f769749cdc3c5144f1f2a4fae43df",
+    "lean/Conjectures/FiscusGridTable.lean": "a1db0450c21273c689ce6eb41650c78a45ad9fc5049cb3346b39e9b03cddacd2"
+  },
+  "input_sha256": {
+    "lean/Conjectures/FiscusGridCertificate.lean": "feb7dd7c24198721e4740b36d1ddb9e4176c0fea2ae2006428e9d12ff1120634",
+    "lean/Conjectures/FiscusGridCounterexample.lean": "2892aa14ca627943a963ed4acfc77cb143cb3319f99bd12df26c3949f152bdc9",
+    "lean/Conjectures/FiscusGridGame.lean": "0934d77e0376f92964f852c11d8c8f89192564b1f6bd23a56ca8bff9444d0d1d",
+    "lean/Conjectures/FiscusGridMasks.lean": "db3bf035a35a613212e81517c424c20eb99973692d4b3a5d4cc847c38e13f509",
+    "lean/Conjectures/FiscusGridSound.lean": "0fb71745101059a2ccda141980987553654f769749cdc3c5144f1f2a4fae43df",
+    "lean/Conjectures/FiscusGridTable.lean": "a1db0450c21273c689ce6eb41650c78a45ad9fc5049cb3346b39e9b03cddacd2",
+    "lean/lean-toolchain": "ca5f1f601d34c49079e38d7e7041eb0f2a9c227fbc1df0f404820069a052330c",
+    "lean/lake-manifest.json": "02e7d705d4ea86c9cfdc22f5eceb2b5bbe5a2c14806c1f3b0f6f1c251c6f2953",
+    "lean/lakefile.toml": "609df590851cb55d2d2c52fd2037e463273a1a69d3c766a00d486cf81163a089",
+    "scripts/audit_lean_all_owned.py": "53c289baad523164bbef5561910fcdc44bc40efba2b8efe8e7212c30db3a663f",
+    "scripts/replay_lean.py": "ff396676b7d4cb19200cc2b84b6a709ff50f45e5f02fb77074a0a6861eb15a1c",
+    "scripts/verify_lean_target.py": "10d8d27c2709659c5318ef6a9fd7a28dde89f7ec46d92386a417caca5949b008"
+  },
+  "lean_toolchain": "leanprover/lean4:v4.35.0",
+  "manifest_sha256": "02e7d705d4ea86c9cfdc22f5eceb2b5bbe5a2c14806c1f3b0f6f1c251c6f2953",
+  "commands": [
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/cinna/solved-fiscus-lean-research/lean/.lake/build/lib/lean/Conjectures/FiscusGridGame.olean",
+        "Conjectures/FiscusGridGame.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.FiscusGridGame.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/cinna/solved-fiscus-lean-research/lean/.lake/build/lib/lean/Conjectures/FiscusGridMasks.olean",
+        "Conjectures/FiscusGridMasks.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.FiscusGridMasks.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/cinna/solved-fiscus-lean-research/lean/.lake/build/lib/lean/Conjectures/FiscusGridTable.olean",
+        "Conjectures/FiscusGridTable.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.FiscusGridTable.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/cinna/solved-fiscus-lean-research/lean/.lake/build/lib/lean/Conjectures/FiscusGridCertificate.olean",
+        "Conjectures/FiscusGridCertificate.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.FiscusGridCertificate.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/cinna/solved-fiscus-lean-research/lean/.lake/build/lib/lean/Conjectures/FiscusGridSound.olean",
+        "Conjectures/FiscusGridSound.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.FiscusGridSound.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/cinna/solved-fiscus-lean-research/lean/.lake/build/lib/lean/Conjectures/FiscusGridCounterexample.olean",
+        "Conjectures/FiscusGridCounterexample.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.FiscusGridCounterexample.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "/home/cinna/.local/state/solved-fiscus-lean/research/TargetAudit.lean"
+      ],
+      "exit_code": 0,
+      "log": "audit.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "python3",
+        "/home/cinna/solved-fiscus-lean-research/scripts/replay_lean.py",
+        "--root",
+        "Conjectures.FiscusGridCounterexample"
+      ],
+      "exit_code": 0,
+      "log": "replay.log"
+    }
+  ],
+  "all_owned_audit": {
+    "allowed_axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "declarations": 80,
+    "modules": 6,
+    "private_declarations": 10,
+    "raw_declarations": 80,
+    "required": 15,
+    "tag": "passed",
+    "theorems": 60
+  },
+  "full_repository_gate": "not run by this target-scoped helper",
+  "status": "PASS"
+}

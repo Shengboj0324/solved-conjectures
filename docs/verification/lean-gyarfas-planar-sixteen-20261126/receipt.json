@@ -1,0 +1,128 @@
+{
+  "schema": "target-complete-closure-verification-v1",
+  "started_at": "2026-11-26T09:50:16.084389+00:00",
+  "finished_at": "2026-11-26T09:51:07.350345+00:00",
+  "root": "Conjectures.GyarfasPlanarWitness",
+  "project_modules": [
+    "Conjectures.GyarfasPlanarLines",
+    "Conjectures.GyarfasPlanarRational",
+    "Conjectures.GyarfasPlanarWitness"
+  ],
+  "required_endpoints": [
+    "GyarfasPlanar.locus_injective",
+    "GyarfasPlanar.spanned_line",
+    "GyarfasPlanar.card_spannedLines",
+    "GyarfasPlanar.realPoint_injective",
+    "GyarfasPlanar.direction_realPoint",
+    "GyarfasPlanar.card_real_lines",
+    "GyarfasPlanar.multiplicity_real",
+    "GyarfasPlanar.axis_triangle_noncollinear",
+    "GyarfasPlanar.multiplicity_from_points",
+    "GyarfasPlanar.sixteen_count",
+    "GyarfasPlanar.sixteen_rational_multiplicity",
+    "GyarfasPlanar.sixteen_attains_two",
+    "GyarfasPlanar.sixteen_real"
+  ],
+  "source_sha256": {
+    "lean/Conjectures/GyarfasPlanarLines.lean": "1f5059a5668386de5f632fe5c93ba23ac60fc4d445e64e87fa755742a5d7a407",
+    "lean/Conjectures/GyarfasPlanarRational.lean": "eaf3f83475755af6c787971ff1519725e6a79a74af0f0e68add040c503e5d5ce",
+    "lean/Conjectures/GyarfasPlanarWitness.lean": "1e797ba11a9e665d12a6d7a741aca8ddcdc77b2917810ff7e4003edaa7c43169"
+  },
+  "input_sha256": {
+    "lean/Conjectures/GyarfasPlanarLines.lean": "1f5059a5668386de5f632fe5c93ba23ac60fc4d445e64e87fa755742a5d7a407",
+    "lean/Conjectures/GyarfasPlanarRational.lean": "eaf3f83475755af6c787971ff1519725e6a79a74af0f0e68add040c503e5d5ce",
+    "lean/Conjectures/GyarfasPlanarWitness.lean": "1e797ba11a9e665d12a6d7a741aca8ddcdc77b2917810ff7e4003edaa7c43169",
+    "lean/lean-toolchain": "ca5f1f601d34c49079e38d7e7041eb0f2a9c227fbc1df0f404820069a052330c",
+    "lean/lake-manifest.json": "02e7d705d4ea86c9cfdc22f5eceb2b5bbe5a2c14806c1f3b0f6f1c251c6f2953",
+    "lean/lakefile.toml": "609df590851cb55d2d2c52fd2037e463273a1a69d3c766a00d486cf81163a089",
+    "scripts/audit_lean_all_owned.py": "53c289baad523164bbef5561910fcdc44bc40efba2b8efe8e7212c30db3a663f",
+    "scripts/replay_lean.py": "ff396676b7d4cb19200cc2b84b6a709ff50f45e5f02fb77074a0a6861eb15a1c",
+    "scripts/verify_lean_target.py": "10d8d27c2709659c5318ef6a9fd7a28dde89f7ec46d92386a417caca5949b008"
+  },
+  "lean_toolchain": "leanprover/lean4:v4.35.0",
+  "manifest_sha256": "02e7d705d4ea86c9cfdc22f5eceb2b5bbe5a2c14806c1f3b0f6f1c251c6f2953",
+  "commands": [
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/cinna/solved-gyarfas-lean-research/lean/.lake/build/lib/lean/Conjectures/GyarfasPlanarLines.olean",
+        "Conjectures/GyarfasPlanarLines.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.GyarfasPlanarLines.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/cinna/solved-gyarfas-lean-research/lean/.lake/build/lib/lean/Conjectures/GyarfasPlanarRational.olean",
+        "Conjectures/GyarfasPlanarRational.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.GyarfasPlanarRational.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/cinna/solved-gyarfas-lean-research/lean/.lake/build/lib/lean/Conjectures/GyarfasPlanarWitness.olean",
+        "Conjectures/GyarfasPlanarWitness.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.GyarfasPlanarWitness.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "/home/cinna/.local/state/solved-gyarfas-lean/witness-research/TargetAudit.lean"
+      ],
+      "exit_code": 0,
+      "log": "audit.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "python3",
+        "/home/cinna/solved-gyarfas-lean-research/scripts/replay_lean.py",
+        "--root",
+        "Conjectures.GyarfasPlanarWitness"
+      ],
+      "exit_code": 0,
+      "log": "replay.log"
+    }
+  ],
+  "all_owned_audit": {
+    "allowed_axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "declarations": 45,
+    "modules": 3,
+    "private_declarations": 9,
+    "raw_declarations": 45,
+    "required": 13,
+    "tag": "passed",
+    "theorems": 31
+  },
+  "full_repository_gate": "not run by this target-scoped helper",
+  "status": "PASS"
+}

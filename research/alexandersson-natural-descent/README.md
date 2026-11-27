@@ -85,3 +85,5 @@ Searches on 20 November 2026 used both available web search engines, exact autho
 | Gessel–Zhuang real-rootedness conjecture | Screened; no attempt claimed | [Two-sided permutation statistics via symmetric functions](https://arxiv.org/abs/2306.15785), Conjecture 7.1. Current specialist page records checks through size 50; these are not a full proof. |
 
 The Pandey example matters for target selection: current aggregator pages can still label a conjecture open despite an existing explicit refutation. An apparently short new proof must survive a search for the exact obstruction, not just a check of a status label.
+
+A [long-first-row theorem](long-first-row.md) now propagates real-rootedness from any fixed Ferrers tail to every sufficiently long first-row extension. It also gives strict consecutive interlacing and individual zero asymptotics.

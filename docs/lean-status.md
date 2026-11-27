@@ -1,5 +1,57 @@
 # Lean verification status
 
+## Chandran–Di Stefano–Haritha–Thomas–Tuite monophonic product conjecture
+
+Lean verifies the 45-vertex counterexample, the exact color counts 20 and 27, and the complement count for every prism length. The original graph’s all-order color formula remains in the written proof. [Prism theorem](../lean/Conjectures/MonophonicPrismTheorems.lean) · [Research receipt](verification/lean-monophonic-prism-20261126/receipt.json).
+
+## Wang–Yang’s six Fuss–Narayana matrices
+
+Adam Benazouz formalized all six matrices in Conjecture 4.1 for every integer parameter at least two. Two independent strict builds, transitive axiom audits and stock-kernel runs verified 322 declarations across five modules and all seven registered endpoints. [Theorems](../lean/Conjectures/WangYangFussNarayana.lean) · [Research receipt](verification/lean-wang-yang-fuss-narayana-20261126/receipt.json) · [Original contribution](https://github.com/1337isnot1337/solved-conjectures/pull/840).
+
+## Square-root-logarithmic growth of nonreal transportation roots
+
+Lean proves the full-support counterexample and the square-root-logarithmic growth of nonreal roots, counted with multiplicity, for the Ehrhart numerators of the actual lattice polytopes. [Complete theorem](../lean/Conjectures/TransportationGrowthTheorems.lean) · [Research receipt](verification/lean-transportation-growth-20261126/receipt.json).
+
+## Alexandersson’s transportation polytope conjecture
+
+Lean proves the original counterexample from the integer points of a full-support, 24-dimensional lattice polytope. Its degree-twelve Ehrhart numerator has exactly two nonreal zeros. The asymptotic lower bound remains in the written proof. [Transportation theorem](../lean/Conjectures/TransportationTheorems.lean) · [Research receipt](verification/lean-transportation-geometry-20261126/receipt.json).
+
+## Mallik–Diwan–Kothari degree-count conjecture
+
+Lean constructs a minimal extendable bipartite counterexample for every stated even order and verifies its exact edge and degree counts. Explicit permutations identify the original 16-vertex search witness with the smallest family member. [Counterexample family](../lean/Conjectures/MallikDegreeTheorems.lean) · [Research receipt](verification/lean-mallik-degree-20261126/receipt.json).
+
+## The Steiner triple system sail problem
+
+Lean proves the uniform count, existence from order 84, the limiting lower density of 1/49, the one-color disjoint packing with limiting lower rate 1/4802, and the fixed disjoint-union Ramsey consequence. [Ramsey theorems](../lean/Conjectures/SteinerSailTheorems.lean) · [Research receipt](verification/lean-steiner-sails-20261126/receipt.json).
+
+## Nathanson’s linear-form Sidon systems
+
+Lean proves all three original questions, the lower bound from the two largest absolute coefficients, the finite upper bound with the common coefficient divisor, and the exact bilinear limit for every choice of nonzero signed coefficients. [Sharp limit theorems](../lean/Conjectures/NathansonSidonSharpTheorems.lean) · [Research receipt](verification/lean-nathanson-sidon-sharp-20261126/receipt.json).
+
+## Erdős–Gyárfás’s point-degree spectrum conjecture
+
+Lean bounds the degree spectrum in every finite linear space, rules out the proposed square-root deficit and proves the same linear bound for real planar point sets. [Lean proof](../lean/Conjectures/ErdosGyarfasSpectrumTheorems.lean) · [Kernel receipt](verification/lean-erdos-gyarfas-spectrum-20261126/receipt.json).
+
+## Fiscus–Hurlbert–Myzelev–Pence’s even-grid conjecture
+
+Lean proves that Player 1 wins on the 14-vertex ladder, verifies all 16,384 positions and identifies all four winning openings. [Lean proof](../lean/Conjectures/FiscusGridCounterexample.lean) · [Kernel receipt](verification/lean-fiscus-ladder-20261126/receipt.json).
+
+## Circular-index certificates within the package memory limit
+
+The finite circular-index certificates for degrees 49, 50, 51, 53, 55 and 59 now verify their vertex tables in groups of sixteen. All six modules passed the normal Lake build under the configured 4.5 GB limit. The joint finite, stored-graph and all-degree proof suites also passed strict compilation, full axiom audit and stock-kernel replay twice. [Finite certificates](verification/lean-circular-bounded-20261126/finite/receipt.json) · [Stored insertions](verification/lean-circular-bounded-20261126/stored/receipt.json) · [All degrees](verification/lean-circular-bounded-20261126/all/receipt.json).
+
+## Gyárfás’s construction at every order
+
+For every order from 16, Lean constructs noncollinear rational points in the real plane, proves optimal maximum degree multiplicity two and determines the entire interval of distinct degrees. [Lean theorem](../lean/Conjectures/GyarfasPlanarUniform.lean) · [Kernel receipt](verification/lean-gyarfas-planar-uniform-20261126/receipt.json).
+
+## Gyárfás’s planar degree-repetition problem at order 16
+
+Lean constructs 16 noncollinear rational points in the real affine plane and proves that every spanned-line degree occurs at most twice. Degree 9 occurs twice. This answers the original existence question. The extension to every order from 16 and its exact count of distinct degrees have a written proof. [Lean theorem](../lean/Conjectures/GyarfasPlanarWitness.lean) · [Kernel receipt](verification/lean-gyarfas-planar-sixteen-20261126/receipt.json).
+
+## Forward insertions in the three-block circular-index construction
+
+Lean verifies the one- and three-block exclusions for all labelled small forward insertions, the classification of two-interval supports, connectivity of the infinite family, and both partial-block graphs with their exact indices. [Lean sources](../lean/Conjectures/CircularThreeBlockAdditional.lean) · [Receipt](verification/lean-circular-forward-insertions-20261126/receipt.json).
+
 ## The two truncated-square covering examples
 
 Lean proves the exact Lebesgue areas and maximal four-shape covering scales of the parallelogram and rational pentagon, and the strict comparisons with the source’s trapezoid formula. The first comparison also holds near the boundary for every first truncation leg. Identifying this scale with symplectic capacity and proving the full strict bound for every convex body remain open in Lean. [Proof](../lean/Conjectures/MeylenderThalmaierPentagonArea.lean) · [Receipt](verification/lean-truncated-square-covers-20261126/receipt.json).
@@ -14,7 +66,7 @@ Lean verifies the maximum degree and the exact real circular chromatic index for
 
 ## The plane-partition polynomial inequalities
 
-Lean proves the strict Turán inequality for every index at least 12 and every real parameter at least 1. The consecutive roots strictly decrease from index 1 when the parameter exceeds 5 and from index 6 when it is at least 1. [Lean theorems](../lean/Conjectures/HeimNeuhauserPlanePartitionTheorems.lean) · [Joint verification receipt](verification/lean-plane-partition-full-20261126/receipt.json).
+Lean proves the strict Turán inequality for every index at least 12 and every real parameter at least 1. The consecutive roots strictly decrease from index 1 when the parameter exceeds 5 and from index 6 when it is at least 1. [Lean theorems](../lean/Conjectures/HeimNeuhauserPlanePartitionTheorems.lean) · [Joint verification receipt](verification/lean-plane-partition-full-20261126/receipt.json). The four certificate modules for indices 200 through 250 now elaborate their proofs sequentially under the 4,500 MB build limit. [Updated joint replay](verification/lean-plane-partition-resource-20261126/receipt.json).
 
 ## Upper-half circular chromatic index in every even degree from eight
 
@@ -195,7 +247,7 @@ proofs are documented separately in the catalogue and result package.
 | Brown–Mol's conjecture | Complete | Lean proves the explicit 1001-vertex counterexample and that all sufficiently large members of the literal tree family have diameter four and a nonzero subtree root in the forbidden disk. It counts actual connected induced vertex sets and establishes the infinite family through local analytic inverses and logarithmic derivatives. Strict standalone compilation, all-owned axiom audit and stock-kernel replay passed; the combined repository gate is pending. |
 | Ekhad–Zeilberger’s most unfair bet conjecture | Not formalized | Written proof of the extremal bound, with a finite exact comparison of pairs. |
 | Kauers–Koutschan recurrence conjecture | Not formalized | Written proof and exact symbolic verification of both recurrences for all lengths. |
-| Kovalev's conjecture | Not formalized | Complete proposed analytic disproof of the lower Hardy-duality comparison by a uniform positive diagonal matrix family in every order at least 500001. Independent mathematical and root reviews passed, with two exact arithmetic replays and a separate priority audit. The upper inequality is not resolved. No Lean formalization is claimed. |
+| Kovalev's conjecture | Partial | Lean proves the pointwise transfer inequality, the dimension threshold, the fourth-moment calculation and the exact rational separation. The Gaussian expectations and spherical Hardy-norm identities remain to be formalized. [Real inequalities and moment calculation](../lean/Conjectures/KovalevHardySeparation.lean) · [Research receipt](verification/lean-kovalev-hardy-separation-20261126/receipt.json). |
 | Roos–Seiringer's conjecture | Not formalized | Complete proposed computer-assisted proof of the full radial Dirichlet kernel assertion. Analytic tails and an essential exact certificate over 184 closed intervals cover the entire positive real axis; source scaling covers all positive chemical potentials. Two independent mathematical/code reviews, a separate priority audit and full replays passed. The unaveraged kernel is outside the claim. No Lean formalization is claimed. |
 | Dospolova–Germanskov–Zaporozhets's conjecture | Partial | Lean checks the positive factorial family, exact ultra-log-concavity and scaled ratios, countable-limit step, and strict expected sample range for an actual Gaussian process under almost-sure boundedness and deterministic local-range-limit assumptions. Intrinsic volumes, determinism of those local limits, and Vitale's limiting theorem remain unformalized. Strict source compilation, isolated kernel replay and endpoint axiom checks passed; full repository gate pending. |
 | Chen–Khare–Sahi's conjecture | Partial: literal source convention unresolved | At q=1/10, t=9/10, Lean proves the complete stable Hall family over all eleven degree-six partitions, literal power-sum coordinates and polynomial injectivity, unique monic dominance-triangular orthogonality, three-variable specialization, positive normalization, and full Muirhead-semiring nonmembership. The degree-three finite-Hall source conflict is formal. All 19 modules passed strict sources, complete owned/private audits and exact stock replay. Broader families remain eigenfunction-characterized; the separate earlier 16-module compatibility replay and the combined repository gate remain pending. |

@@ -1,0 +1,15 @@
+# The two-occurrence obstruction can be a closed family of infinite sets
+
+Use the usual Cantor topology on subsets of a countable ground set, identifying a set with its indicator. The subspace $`[X]^\omega`$ consists of its infinite subsets. The [two-occurrence obstruction](README.md) can be made **closed in $`[X]^\omega`$**, hence a $`G_\delta`$ subset of Cantor space. In contrast, every countable union of compact families of infinite sets has a single coloring giving infinitely many points of each color in every member. The ordinary Komjáth property B question is open here. [Original problem](https://www.erdosproblems.com/602)
+
+Write $`X=2^{<\omega}`$ and fix an enumeration of $`X`$, so that a real $`f\in2^\omega`$ continuously indexes all binary colorings $`c_f`$ of $`X`$. For $`i=0,1`$, set
+
+```math
+A_{f,i}=\{f\upharpoonright n:n\geq0,\ c_f(f\upharpoonright n)=i\}.
+```
+
+The map $`f\mapsto A_{f,i}`$ is continuous into $`2^X`$: membership of a fixed finite string $`t`$ tests its finitely many prefix bits and the single bit indexing $`t`$. Thus the union $`K`$ of the two images is compact. Let $`\mathcal U=K\cap[X]^\omega`$. Distinct branches meet in only finitely many prefixes, and the two colors on the same branch give disjoint sets. Every coloring $`c_f`$ has an infinite monochromatic member because the two sets cover its branch. This produces a relatively closed almost-disjoint family without property B before imposing Komjáth’s no-singleton condition.
+
+Take the pair-doubling and private-copy construction of the [main note](README.md), using this $`\mathcal U`$ throughout. To check its topology, temporarily use every $`V\in K`$, allowing finite members. The collection of doubled edges is compact by continuity. Each fixed private collection $`\{P_x\cup V:V\in K_x\}`$ is compact. The union of the private collections together with the empty set is closed: a sequence with distinct indices tends coordinatewise to the empty set because the private grounds and their marker pairs are pairwise disjoint. Thus all generalized edges and the empty set form a compact set. Intersecting it with the infinite subsets gives exactly the construction in the main note. Its intersection sizes and coloring conclusions are unchanged. Relative closedness implies the claimed $`G_\delta`$ description since the infinite subsets themselves form a $`G_\delta`$.
+
+For the other direction, let $`\mathcal H=\bigcup_m K_m`$ with $`K_m`$ compact and consisting entirely of infinite subsets of $`\mathbb N`$. For any $`N`$ and any $`m`$, some finite interval starting at $`N`$ meets every member of $`K_0\cup\cdots\cup K_m`$. The sets of subsets that meet $`[N,M]`$, as $`M`$ increases, form an increasing open cover of this compact union. Successively take disjoint intervals meeting the first $`m+1`$ families at stage $`m`$, and color their vertices by the parity of $`m`$. Each member meets both parities infinitely often. In particular the relatively closed family above cannot be $`F_\sigma`$ in Cantor space. This descriptive distinction concerns the strengthened conclusion of two points of each color.

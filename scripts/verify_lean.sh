@@ -2,8 +2,194 @@
 # Rebuild sources, audit every project theorem's axioms, then replay the kernel.
 set -euo pipefail
 export LEAN_NUM_THREADS=1
+# Lean's worker threads each get a glibc malloc arena, and memory freed in one arena
+# is not reused by another. Large certificate modules then exceed the -M4500 cap on
+# Linux although each proof is small. One arena that returns freed blocks keeps them
+# under the cap. macOS ignores this variable.
+export GLIBC_TUNABLES="${GLIBC_TUNABLES:-glibc.malloc.arena_max=1:glibc.malloc.mmap_threshold=131072:glibc.malloc.trim_threshold=131072}"
 cd "$(dirname "${BASH_SOURCE[0]}")/../lean"
 modules=(
+  Conjectures.MonophonicPrismBlock00
+  Conjectures.MonophonicPrismBlock05
+  Conjectures.MonophonicPrismBlock10
+  Conjectures.MonophonicPrismBlock15
+  Conjectures.MonophonicPrismBlock20
+  Conjectures.MonophonicPrismBlock25
+  Conjectures.MonophonicPrismBlock30
+  Conjectures.MonophonicPrismBlock35
+  Conjectures.MonophonicPrismBlock40
+  Conjectures.MonophonicPrismColorings
+  Conjectures.MonophonicPrismConstruction
+  Conjectures.MonophonicPrismCounterexample
+  Conjectures.MonophonicPrismCoverage
+  Conjectures.MonophonicPrismData
+  Conjectures.MonophonicPrismIncidence
+  Conjectures.MonophonicPrismIsomorphism
+  Conjectures.MonophonicPrismRoutes
+  Conjectures.MonophonicPrismTheorems
+  Conjectures.MonophonicProductPaths
+  Conjectures.WangYangFussNarayana
+  Conjectures.WangYangFussNarayanaCriteria
+  Conjectures.WangYangFussNarayanaDefs
+  Conjectures.WangYangFussNarayanaDet
+  Conjectures.WangYangFussNarayanaMatrix
+  Conjectures.TransportationGrowthTheorems
+  Conjectures.TransportationLegendreBound
+  Conjectures.TransportationLegendreCenter
+  Conjectures.TransportationLegendreEnergy
+  Conjectures.TransportationLegendreExpansion
+  Conjectures.TransportationLegendreODE
+  Conjectures.TransportationLegendreOscillator
+  Conjectures.TransportationLogWindow
+  Conjectures.TransportationNonrealGrowth
+  Conjectures.TransportationRolleWindow
+  Conjectures.TransportationRootDeficit
+  Conjectures.TransportationSturmInterval
+  Conjectures.TransportationWindowOscillation
+  Conjectures.TransportationWindowSuppression
+  Conjectures.TransportationBadColumn
+  Conjectures.TransportationBinomial
+  Conjectures.TransportationComplexRoots
+  Conjectures.TransportationDirections
+  Conjectures.TransportationEhrhartCount
+  Conjectures.TransportationGrouping
+  Conjectures.TransportationLaguerre
+  Conjectures.TransportationLattice
+  Conjectures.TransportationLatticeHull
+  Conjectures.TransportationPolynomial
+  Conjectures.TransportationPolytope
+  Conjectures.TransportationRootCount
+  Conjectures.TransportationRows
+  Conjectures.TransportationSeries
+  Conjectures.TransportationSlots
+  Conjectures.TransportationTables
+  Conjectures.TransportationTheorems
+  Conjectures.TransportationTwelveRoots
+  Conjectures.TransportationVertices
+  Conjectures.MallikDegreeCounterfamily
+  Conjectures.MallikDegreeCounts
+  Conjectures.MallikDegreeEdgeMatchings
+  Conjectures.MallikDegreeExtendable
+  Conjectures.MallikDegreeFamily
+  Conjectures.MallikDegreeGraphs
+  Conjectures.MallikDegreeHall
+  Conjectures.MallikDegreeHighDeletion
+  Conjectures.MallikDegreeLiteral
+  Conjectures.MallikDegreeLowDeletion
+  Conjectures.MallikDegreeObstruction
+  Conjectures.MallikDegreePerfect
+  Conjectures.MallikDegreeRelabel
+  Conjectures.MallikDegreeSimpleGraph
+  Conjectures.MallikDegreeSubgraphs
+  Conjectures.MallikDegreeTheorems
+  Conjectures.MallikDegreeWitness
+  Conjectures.SteinerSailCount
+  Conjectures.SteinerSailCover
+  Conjectures.SteinerSailDegrees
+  Conjectures.SteinerSailGeometry
+  Conjectures.SteinerSailMixed
+  Conjectures.SteinerSailOpposite
+  Conjectures.SteinerSailPacking
+  Conjectures.SteinerSailPackingLemma
+  Conjectures.SteinerSailParity
+  Conjectures.SteinerSailPointCounts
+  Conjectures.SteinerSailShape
+  Conjectures.SteinerSailSpokes
+  Conjectures.SteinerSailSystem
+  Conjectures.SteinerSailTheorems
+  Conjectures.NathansonSidonAllocation
+  Conjectures.NathansonSidonLayerBounds
+  Conjectures.NathansonSidonLayers
+  Conjectures.NathansonSidonLowDigits
+  Conjectures.NathansonSidonMixedRadix
+  Conjectures.NathansonSidonSharpLimit
+  Conjectures.NathansonSidonSharpProgression
+  Conjectures.NathansonSidonSharpTheorems
+  Conjectures.NathansonSidonSignedSets
+  Conjectures.NathansonSidonSplitDigits
+  Conjectures.NathansonSidonTopDigits
+  Conjectures.NathansonSidonWidth
+  Conjectures.KovalevHardySeparation
+  Conjectures.KovalevRationalCertificate
+  Conjectures.NathansonSidonDiameter
+  Conjectures.NathansonSidonDigits
+  Conjectures.NathansonSidonGcd
+  Conjectures.NathansonSidonLimit
+  Conjectures.NathansonSidonOrder
+  Conjectures.NathansonSidonProgressions
+  Conjectures.NathansonSidonRounding
+  Conjectures.NathansonSidonSteps
+  Conjectures.NathansonSidonSystems
+  Conjectures.NathansonSidonTheorems
+  Conjectures.ErdosGyarfasSpectrumArithmetic
+  Conjectures.ErdosGyarfasSpectrumBound
+  Conjectures.ErdosGyarfasSpectrumComparison
+  Conjectures.ErdosGyarfasSpectrumExtremal
+  Conjectures.ErdosGyarfasSpectrumIncidence
+  Conjectures.ErdosGyarfasSpectrumPlane
+  Conjectures.ErdosGyarfasSpectrumRealDegrees
+  Conjectures.ErdosGyarfasSpectrumRepresentatives
+  Conjectures.ErdosGyarfasSpectrumTheorems
+  Conjectures.ErdosGyarfasSpectrumTotals
+  Conjectures.FiscusGridCertificate
+  Conjectures.FiscusGridCounterexample
+  Conjectures.FiscusGridGame
+  Conjectures.FiscusGridMasks
+  Conjectures.FiscusGridSound
+  Conjectures.FiscusGridTable
+  Conjectures.GyarfasPlanarAxisDegrees
+  Conjectures.GyarfasPlanarConfiguration
+  Conjectures.GyarfasPlanarDirections
+  Conjectures.GyarfasPlanarLabels
+  Conjectures.GyarfasPlanarMultiplicity
+  Conjectures.GyarfasPlanarOffDegrees
+  Conjectures.GyarfasPlanarOptimal
+  Conjectures.GyarfasPlanarSecants
+  Conjectures.GyarfasPlanarSpectrum
+  Conjectures.GyarfasPlanarUniform
+  Conjectures.GyarfasPlanarLines
+  Conjectures.GyarfasPlanarRational
+  Conjectures.GyarfasPlanarWitness
+  Conjectures.CircularSmallInsertionBlocks
+  Conjectures.CircularSmallInsertionCertificates
+  Conjectures.CircularSmallInsertionClassification
+  Conjectures.CircularSmallInsertionConflicts
+  Conjectures.CircularSmallInsertionExclusions
+  Conjectures.CircularSmallInsertionFamily
+  Conjectures.CircularSmallInsertionFixtures
+  Conjectures.CircularSmallInsertionForced
+  Conjectures.CircularSmallInsertionMatchings
+  Conjectures.CircularSmallInsertionPairings
+  Conjectures.CircularSmallInsertionPositive
+  Conjectures.CircularSmallInsertionProfiles1
+  Conjectures.CircularSmallInsertionProfiles2
+  Conjectures.CircularSmallInsertionProfiles3
+  Conjectures.CircularSmallInsertionProfiles4
+  Conjectures.CircularSmallInsertionProfiles5
+  Conjectures.CircularSmallInsertionProfiles6
+  Conjectures.CircularSmallInsertionProfiles7
+  Conjectures.CircularSmallInsertionProfiles8
+  Conjectures.CircularSmallInsertionProfiles9
+  Conjectures.CircularSmallInsertionSearch
+  Conjectures.CircularSmallInsertionShapes
+  Conjectures.CircularSmallInsertionShapes2
+  Conjectures.CircularSmallInsertionShapes3
+  Conjectures.CircularSmallInsertionShapes4
+  Conjectures.CircularSmallInsertionTerminal
+  Conjectures.CircularSmallInsertionTranslation
+  Conjectures.CircularSmallInsertionViable1
+  Conjectures.CircularSmallInsertionViable2
+  Conjectures.CircularSmallInsertionViable3
+  Conjectures.CircularSmallInsertionViable4
+  Conjectures.CircularSmallInsertionViable5
+  Conjectures.CircularSmallInsertionViable6
+  Conjectures.CircularSmallInsertionViable7
+  Conjectures.CircularSmallInsertionViable8
+  Conjectures.CircularSmallInsertionViable9
+  Conjectures.CircularSmallInsertionWindows
+  Conjectures.CircularThreeBlockAdditional
+  Conjectures.CircularThreeBlockConnected
+  Conjectures.CircularThreeBlockPrefixes
   Conjectures.MeylenderThalmaierArea
   Conjectures.MeylenderThalmaierComparison
   Conjectures.MeylenderThalmaierCoverScale
@@ -47,19 +233,6 @@ modules=(
   Conjectures.CircularInsertionDegree53
   Conjectures.CircularInsertionDegree54
   Conjectures.CircularInsertionStoredBases
-  Conjectures.HeimNeuhauserPlanePartition
-  Conjectures.HeimNeuhauserPlanePartitionBoundary
-  Conjectures.HeimNeuhauserPlanePartitionCertificate
-  Conjectures.HeimNeuhauserPlanePartitionCharacteristic
-  Conjectures.HeimNeuhauserPlanePartitionChecks
-  Conjectures.HeimNeuhauserPlanePartitionCosineInversion
-  Conjectures.HeimNeuhauserPlanePartitionDampingBounds
-  Conjectures.HeimNeuhauserPlanePartitionData
-  Conjectures.HeimNeuhauserPlanePartitionFinite
-  Conjectures.HeimNeuhauserPlanePartitionFourier
-  Conjectures.HeimNeuhauserPlanePartitionFourierCentral
-  Conjectures.HeimNeuhauserPlanePartitionFourierSign
-  Conjectures.HeimNeuhauserPlanePartitionGeometricDamping
   Conjectures.HeimNeuhauserPlanePartitionIndices000To031
   Conjectures.HeimNeuhauserPlanePartitionIndices032To063
   Conjectures.HeimNeuhauserPlanePartitionIndices064To095
@@ -72,6 +245,20 @@ modules=(
   Conjectures.HeimNeuhauserPlanePartitionIndices215To229
   Conjectures.HeimNeuhauserPlanePartitionIndices230To239
   Conjectures.HeimNeuhauserPlanePartitionIndices240To250
+  Conjectures.HeimNeuhauserPlanePartition
+  Conjectures.HeimNeuhauserPlanePartitionBoundary
+  Conjectures.HeimNeuhauserPlanePartitionCertificate
+  Conjectures.HeimNeuhauserPlanePartitionCharacteristic
+  Conjectures.HeimNeuhauserPlanePartitionChecks
+  Conjectures.HeimNeuhauserPlanePartitionCosineInversion
+  Conjectures.HeimNeuhauserPlanePartitionDampingBounds
+  Conjectures.HeimNeuhauserPlanePartitionData
+  Conjectures.HeimNeuhauserPlanePartitionFastSum
+  Conjectures.HeimNeuhauserPlanePartitionFinite
+  Conjectures.HeimNeuhauserPlanePartitionFourier
+  Conjectures.HeimNeuhauserPlanePartitionFourierCentral
+  Conjectures.HeimNeuhauserPlanePartitionFourierSign
+  Conjectures.HeimNeuhauserPlanePartitionGeometricDamping
   Conjectures.HeimNeuhauserPlanePartitionInversion
   Conjectures.HeimNeuhauserPlanePartitionLargeRadius
   Conjectures.HeimNeuhauserPlanePartitionMiddleGrid
@@ -143,6 +330,7 @@ modules=(
   Conjectures.CircularInsertionDegree51
   Conjectures.CircularInsertionDegree55
   Conjectures.CircularInsertionDegree59
+  Conjectures.CircularTableRowBlocks
   Conjectures.CircularTableColoring
   Conjectures.DukesRevstackAlternation
   Conjectures.DukesRevstackDegree

@@ -1,0 +1,278 @@
+{
+  "schema": "target-complete-closure-verification-v1",
+  "started_at": "2026-11-26T11:19:18.327612+00:00",
+  "finished_at": "2026-11-26T11:20:34.469471+00:00",
+  "root": "Conjectures.NathansonSidonTheorems",
+  "project_modules": [
+    "Conjectures.NathansonSidonDiameter",
+    "Conjectures.NathansonSidonDigits",
+    "Conjectures.NathansonSidonGcd",
+    "Conjectures.NathansonSidonLimit",
+    "Conjectures.NathansonSidonOrder",
+    "Conjectures.NathansonSidonProgressions",
+    "Conjectures.NathansonSidonRounding",
+    "Conjectures.NathansonSidonSteps",
+    "Conjectures.NathansonSidonSystems",
+    "Conjectures.NathansonSidonTheorems"
+  ],
+  "required_endpoints": [
+    "NathansonSidon.zero_feasible",
+    "NathansonSidon.extremal_feasible",
+    "NathansonSidon.feasible_diameter",
+    "NathansonSidon.extremal_diameter",
+    "NathansonSidon.pack_succ",
+    "NathansonSidon.pack_lt",
+    "NathansonSidon.pack_injective",
+    "NathansonSidon.pack_surjective",
+    "NathansonSidon.gcd_dvd_weight",
+    "NathansonSidon.coefficientGcd_pos",
+    "NathansonSidon.output_scale",
+    "NathansonSidon.scale_fibers",
+    "NathansonSidon.feasible_divide",
+    "NathansonSidon.normalized_diameter",
+    "NathansonSidon.extremal_normalized_diameter",
+    "NathansonSidon.normalized_bounded",
+    "NathansonSidon.positional_eventually",
+    "NathansonSidon.positional_liminf",
+    "NathansonSidon.one_le_positionalConstant",
+    "NathansonSidon.nathanson_multiplicity_one",
+    "NathansonSidon.nathanson_factorial",
+    "NathansonSidon.output_reindex",
+    "NathansonSidon.representations_reindex",
+    "NathansonSidon.feasible_reindex",
+    "NathansonSidon.arranged",
+    "NathansonSidon.signedDigit_involutive",
+    "NathansonSidon.coord_injective",
+    "NathansonSidon.coord_card",
+    "NathansonSidon.contribution",
+    "NathansonSidon.positional_output",
+    "NathansonSidon.positional_feasible",
+    "NathansonSidon.all_outputs",
+    "NathansonSidon.radius_pow",
+    "NathansonSidon.radius_atTop",
+    "NathansonSidon.rounded_bases",
+    "NathansonSidon.period_pos",
+    "NathansonSidon.weight_step",
+    "NathansonSidon.largest_step",
+    "NathansonSidon.finite_system",
+    "NathansonSidon.feasible_le_size",
+    "NathansonSidon.feasible_le_extremal",
+    "NathansonSidon.representations_le_one_of_injective",
+    "NathansonSidon.feasible_mono_multiplicity",
+    "NathansonSidon.nathanson_three_questions"
+  ],
+  "source_sha256": {
+    "lean/Conjectures/NathansonSidonDiameter.lean": "422f9d3722086d1913d25afe67681d323020711453a0a22787b1c540e596b678",
+    "lean/Conjectures/NathansonSidonDigits.lean": "f492e4a2628f6c0b0c7395876fc7249cfc2ebd4d99f13a3aad033f1ae0146522",
+    "lean/Conjectures/NathansonSidonGcd.lean": "8d335e5f48f8973517573efcf36e8769a3aaa89c6a8f00cb0c1b7f7564a74b38",
+    "lean/Conjectures/NathansonSidonLimit.lean": "39aa39210f2923ec48cd3cf2cd2320e9ea341afe2225fb1c85ccbd8da2f80578",
+    "lean/Conjectures/NathansonSidonOrder.lean": "eb776f05d4383f09f0858724adf3053572fdcb4199586efe5ed5702a042c1823",
+    "lean/Conjectures/NathansonSidonProgressions.lean": "786b04a5c3f4f079f414426fcecafac1ced7c01a434af3e9112d203eb92f6ab3",
+    "lean/Conjectures/NathansonSidonRounding.lean": "df06163c36efed051fe28c9a9c8edc6d5a82f23754d4fed123fe8128636adc04",
+    "lean/Conjectures/NathansonSidonSteps.lean": "db0e22783a57994d355677578ffca5da3afc8c07495ac7564cadc8107a0f251a",
+    "lean/Conjectures/NathansonSidonSystems.lean": "9cf28bd6f5071fe456c2c1eb4337758d19cf735e0aacf91abb30719b6f4d8fdf",
+    "lean/Conjectures/NathansonSidonTheorems.lean": "d37ce3ee535aa6a84b9e4f66d55de52ab6f21f295166ef5de61c24ebbda501ff"
+  },
+  "input_sha256": {
+    "lean/Conjectures/NathansonSidonDiameter.lean": "422f9d3722086d1913d25afe67681d323020711453a0a22787b1c540e596b678",
+    "lean/Conjectures/NathansonSidonDigits.lean": "f492e4a2628f6c0b0c7395876fc7249cfc2ebd4d99f13a3aad033f1ae0146522",
+    "lean/Conjectures/NathansonSidonGcd.lean": "8d335e5f48f8973517573efcf36e8769a3aaa89c6a8f00cb0c1b7f7564a74b38",
+    "lean/Conjectures/NathansonSidonLimit.lean": "39aa39210f2923ec48cd3cf2cd2320e9ea341afe2225fb1c85ccbd8da2f80578",
+    "lean/Conjectures/NathansonSidonOrder.lean": "eb776f05d4383f09f0858724adf3053572fdcb4199586efe5ed5702a042c1823",
+    "lean/Conjectures/NathansonSidonProgressions.lean": "786b04a5c3f4f079f414426fcecafac1ced7c01a434af3e9112d203eb92f6ab3",
+    "lean/Conjectures/NathansonSidonRounding.lean": "df06163c36efed051fe28c9a9c8edc6d5a82f23754d4fed123fe8128636adc04",
+    "lean/Conjectures/NathansonSidonSteps.lean": "db0e22783a57994d355677578ffca5da3afc8c07495ac7564cadc8107a0f251a",
+    "lean/Conjectures/NathansonSidonSystems.lean": "9cf28bd6f5071fe456c2c1eb4337758d19cf735e0aacf91abb30719b6f4d8fdf",
+    "lean/Conjectures/NathansonSidonTheorems.lean": "d37ce3ee535aa6a84b9e4f66d55de52ab6f21f295166ef5de61c24ebbda501ff",
+    "lean/lean-toolchain": "ca5f1f601d34c49079e38d7e7041eb0f2a9c227fbc1df0f404820069a052330c",
+    "lean/lake-manifest.json": "02e7d705d4ea86c9cfdc22f5eceb2b5bbe5a2c14806c1f3b0f6f1c251c6f2953",
+    "lean/lakefile.toml": "609df590851cb55d2d2c52fd2037e463273a1a69d3c766a00d486cf81163a089",
+    "scripts/audit_lean_all_owned.py": "53c289baad523164bbef5561910fcdc44bc40efba2b8efe8e7212c30db3a663f",
+    "scripts/replay_lean.py": "ff396676b7d4cb19200cc2b84b6a709ff50f45e5f02fb77074a0a6861eb15a1c",
+    "scripts/verify_lean_target.py": "10d8d27c2709659c5318ef6a9fd7a28dde89f7ec46d92386a417caca5949b008"
+  },
+  "lean_toolchain": "leanprover/lean4:v4.35.0",
+  "manifest_sha256": "02e7d705d4ea86c9cfdc22f5eceb2b5bbe5a2c14806c1f3b0f6f1c251c6f2953",
+  "commands": [
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/cinna/solved-nathanson-sidon-research/lean/.lake/build/lib/lean/Conjectures/NathansonSidonSystems.olean",
+        "Conjectures/NathansonSidonSystems.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.NathansonSidonSystems.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/cinna/solved-nathanson-sidon-research/lean/.lake/build/lib/lean/Conjectures/NathansonSidonDiameter.olean",
+        "Conjectures/NathansonSidonDiameter.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.NathansonSidonDiameter.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/cinna/solved-nathanson-sidon-research/lean/.lake/build/lib/lean/Conjectures/NathansonSidonGcd.olean",
+        "Conjectures/NathansonSidonGcd.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.NathansonSidonGcd.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/cinna/solved-nathanson-sidon-research/lean/.lake/build/lib/lean/Conjectures/NathansonSidonDigits.olean",
+        "Conjectures/NathansonSidonDigits.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.NathansonSidonDigits.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/cinna/solved-nathanson-sidon-research/lean/.lake/build/lib/lean/Conjectures/NathansonSidonProgressions.olean",
+        "Conjectures/NathansonSidonProgressions.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.NathansonSidonProgressions.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/cinna/solved-nathanson-sidon-research/lean/.lake/build/lib/lean/Conjectures/NathansonSidonSteps.olean",
+        "Conjectures/NathansonSidonSteps.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.NathansonSidonSteps.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/cinna/solved-nathanson-sidon-research/lean/.lake/build/lib/lean/Conjectures/NathansonSidonOrder.olean",
+        "Conjectures/NathansonSidonOrder.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.NathansonSidonOrder.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/cinna/solved-nathanson-sidon-research/lean/.lake/build/lib/lean/Conjectures/NathansonSidonRounding.olean",
+        "Conjectures/NathansonSidonRounding.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.NathansonSidonRounding.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/cinna/solved-nathanson-sidon-research/lean/.lake/build/lib/lean/Conjectures/NathansonSidonLimit.olean",
+        "Conjectures/NathansonSidonLimit.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.NathansonSidonLimit.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/cinna/solved-nathanson-sidon-research/lean/.lake/build/lib/lean/Conjectures/NathansonSidonTheorems.olean",
+        "Conjectures/NathansonSidonTheorems.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.NathansonSidonTheorems.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "/home/cinna/.local/state/solved-nathanson-sidon/research/TargetAudit.lean"
+      ],
+      "exit_code": 0,
+      "log": "audit.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "python3",
+        "/home/cinna/solved-nathanson-sidon-research/scripts/replay_lean.py",
+        "--root",
+        "Conjectures.NathansonSidonTheorems"
+      ],
+      "exit_code": 0,
+      "log": "replay.log"
+    }
+  ],
+  "all_owned_audit": {
+    "allowed_axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "declarations": 118,
+    "modules": 10,
+    "private_declarations": 4,
+    "raw_declarations": 118,
+    "required": 44,
+    "tag": "passed",
+    "theorems": 97
+  },
+  "full_repository_gate": "not run by this target-scoped helper",
+  "status": "PASS"
+}

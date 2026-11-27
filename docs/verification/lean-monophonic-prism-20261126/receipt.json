@@ -1,0 +1,494 @@
+{
+  "schema": "target-complete-closure-verification-v1",
+  "started_at": "2026-11-26T15:09:26.543750+00:00",
+  "finished_at": "2026-11-26T15:20:24.840318+00:00",
+  "root": "Conjectures.MonophonicPrismTheorems",
+  "project_modules": [
+    "Conjectures.MonophonicPrismBlock00",
+    "Conjectures.MonophonicPrismBlock05",
+    "Conjectures.MonophonicPrismBlock10",
+    "Conjectures.MonophonicPrismBlock15",
+    "Conjectures.MonophonicPrismBlock20",
+    "Conjectures.MonophonicPrismBlock25",
+    "Conjectures.MonophonicPrismBlock30",
+    "Conjectures.MonophonicPrismBlock35",
+    "Conjectures.MonophonicPrismBlock40",
+    "Conjectures.MonophonicPrismColorings",
+    "Conjectures.MonophonicPrismConstruction",
+    "Conjectures.MonophonicPrismCounterexample",
+    "Conjectures.MonophonicPrismCoverage",
+    "Conjectures.MonophonicPrismData",
+    "Conjectures.MonophonicPrismIncidence",
+    "Conjectures.MonophonicPrismIsomorphism",
+    "Conjectures.MonophonicPrismRoutes",
+    "Conjectures.MonophonicPrismTheorems",
+    "Conjectures.MonophonicProductPaths"
+  ],
+  "required_endpoints": [
+    "MonophonicProduct.ChromaticNumber",
+    "MonophonicProduct.HasColoring",
+    "MonophonicProduct.InducedPath",
+    "MonophonicProduct.Port",
+    "MonophonicProduct.PrismEdge",
+    "MonophonicProduct.PrismVertex",
+    "MonophonicProduct.RouteSound",
+    "MonophonicProduct.Station",
+    "MonophonicProduct.ValidColoring",
+    "MonophonicProduct.Vertex",
+    "MonophonicProduct.adjacencyRows",
+    "MonophonicProduct.allMasks",
+    "MonophonicProduct.all_pairs_covered",
+    "MonophonicProduct.center_of_internal",
+    "MonophonicProduct.consecutive",
+    "MonophonicProduct.coverage_00",
+    "MonophonicProduct.coverage_05",
+    "MonophonicProduct.coverage_10",
+    "MonophonicProduct.coverage_15",
+    "MonophonicProduct.coverage_20",
+    "MonophonicProduct.coverage_25",
+    "MonophonicProduct.coverage_30",
+    "MonophonicProduct.coverage_35",
+    "MonophonicProduct.coverage_40",
+    "MonophonicProduct.dual",
+    "MonophonicProduct.dualColors",
+    "MonophonicProduct.dualLabel",
+    "MonophonicProduct.dual_clique",
+    "MonophonicProduct.dual_exact",
+    "MonophonicProduct.dual_fibers",
+    "MonophonicProduct.dual_label_at_most_two",
+    "MonophonicProduct.dual_label_pair",
+    "MonophonicProduct.dual_lower",
+    "MonophonicProduct.dual_proper",
+    "MonophonicProduct.dual_valid",
+    "MonophonicProduct.edge_count",
+    "MonophonicProduct.embedding_induced",
+    "MonophonicProduct.encoding_adjacency",
+    "MonophonicProduct.encoding_injective",
+    "MonophonicProduct.encoding_surjective",
+    "MonophonicProduct.expanded_prism_complements",
+    "MonophonicProduct.expanded_prism_counterexample",
+    "MonophonicProduct.family_dual_exact",
+    "MonophonicProduct.fiber",
+    "MonophonicProduct.fiber_is_star",
+    "MonophonicProduct.full_bits",
+    "MonophonicProduct.incident",
+    "MonophonicProduct.inducedEmbedding",
+    "MonophonicProduct.largeColors",
+    "MonophonicProduct.large_colors_le_six",
+    "MonophonicProduct.mem_fiber",
+    "MonophonicProduct.mem_neighbors",
+    "MonophonicProduct.mem_star",
+    "MonophonicProduct.monochrome_triple",
+    "MonophonicProduct.monophonic_product_counterexample",
+    "MonophonicProduct.neighbors",
+    "MonophonicProduct.no_three_in_star",
+    "MonophonicProduct.number_pullback",
+    "MonophonicProduct.original",
+    "MonophonicProduct.pathMasks",
+    "MonophonicProduct.paths_00",
+    "MonophonicProduct.paths_05",
+    "MonophonicProduct.paths_10",
+    "MonophonicProduct.paths_15",
+    "MonophonicProduct.paths_20",
+    "MonophonicProduct.paths_25",
+    "MonophonicProduct.paths_30",
+    "MonophonicProduct.paths_35",
+    "MonophonicProduct.paths_40",
+    "MonophonicProduct.portIndex",
+    "MonophonicProduct.primal",
+    "MonophonicProduct.primalColors",
+    "MonophonicProduct.primal_exact",
+    "MonophonicProduct.primal_fibers",
+    "MonophonicProduct.primal_lower",
+    "MonophonicProduct.primal_proper",
+    "MonophonicProduct.primal_valid",
+    "MonophonicProduct.prismAdj",
+    "MonophonicProduct.prismEncoding",
+    "MonophonicProduct.prismEnds",
+    "MonophonicProduct.prismIso",
+    "MonophonicProduct.route",
+    "MonophonicProduct.routeMask",
+    "MonophonicProduct.routes_sound",
+    "MonophonicProduct.row",
+    "MonophonicProduct.rows_diagonal",
+    "MonophonicProduct.rows_symmetric",
+    "MonophonicProduct.sharedMask",
+    "MonophonicProduct.sharedMask_mem",
+    "MonophonicProduct.small_fiber_excludes",
+    "MonophonicProduct.star",
+    "MonophonicProduct.starMasks",
+    "MonophonicProduct.star_card",
+    "MonophonicProduct.star_intersections",
+    "MonophonicProduct.stationIndex",
+    "MonophonicProduct.storedMasks",
+    "MonophonicProduct.storedPaths",
+    "MonophonicProduct.subdivider",
+    "MonophonicProduct.subdivision",
+    "MonophonicProduct.subdivision_degrees",
+    "MonophonicProduct.subdivision_neighbors",
+    "MonophonicProduct.triangle_overlap",
+    "MonophonicProduct.triple_support",
+    "MonophonicProduct.universal_product_false",
+    "MonophonicProduct.valid_pullback",
+    "MonophonicProduct.vertex_count",
+    "MonophonicProduct.witnessGraph"
+  ],
+  "source_sha256": {
+    "lean/Conjectures/MonophonicPrismBlock00.lean": "ae520cf79fd31f871b07254748ce9a1b3712d7887b265a2a36da0a2bb80002d5",
+    "lean/Conjectures/MonophonicPrismBlock05.lean": "80e74c63f233d85ed0a9abf45ccbe6360c1554be4e1fe23ecc6b467d1acc4c29",
+    "lean/Conjectures/MonophonicPrismBlock10.lean": "bdeb7b8f41b18f7b505599103b83f25705087bfa6476df6cfc4178f9377595d6",
+    "lean/Conjectures/MonophonicPrismBlock15.lean": "7b2a402fd9e7554180ae8921b3afea80aa07cb723d1114a94364fb7eca0f3aac",
+    "lean/Conjectures/MonophonicPrismBlock20.lean": "5954d30595c59281d2a3ba0dfbf374a027fc3ef1ea3c78c9c1c9b7a37604ffd8",
+    "lean/Conjectures/MonophonicPrismBlock25.lean": "b5a2d0c50253970e4d7ed398c09ff4af010accc828dfd0d4946248da44c3884f",
+    "lean/Conjectures/MonophonicPrismBlock30.lean": "aa30c58bba479e823d812dcbb9bf90d9af22f5bf5e2b7f71661ca3033b691e00",
+    "lean/Conjectures/MonophonicPrismBlock35.lean": "a5b7da608037c3a9a57956caeb64b6c642835cc1f3039a0fcfda7b03b45ae3b2",
+    "lean/Conjectures/MonophonicPrismBlock40.lean": "424b4b5192af6b98ddf000ce22bc24c3861b2af220400ae7f3df5a13ff53f81d",
+    "lean/Conjectures/MonophonicPrismColorings.lean": "9fff6bb440b48825e91f57fbf5f757365488a11fb22aab31f4069c978b8dc3a3",
+    "lean/Conjectures/MonophonicPrismConstruction.lean": "85b22639d56feeb75ccd8eb0df75495f16730128c751d2de460c1cea29edef38",
+    "lean/Conjectures/MonophonicPrismCounterexample.lean": "d34ed82b0d866c7fc90c1e58036e872ae8c07871b8c0407dd57880bc856dad31",
+    "lean/Conjectures/MonophonicPrismCoverage.lean": "a130de9ca8e6fcf4944af38c0d7d9130974cf97b6efbeeb34cc3479d81e6b6ec",
+    "lean/Conjectures/MonophonicPrismData.lean": "c113e90529e63b6562c34b7579a9a17f2a8155649a795e412e1e330825d5c2ea",
+    "lean/Conjectures/MonophonicPrismIncidence.lean": "76599aeb9db472821f238e47143668b71776f571bb7fd02037f47677bab4c98e",
+    "lean/Conjectures/MonophonicPrismIsomorphism.lean": "2fc37222f75a2d381f856b971b646206b3aad8a4f17f2b38ccee08422f7a6b10",
+    "lean/Conjectures/MonophonicPrismRoutes.lean": "4c14ed10a23ddc67c0c4bb9acc9991888353dd5cb99eb64c9b76ed0e8683908e",
+    "lean/Conjectures/MonophonicPrismTheorems.lean": "d1bbd4ed2abbee107a08020e5778c28c9e3b11656607feb31e791ae0d0194393",
+    "lean/Conjectures/MonophonicProductPaths.lean": "57db2937cc8a594a567432ab3bf34ddce673f1c9c00ac940b9abc936dd415b66"
+  },
+  "input_sha256": {
+    "lean/Conjectures/MonophonicPrismBlock00.lean": "ae520cf79fd31f871b07254748ce9a1b3712d7887b265a2a36da0a2bb80002d5",
+    "lean/Conjectures/MonophonicPrismBlock05.lean": "80e74c63f233d85ed0a9abf45ccbe6360c1554be4e1fe23ecc6b467d1acc4c29",
+    "lean/Conjectures/MonophonicPrismBlock10.lean": "bdeb7b8f41b18f7b505599103b83f25705087bfa6476df6cfc4178f9377595d6",
+    "lean/Conjectures/MonophonicPrismBlock15.lean": "7b2a402fd9e7554180ae8921b3afea80aa07cb723d1114a94364fb7eca0f3aac",
+    "lean/Conjectures/MonophonicPrismBlock20.lean": "5954d30595c59281d2a3ba0dfbf374a027fc3ef1ea3c78c9c1c9b7a37604ffd8",
+    "lean/Conjectures/MonophonicPrismBlock25.lean": "b5a2d0c50253970e4d7ed398c09ff4af010accc828dfd0d4946248da44c3884f",
+    "lean/Conjectures/MonophonicPrismBlock30.lean": "aa30c58bba479e823d812dcbb9bf90d9af22f5bf5e2b7f71661ca3033b691e00",
+    "lean/Conjectures/MonophonicPrismBlock35.lean": "a5b7da608037c3a9a57956caeb64b6c642835cc1f3039a0fcfda7b03b45ae3b2",
+    "lean/Conjectures/MonophonicPrismBlock40.lean": "424b4b5192af6b98ddf000ce22bc24c3861b2af220400ae7f3df5a13ff53f81d",
+    "lean/Conjectures/MonophonicPrismColorings.lean": "9fff6bb440b48825e91f57fbf5f757365488a11fb22aab31f4069c978b8dc3a3",
+    "lean/Conjectures/MonophonicPrismConstruction.lean": "85b22639d56feeb75ccd8eb0df75495f16730128c751d2de460c1cea29edef38",
+    "lean/Conjectures/MonophonicPrismCounterexample.lean": "d34ed82b0d866c7fc90c1e58036e872ae8c07871b8c0407dd57880bc856dad31",
+    "lean/Conjectures/MonophonicPrismCoverage.lean": "a130de9ca8e6fcf4944af38c0d7d9130974cf97b6efbeeb34cc3479d81e6b6ec",
+    "lean/Conjectures/MonophonicPrismData.lean": "c113e90529e63b6562c34b7579a9a17f2a8155649a795e412e1e330825d5c2ea",
+    "lean/Conjectures/MonophonicPrismIncidence.lean": "76599aeb9db472821f238e47143668b71776f571bb7fd02037f47677bab4c98e",
+    "lean/Conjectures/MonophonicPrismIsomorphism.lean": "2fc37222f75a2d381f856b971b646206b3aad8a4f17f2b38ccee08422f7a6b10",
+    "lean/Conjectures/MonophonicPrismRoutes.lean": "4c14ed10a23ddc67c0c4bb9acc9991888353dd5cb99eb64c9b76ed0e8683908e",
+    "lean/Conjectures/MonophonicPrismTheorems.lean": "d1bbd4ed2abbee107a08020e5778c28c9e3b11656607feb31e791ae0d0194393",
+    "lean/Conjectures/MonophonicProductPaths.lean": "57db2937cc8a594a567432ab3bf34ddce673f1c9c00ac940b9abc936dd415b66",
+    "lean/lean-toolchain": "ca5f1f601d34c49079e38d7e7041eb0f2a9c227fbc1df0f404820069a052330c",
+    "lean/lake-manifest.json": "02e7d705d4ea86c9cfdc22f5eceb2b5bbe5a2c14806c1f3b0f6f1c251c6f2953",
+    "lean/lakefile.toml": "609df590851cb55d2d2c52fd2037e463273a1a69d3c766a00d486cf81163a089",
+    "scripts/audit_lean_all_owned.py": "53c289baad523164bbef5561910fcdc44bc40efba2b8efe8e7212c30db3a663f",
+    "scripts/replay_lean.py": "ff396676b7d4cb19200cc2b84b6a709ff50f45e5f02fb77074a0a6861eb15a1c",
+    "scripts/verify_lean_target.py": "10d8d27c2709659c5318ef6a9fd7a28dde89f7ec46d92386a417caca5949b008"
+  },
+  "lean_toolchain": "leanprover/lean4:v4.35.0",
+  "manifest_sha256": "02e7d705d4ea86c9cfdc22f5eceb2b5bbe5a2c14806c1f3b0f6f1c251c6f2953",
+  "commands": [
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/cinna/solved-monophonic-lean-research/lean/.lake/build/lib/lean/Conjectures/MonophonicProductPaths.olean",
+        "Conjectures/MonophonicProductPaths.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.MonophonicProductPaths.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/cinna/solved-monophonic-lean-research/lean/.lake/build/lib/lean/Conjectures/MonophonicPrismConstruction.olean",
+        "Conjectures/MonophonicPrismConstruction.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.MonophonicPrismConstruction.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/cinna/solved-monophonic-lean-research/lean/.lake/build/lib/lean/Conjectures/MonophonicPrismData.olean",
+        "Conjectures/MonophonicPrismData.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.MonophonicPrismData.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/cinna/solved-monophonic-lean-research/lean/.lake/build/lib/lean/Conjectures/MonophonicPrismIsomorphism.olean",
+        "Conjectures/MonophonicPrismIsomorphism.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.MonophonicPrismIsomorphism.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/cinna/solved-monophonic-lean-research/lean/.lake/build/lib/lean/Conjectures/MonophonicPrismRoutes.olean",
+        "Conjectures/MonophonicPrismRoutes.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.MonophonicPrismRoutes.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/cinna/solved-monophonic-lean-research/lean/.lake/build/lib/lean/Conjectures/MonophonicPrismBlock00.olean",
+        "Conjectures/MonophonicPrismBlock00.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.MonophonicPrismBlock00.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/cinna/solved-monophonic-lean-research/lean/.lake/build/lib/lean/Conjectures/MonophonicPrismBlock05.olean",
+        "Conjectures/MonophonicPrismBlock05.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.MonophonicPrismBlock05.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/cinna/solved-monophonic-lean-research/lean/.lake/build/lib/lean/Conjectures/MonophonicPrismBlock10.olean",
+        "Conjectures/MonophonicPrismBlock10.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.MonophonicPrismBlock10.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/cinna/solved-monophonic-lean-research/lean/.lake/build/lib/lean/Conjectures/MonophonicPrismBlock15.olean",
+        "Conjectures/MonophonicPrismBlock15.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.MonophonicPrismBlock15.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/cinna/solved-monophonic-lean-research/lean/.lake/build/lib/lean/Conjectures/MonophonicPrismBlock20.olean",
+        "Conjectures/MonophonicPrismBlock20.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.MonophonicPrismBlock20.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/cinna/solved-monophonic-lean-research/lean/.lake/build/lib/lean/Conjectures/MonophonicPrismBlock25.olean",
+        "Conjectures/MonophonicPrismBlock25.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.MonophonicPrismBlock25.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/cinna/solved-monophonic-lean-research/lean/.lake/build/lib/lean/Conjectures/MonophonicPrismBlock30.olean",
+        "Conjectures/MonophonicPrismBlock30.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.MonophonicPrismBlock30.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/cinna/solved-monophonic-lean-research/lean/.lake/build/lib/lean/Conjectures/MonophonicPrismBlock35.olean",
+        "Conjectures/MonophonicPrismBlock35.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.MonophonicPrismBlock35.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/cinna/solved-monophonic-lean-research/lean/.lake/build/lib/lean/Conjectures/MonophonicPrismBlock40.olean",
+        "Conjectures/MonophonicPrismBlock40.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.MonophonicPrismBlock40.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/cinna/solved-monophonic-lean-research/lean/.lake/build/lib/lean/Conjectures/MonophonicPrismCoverage.olean",
+        "Conjectures/MonophonicPrismCoverage.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.MonophonicPrismCoverage.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/cinna/solved-monophonic-lean-research/lean/.lake/build/lib/lean/Conjectures/MonophonicPrismIncidence.olean",
+        "Conjectures/MonophonicPrismIncidence.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.MonophonicPrismIncidence.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/cinna/solved-monophonic-lean-research/lean/.lake/build/lib/lean/Conjectures/MonophonicPrismColorings.olean",
+        "Conjectures/MonophonicPrismColorings.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.MonophonicPrismColorings.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/cinna/solved-monophonic-lean-research/lean/.lake/build/lib/lean/Conjectures/MonophonicPrismCounterexample.olean",
+        "Conjectures/MonophonicPrismCounterexample.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.MonophonicPrismCounterexample.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/cinna/solved-monophonic-lean-research/lean/.lake/build/lib/lean/Conjectures/MonophonicPrismTheorems.olean",
+        "Conjectures/MonophonicPrismTheorems.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.MonophonicPrismTheorems.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "/home/cinna/.local/state/solved-monophonic-lean/research/TargetAudit.lean"
+      ],
+      "exit_code": 0,
+      "log": "audit.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "python3",
+        "/home/cinna/solved-monophonic-lean-research/scripts/replay_lean.py",
+        "--root",
+        "Conjectures.MonophonicPrismTheorems"
+      ],
+      "exit_code": 0,
+      "log": "replay.log"
+    }
+  ],
+  "all_owned_audit": {
+    "allowed_axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "declarations": 231,
+    "modules": 19,
+    "private_declarations": 6,
+    "raw_declarations": 231,
+    "required": 107,
+    "tag": "passed",
+    "theorems": 164
+  },
+  "full_repository_gate": "not run by this target-scoped helper",
+  "status": "PASS"
+}
