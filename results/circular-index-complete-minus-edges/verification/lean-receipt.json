@@ -1,7 +1,7 @@
 {
   "schema": "target-complete-closure-verification-v1",
-  "started_at": "2026-11-26T06:48:10.011944+00:00",
-  "finished_at": "2026-11-26T07:15:18.193931+00:00",
+  "started_at": "2026-11-26T09:12:57.748778+00:00",
+  "finished_at": "2026-11-26T09:46:00.209375+00:00",
   "root": "Conjectures.CircularFiniteIndexTheorems",
   "project_modules": [
     "Conjectures.CircularDeletedColoring",
@@ -37,7 +37,8 @@
     "Conjectures.CircularInsertionDegree51",
     "Conjectures.CircularInsertionDegree55",
     "Conjectures.CircularInsertionDegree59",
-    "Conjectures.CircularTableColoring"
+    "Conjectures.CircularTableColoring",
+    "Conjectures.CircularTableRowBlocks"
   ],
   "required_endpoints": [
     "CircularIndex.Deleted.Witness01.bounds",
@@ -109,7 +110,8 @@
     "CircularIndex.Deleted.Degree59.exact_index_and_degree",
     "CircularIndex.Deleted.table_exact",
     "CircularIndex.Deleted.insertion_at_six",
-    "CircularIndex.Deleted.finite_three_block"
+    "CircularIndex.Deleted.finite_three_block",
+    "CircularIndex.Deleted.all_rows_of_blocks"
   ],
   "source_sha256": {
     "lean/Conjectures/CircularDeletedColoring.lean": "5fbceab158683bd36ab0de1a95bcc15cab555857918693e8998b2dfcade58379",
@@ -142,10 +144,11 @@
     "lean/Conjectures/CircularInsertionDegree39.lean": "4978e60491ad51ab42bc2d8f320b2b1680f4d97ef2050ee7793520ed32bcb9f5",
     "lean/Conjectures/CircularInsertionDegree43.lean": "e44b6ca62a4144f9480f99adf0341aaf6cfa741e6e466a22d7309dac192f2ef1",
     "lean/Conjectures/CircularInsertionDegree47.lean": "8153c372262fd641116a32b44a3ee65c19d1e04365353f27a37759f4ba3b175a",
-    "lean/Conjectures/CircularInsertionDegree51.lean": "a2cfd2cea0b5c9785f2a7d7937450e160a0f80f44eed6f81e744c7e4bb410e8b",
-    "lean/Conjectures/CircularInsertionDegree55.lean": "88edd4fd7291df255b2656fad2fb615ac0bd532a34c8efc9aea106de7ceaee37",
-    "lean/Conjectures/CircularInsertionDegree59.lean": "cd1103de8434c278d1b31426f3a0adb54729fc78cdd1b0f13ab379af421e9c3f",
-    "lean/Conjectures/CircularTableColoring.lean": "736623c8647f833a0795760b85712553ed336e1febcaabf897872d0900605958"
+    "lean/Conjectures/CircularInsertionDegree51.lean": "d64559e34046bd69ee336511a4ebfc4480995f45c4736aad870c5eccf94b7fee",
+    "lean/Conjectures/CircularInsertionDegree55.lean": "4befed77b8871c015b99e710077e29eaff566b9764a5e7c25c206e993c7ecbd2",
+    "lean/Conjectures/CircularInsertionDegree59.lean": "cca0a8582195520215932d49f2598f1ed3af8cfaef998766bc5006048b02ba6b",
+    "lean/Conjectures/CircularTableColoring.lean": "736623c8647f833a0795760b85712553ed336e1febcaabf897872d0900605958",
+    "lean/Conjectures/CircularTableRowBlocks.lean": "cd1ead24c8c8676c5796afb9bca9ca1b3bb08b067a1ac4ff025e6024a314c3ec"
   },
   "input_sha256": {
     "lean/Conjectures/CircularDeletedColoring.lean": "5fbceab158683bd36ab0de1a95bcc15cab555857918693e8998b2dfcade58379",
@@ -178,10 +181,11 @@
     "lean/Conjectures/CircularInsertionDegree39.lean": "4978e60491ad51ab42bc2d8f320b2b1680f4d97ef2050ee7793520ed32bcb9f5",
     "lean/Conjectures/CircularInsertionDegree43.lean": "e44b6ca62a4144f9480f99adf0341aaf6cfa741e6e466a22d7309dac192f2ef1",
     "lean/Conjectures/CircularInsertionDegree47.lean": "8153c372262fd641116a32b44a3ee65c19d1e04365353f27a37759f4ba3b175a",
-    "lean/Conjectures/CircularInsertionDegree51.lean": "a2cfd2cea0b5c9785f2a7d7937450e160a0f80f44eed6f81e744c7e4bb410e8b",
-    "lean/Conjectures/CircularInsertionDegree55.lean": "88edd4fd7291df255b2656fad2fb615ac0bd532a34c8efc9aea106de7ceaee37",
-    "lean/Conjectures/CircularInsertionDegree59.lean": "cd1103de8434c278d1b31426f3a0adb54729fc78cdd1b0f13ab379af421e9c3f",
+    "lean/Conjectures/CircularInsertionDegree51.lean": "d64559e34046bd69ee336511a4ebfc4480995f45c4736aad870c5eccf94b7fee",
+    "lean/Conjectures/CircularInsertionDegree55.lean": "4befed77b8871c015b99e710077e29eaff566b9764a5e7c25c206e993c7ecbd2",
+    "lean/Conjectures/CircularInsertionDegree59.lean": "cca0a8582195520215932d49f2598f1ed3af8cfaef998766bc5006048b02ba6b",
     "lean/Conjectures/CircularTableColoring.lean": "736623c8647f833a0795760b85712553ed336e1febcaabf897872d0900605958",
+    "lean/Conjectures/CircularTableRowBlocks.lean": "cd1ead24c8c8676c5796afb9bca9ca1b3bb08b067a1ac4ff025e6024a314c3ec",
     "lean/lean-toolchain": "ca5f1f601d34c49079e38d7e7041eb0f2a9c227fbc1df0f404820069a052330c",
     "lean/lake-manifest.json": "02e7d705d4ea86c9cfdc22f5eceb2b5bbe5a2c14806c1f3b0f6f1c251c6f2953",
     "lean/lakefile.toml": "609df590851cb55d2d2c52fd2037e463273a1a69d3c766a00d486cf81163a089",
@@ -200,7 +204,7 @@
         "-j1",
         "-DwarningAsError=true",
         "-o",
-        "/home/cinna/solved-circular-witness-publication/lean/.lake/build/lib/lean/Conjectures/CircularIndexBase.olean",
+        "/home/cinna/solved-circular-bounded-publication/lean/.lake/build/lib/lean/Conjectures/CircularIndexBase.olean",
         "Conjectures/CircularIndexBase.lean"
       ],
       "exit_code": 0,
@@ -214,7 +218,7 @@
         "-j1",
         "-DwarningAsError=true",
         "-o",
-        "/home/cinna/solved-circular-witness-publication/lean/.lake/build/lib/lean/Conjectures/CircularIndexCirculant.olean",
+        "/home/cinna/solved-circular-bounded-publication/lean/.lake/build/lib/lean/Conjectures/CircularIndexCirculant.olean",
         "Conjectures/CircularIndexCirculant.lean"
       ],
       "exit_code": 0,
@@ -228,7 +232,7 @@
         "-j1",
         "-DwarningAsError=true",
         "-o",
-        "/home/cinna/solved-circular-witness-publication/lean/.lake/build/lib/lean/Conjectures/CircularIndexClassArithmetic.olean",
+        "/home/cinna/solved-circular-bounded-publication/lean/.lake/build/lib/lean/Conjectures/CircularIndexClassArithmetic.olean",
         "Conjectures/CircularIndexClassArithmetic.lean"
       ],
       "exit_code": 0,
@@ -242,7 +246,7 @@
         "-j1",
         "-DwarningAsError=true",
         "-o",
-        "/home/cinna/solved-circular-witness-publication/lean/.lake/build/lib/lean/Conjectures/CircularIndexColoring.olean",
+        "/home/cinna/solved-circular-bounded-publication/lean/.lake/build/lib/lean/Conjectures/CircularIndexColoring.olean",
         "Conjectures/CircularIndexColoring.lean"
       ],
       "exit_code": 0,
@@ -256,7 +260,7 @@
         "-j1",
         "-DwarningAsError=true",
         "-o",
-        "/home/cinna/solved-circular-witness-publication/lean/.lake/build/lib/lean/Conjectures/CircularIndexCounting.olean",
+        "/home/cinna/solved-circular-bounded-publication/lean/.lake/build/lib/lean/Conjectures/CircularIndexCounting.olean",
         "Conjectures/CircularIndexCounting.lean"
       ],
       "exit_code": 0,
@@ -270,7 +274,7 @@
         "-j1",
         "-DwarningAsError=true",
         "-o",
-        "/home/cinna/solved-circular-witness-publication/lean/.lake/build/lib/lean/Conjectures/CircularIndexReal.olean",
+        "/home/cinna/solved-circular-bounded-publication/lean/.lake/build/lib/lean/Conjectures/CircularIndexReal.olean",
         "Conjectures/CircularIndexReal.lean"
       ],
       "exit_code": 0,
@@ -284,7 +288,7 @@
         "-j1",
         "-DwarningAsError=true",
         "-o",
-        "/home/cinna/solved-circular-witness-publication/lean/.lake/build/lib/lean/Conjectures/CircularIndexOptimality.olean",
+        "/home/cinna/solved-circular-bounded-publication/lean/.lake/build/lib/lean/Conjectures/CircularIndexOptimality.olean",
         "Conjectures/CircularIndexOptimality.lean"
       ],
       "exit_code": 0,
@@ -298,7 +302,7 @@
         "-j1",
         "-DwarningAsError=true",
         "-o",
-        "/home/cinna/solved-circular-witness-publication/lean/.lake/build/lib/lean/Conjectures/CircularDeletedColoring.olean",
+        "/home/cinna/solved-circular-bounded-publication/lean/.lake/build/lib/lean/Conjectures/CircularDeletedColoring.olean",
         "Conjectures/CircularDeletedColoring.lean"
       ],
       "exit_code": 0,
@@ -312,7 +316,7 @@
         "-j1",
         "-DwarningAsError=true",
         "-o",
-        "/home/cinna/solved-circular-witness-publication/lean/.lake/build/lib/lean/Conjectures/CircularDeletedWitness07.olean",
+        "/home/cinna/solved-circular-bounded-publication/lean/.lake/build/lib/lean/Conjectures/CircularDeletedWitness07.olean",
         "Conjectures/CircularDeletedWitness07.lean"
       ],
       "exit_code": 0,
@@ -326,7 +330,7 @@
         "-j1",
         "-DwarningAsError=true",
         "-o",
-        "/home/cinna/solved-circular-witness-publication/lean/.lake/build/lib/lean/Conjectures/CircularDeletedWitness09.olean",
+        "/home/cinna/solved-circular-bounded-publication/lean/.lake/build/lib/lean/Conjectures/CircularDeletedWitness09.olean",
         "Conjectures/CircularDeletedWitness09.lean"
       ],
       "exit_code": 0,
@@ -340,7 +344,7 @@
         "-j1",
         "-DwarningAsError=true",
         "-o",
-        "/home/cinna/solved-circular-witness-publication/lean/.lake/build/lib/lean/Conjectures/CircularDeletedWitness11.olean",
+        "/home/cinna/solved-circular-bounded-publication/lean/.lake/build/lib/lean/Conjectures/CircularDeletedWitness11.olean",
         "Conjectures/CircularDeletedWitness11.lean"
       ],
       "exit_code": 0,
@@ -354,7 +358,7 @@
         "-j1",
         "-DwarningAsError=true",
         "-o",
-        "/home/cinna/solved-circular-witness-publication/lean/.lake/build/lib/lean/Conjectures/CircularDeletedWitness13.olean",
+        "/home/cinna/solved-circular-bounded-publication/lean/.lake/build/lib/lean/Conjectures/CircularDeletedWitness13.olean",
         "Conjectures/CircularDeletedWitness13.lean"
       ],
       "exit_code": 0,
@@ -368,7 +372,7 @@
         "-j1",
         "-DwarningAsError=true",
         "-o",
-        "/home/cinna/solved-circular-witness-publication/lean/.lake/build/lib/lean/Conjectures/CircularDeletedWitness15.olean",
+        "/home/cinna/solved-circular-bounded-publication/lean/.lake/build/lib/lean/Conjectures/CircularDeletedWitness15.olean",
         "Conjectures/CircularDeletedWitness15.lean"
       ],
       "exit_code": 0,
@@ -382,7 +386,7 @@
         "-j1",
         "-DwarningAsError=true",
         "-o",
-        "/home/cinna/solved-circular-witness-publication/lean/.lake/build/lib/lean/Conjectures/CircularDeletedWitness17.olean",
+        "/home/cinna/solved-circular-bounded-publication/lean/.lake/build/lib/lean/Conjectures/CircularDeletedWitness17.olean",
         "Conjectures/CircularDeletedWitness17.lean"
       ],
       "exit_code": 0,
@@ -396,7 +400,7 @@
         "-j1",
         "-DwarningAsError=true",
         "-o",
-        "/home/cinna/solved-circular-witness-publication/lean/.lake/build/lib/lean/Conjectures/CircularDeletedWitness19.olean",
+        "/home/cinna/solved-circular-bounded-publication/lean/.lake/build/lib/lean/Conjectures/CircularDeletedWitness19.olean",
         "Conjectures/CircularDeletedWitness19.lean"
       ],
       "exit_code": 0,
@@ -410,7 +414,7 @@
         "-j1",
         "-DwarningAsError=true",
         "-o",
-        "/home/cinna/solved-circular-witness-publication/lean/.lake/build/lib/lean/Conjectures/CircularDeletedWitness23.olean",
+        "/home/cinna/solved-circular-bounded-publication/lean/.lake/build/lib/lean/Conjectures/CircularDeletedWitness23.olean",
         "Conjectures/CircularDeletedWitness23.lean"
       ],
       "exit_code": 0,
@@ -424,7 +428,7 @@
         "-j1",
         "-DwarningAsError=true",
         "-o",
-        "/home/cinna/solved-circular-witness-publication/lean/.lake/build/lib/lean/Conjectures/CircularDeletedWitness25.olean",
+        "/home/cinna/solved-circular-bounded-publication/lean/.lake/build/lib/lean/Conjectures/CircularDeletedWitness25.olean",
         "Conjectures/CircularDeletedWitness25.lean"
       ],
       "exit_code": 0,
@@ -438,7 +442,7 @@
         "-j1",
         "-DwarningAsError=true",
         "-o",
-        "/home/cinna/solved-circular-witness-publication/lean/.lake/build/lib/lean/Conjectures/CircularDeletedWitness27.olean",
+        "/home/cinna/solved-circular-bounded-publication/lean/.lake/build/lib/lean/Conjectures/CircularDeletedWitness27.olean",
         "Conjectures/CircularDeletedWitness27.lean"
       ],
       "exit_code": 0,
@@ -452,7 +456,7 @@
         "-j1",
         "-DwarningAsError=true",
         "-o",
-        "/home/cinna/solved-circular-witness-publication/lean/.lake/build/lib/lean/Conjectures/CircularDeletedWitness41.olean",
+        "/home/cinna/solved-circular-bounded-publication/lean/.lake/build/lib/lean/Conjectures/CircularDeletedWitness41.olean",
         "Conjectures/CircularDeletedWitness41.lean"
       ],
       "exit_code": 0,
@@ -466,7 +470,7 @@
         "-j1",
         "-DwarningAsError=true",
         "-o",
-        "/home/cinna/solved-circular-witness-publication/lean/.lake/build/lib/lean/Conjectures/CircularDeletedWitness47.olean",
+        "/home/cinna/solved-circular-bounded-publication/lean/.lake/build/lib/lean/Conjectures/CircularDeletedWitness47.olean",
         "Conjectures/CircularDeletedWitness47.lean"
       ],
       "exit_code": 0,
@@ -480,7 +484,7 @@
         "-j1",
         "-DwarningAsError=true",
         "-o",
-        "/home/cinna/solved-circular-witness-publication/lean/.lake/build/lib/lean/Conjectures/CircularDeletedWitnesses.olean",
+        "/home/cinna/solved-circular-bounded-publication/lean/.lake/build/lib/lean/Conjectures/CircularDeletedWitnesses.olean",
         "Conjectures/CircularDeletedWitnesses.lean"
       ],
       "exit_code": 0,
@@ -494,7 +498,7 @@
         "-j1",
         "-DwarningAsError=true",
         "-o",
-        "/home/cinna/solved-circular-witness-publication/lean/.lake/build/lib/lean/Conjectures/CircularTableColoring.olean",
+        "/home/cinna/solved-circular-bounded-publication/lean/.lake/build/lib/lean/Conjectures/CircularTableColoring.olean",
         "Conjectures/CircularTableColoring.lean"
       ],
       "exit_code": 0,
@@ -508,7 +512,7 @@
         "-j1",
         "-DwarningAsError=true",
         "-o",
-        "/home/cinna/solved-circular-witness-publication/lean/.lake/build/lib/lean/Conjectures/CircularInsertionDegree25.olean",
+        "/home/cinna/solved-circular-bounded-publication/lean/.lake/build/lib/lean/Conjectures/CircularInsertionDegree25.olean",
         "Conjectures/CircularInsertionDegree25.lean"
       ],
       "exit_code": 0,
@@ -522,7 +526,7 @@
         "-j1",
         "-DwarningAsError=true",
         "-o",
-        "/home/cinna/solved-circular-witness-publication/lean/.lake/build/lib/lean/Conjectures/CircularInsertionDegree26.olean",
+        "/home/cinna/solved-circular-bounded-publication/lean/.lake/build/lib/lean/Conjectures/CircularInsertionDegree26.olean",
         "Conjectures/CircularInsertionDegree26.lean"
       ],
       "exit_code": 0,
@@ -536,7 +540,7 @@
         "-j1",
         "-DwarningAsError=true",
         "-o",
-        "/home/cinna/solved-circular-witness-publication/lean/.lake/build/lib/lean/Conjectures/CircularInsertionDegree27.olean",
+        "/home/cinna/solved-circular-bounded-publication/lean/.lake/build/lib/lean/Conjectures/CircularInsertionDegree27.olean",
         "Conjectures/CircularInsertionDegree27.lean"
       ],
       "exit_code": 0,
@@ -550,7 +554,7 @@
         "-j1",
         "-DwarningAsError=true",
         "-o",
-        "/home/cinna/solved-circular-witness-publication/lean/.lake/build/lib/lean/Conjectures/CircularInsertionDegree31.olean",
+        "/home/cinna/solved-circular-bounded-publication/lean/.lake/build/lib/lean/Conjectures/CircularInsertionDegree31.olean",
         "Conjectures/CircularInsertionDegree31.lean"
       ],
       "exit_code": 0,
@@ -564,7 +568,7 @@
         "-j1",
         "-DwarningAsError=true",
         "-o",
-        "/home/cinna/solved-circular-witness-publication/lean/.lake/build/lib/lean/Conjectures/CircularInsertionDegree35.olean",
+        "/home/cinna/solved-circular-bounded-publication/lean/.lake/build/lib/lean/Conjectures/CircularInsertionDegree35.olean",
         "Conjectures/CircularInsertionDegree35.lean"
       ],
       "exit_code": 0,
@@ -578,7 +582,7 @@
         "-j1",
         "-DwarningAsError=true",
         "-o",
-        "/home/cinna/solved-circular-witness-publication/lean/.lake/build/lib/lean/Conjectures/CircularInsertionDegree39.olean",
+        "/home/cinna/solved-circular-bounded-publication/lean/.lake/build/lib/lean/Conjectures/CircularInsertionDegree39.olean",
         "Conjectures/CircularInsertionDegree39.lean"
       ],
       "exit_code": 0,
@@ -592,7 +596,7 @@
         "-j1",
         "-DwarningAsError=true",
         "-o",
-        "/home/cinna/solved-circular-witness-publication/lean/.lake/build/lib/lean/Conjectures/CircularInsertionDegree43.olean",
+        "/home/cinna/solved-circular-bounded-publication/lean/.lake/build/lib/lean/Conjectures/CircularInsertionDegree43.olean",
         "Conjectures/CircularInsertionDegree43.lean"
       ],
       "exit_code": 0,
@@ -606,7 +610,7 @@
         "-j1",
         "-DwarningAsError=true",
         "-o",
-        "/home/cinna/solved-circular-witness-publication/lean/.lake/build/lib/lean/Conjectures/CircularInsertionDegree47.olean",
+        "/home/cinna/solved-circular-bounded-publication/lean/.lake/build/lib/lean/Conjectures/CircularInsertionDegree47.olean",
         "Conjectures/CircularInsertionDegree47.lean"
       ],
       "exit_code": 0,
@@ -620,7 +624,21 @@
         "-j1",
         "-DwarningAsError=true",
         "-o",
-        "/home/cinna/solved-circular-witness-publication/lean/.lake/build/lib/lean/Conjectures/CircularInsertionDegree51.olean",
+        "/home/cinna/solved-circular-bounded-publication/lean/.lake/build/lib/lean/Conjectures/CircularTableRowBlocks.olean",
+        "Conjectures/CircularTableRowBlocks.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.CircularTableRowBlocks.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/cinna/solved-circular-bounded-publication/lean/.lake/build/lib/lean/Conjectures/CircularInsertionDegree51.olean",
         "Conjectures/CircularInsertionDegree51.lean"
       ],
       "exit_code": 0,
@@ -634,7 +652,7 @@
         "-j1",
         "-DwarningAsError=true",
         "-o",
-        "/home/cinna/solved-circular-witness-publication/lean/.lake/build/lib/lean/Conjectures/CircularInsertionDegree55.olean",
+        "/home/cinna/solved-circular-bounded-publication/lean/.lake/build/lib/lean/Conjectures/CircularInsertionDegree55.olean",
         "Conjectures/CircularInsertionDegree55.lean"
       ],
       "exit_code": 0,
@@ -648,7 +666,7 @@
         "-j1",
         "-DwarningAsError=true",
         "-o",
-        "/home/cinna/solved-circular-witness-publication/lean/.lake/build/lib/lean/Conjectures/CircularInsertionDegree59.olean",
+        "/home/cinna/solved-circular-bounded-publication/lean/.lake/build/lib/lean/Conjectures/CircularInsertionDegree59.olean",
         "Conjectures/CircularInsertionDegree59.lean"
       ],
       "exit_code": 0,
@@ -662,7 +680,7 @@
         "-j1",
         "-DwarningAsError=true",
         "-o",
-        "/home/cinna/solved-circular-witness-publication/lean/.lake/build/lib/lean/Conjectures/CircularFiniteIndexTheorems.olean",
+        "/home/cinna/solved-circular-bounded-publication/lean/.lake/build/lib/lean/Conjectures/CircularFiniteIndexTheorems.olean",
         "Conjectures/CircularFiniteIndexTheorems.lean"
       ],
       "exit_code": 0,
@@ -675,7 +693,7 @@
         "lean",
         "-j1",
         "-DwarningAsError=true",
-        "/home/cinna/.local/state/solved-circular-certificates/main/TargetAudit.lean"
+        "/home/cinna/.local/state/solved-circular-certificates/bounded-main-finite/TargetAudit.lean"
       ],
       "exit_code": 0,
       "log": "audit.log"
@@ -685,7 +703,7 @@
         "lake",
         "env",
         "python3",
-        "/home/cinna/solved-circular-witness-publication/scripts/replay_lean.py",
+        "/home/cinna/solved-circular-bounded-publication/scripts/replay_lean.py",
         "--root",
         "Conjectures.CircularFiniteIndexTheorems",
         "--per-module"
@@ -700,13 +718,13 @@
       "Classical.choice",
       "Quot.sound"
     ],
-    "declarations": 802,
-    "modules": 34,
-    "private_declarations": 142,
-    "raw_declarations": 802,
-    "required": 70,
+    "declarations": 822,
+    "modules": 35,
+    "private_declarations": 158,
+    "raw_declarations": 822,
+    "required": 71,
     "tag": "passed",
-    "theorems": 601
+    "theorems": 617
   },
   "full_repository_gate": "not run by this target-scoped helper",
   "status": "PASS"

@@ -67,10 +67,42 @@ theorem certificate_ok : chunkOk certificate = true := by
     data05_ok, data06_ok, data07_ok, data08_ok, data09_ok, data10_ok, data11_ok,
     data12_ok, data13_ok]
 
+/-- The partitions whose largest part lies between `k + 1` and `k + d`, in the
+order of `partsAuxF`. -/
+def partsTail (fuel n k : Nat) : Nat → List (List Nat)
+  | 0 => []
+  | d + 1 => partsTail fuel n k d ++
+      (if k + d < n + 1 then
+        (partsAuxF (fuel + d) (n - (k + d)) (k + d + 1)).map (fun l => (k + d + 1) :: l)
+      else [])
+
+/-- Unfolding `partsAuxF` along the bound on the largest part. -/
+theorem partsAuxF_eq_append_tail (fuel n k : Nat) :
+    ∀ d, partsAuxF (fuel + d) (n + 1) (k + d) = partsAuxF fuel (n + 1) k ++ partsTail fuel n k d
+  | 0 => by simp [partsTail]
+  | d + 1 => by
+      rw [show fuel + (d + 1) = (fuel + d) + 1 from rfl, show k + (d + 1) = (k + d) + 1 from rfl,
+        partsAuxF, partsAuxF_eq_append_tail fuel n k d, partsTail, List.append_assoc]
+
+/-- The partitions of `31` with largest part at most `8` come first. -/
+theorem partsAux_31_split : partsAux 31 31 = partsAuxF 39 31 8 ++ partsTail 39 30 8 23 :=
+  partsAuxF_eq_append_tail 39 30 8 23
+
+/-- The first 2,857 certificate rows list the partitions with largest part at most `8`.
+The comparison is split in two because one decision exceeds the CI memory cap. -/
+theorem certificate_parts_take :
+    (certificate.map (fun r => r.1)).take 2857 = partsAuxF 39 31 8 := by
+  decide
+
+/-- The remaining rows list the partitions with largest part from `9` to `31`. -/
+theorem certificate_parts_drop :
+    (certificate.map (fun r => r.1)).drop 2857 = partsTail 39 30 8 23 := by
+  decide
+
 /-- The partition columns of the certificate are exactly the computable
 enumeration of the integer partitions of `31`. -/
 theorem certificate_parts : certificate.map (fun r => r.1) = partsAux 31 31 := by
-  decide
+  rw [partsAux_31_split, ← certificate_parts_take, ← certificate_parts_drop, List.take_append_drop]
 
 /-- The certificate has 6,842 rows. -/
 theorem certificate_length : certificate.length = 6842 := by

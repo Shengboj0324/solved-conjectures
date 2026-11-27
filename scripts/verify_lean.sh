@@ -2,8 +2,66 @@
 # Rebuild sources, audit every project theorem's axioms, then replay the kernel.
 set -euo pipefail
 export LEAN_NUM_THREADS=1
+# Lean's worker threads each get a glibc malloc arena, and memory freed in one arena
+# is not reused by another. Large certificate modules then exceed the -M4500 cap on
+# Linux although each proof is small. One arena that returns freed blocks keeps them
+# under the cap. macOS ignores this variable.
+export GLIBC_TUNABLES="${GLIBC_TUNABLES:-glibc.malloc.arena_max=1:glibc.malloc.mmap_threshold=131072:glibc.malloc.trim_threshold=131072}"
 cd "$(dirname "${BASH_SOURCE[0]}")/../lean"
 modules=(
+  Conjectures.GyarfasPlanarAxisDegrees
+  Conjectures.GyarfasPlanarConfiguration
+  Conjectures.GyarfasPlanarDirections
+  Conjectures.GyarfasPlanarLabels
+  Conjectures.GyarfasPlanarMultiplicity
+  Conjectures.GyarfasPlanarOffDegrees
+  Conjectures.GyarfasPlanarOptimal
+  Conjectures.GyarfasPlanarSecants
+  Conjectures.GyarfasPlanarSpectrum
+  Conjectures.GyarfasPlanarUniform
+  Conjectures.GyarfasPlanarLines
+  Conjectures.GyarfasPlanarRational
+  Conjectures.GyarfasPlanarWitness
+  Conjectures.CircularSmallInsertionBlocks
+  Conjectures.CircularSmallInsertionCertificates
+  Conjectures.CircularSmallInsertionClassification
+  Conjectures.CircularSmallInsertionConflicts
+  Conjectures.CircularSmallInsertionExclusions
+  Conjectures.CircularSmallInsertionFamily
+  Conjectures.CircularSmallInsertionFixtures
+  Conjectures.CircularSmallInsertionForced
+  Conjectures.CircularSmallInsertionMatchings
+  Conjectures.CircularSmallInsertionPairings
+  Conjectures.CircularSmallInsertionPositive
+  Conjectures.CircularSmallInsertionProfiles1
+  Conjectures.CircularSmallInsertionProfiles2
+  Conjectures.CircularSmallInsertionProfiles3
+  Conjectures.CircularSmallInsertionProfiles4
+  Conjectures.CircularSmallInsertionProfiles5
+  Conjectures.CircularSmallInsertionProfiles6
+  Conjectures.CircularSmallInsertionProfiles7
+  Conjectures.CircularSmallInsertionProfiles8
+  Conjectures.CircularSmallInsertionProfiles9
+  Conjectures.CircularSmallInsertionSearch
+  Conjectures.CircularSmallInsertionShapes
+  Conjectures.CircularSmallInsertionShapes2
+  Conjectures.CircularSmallInsertionShapes3
+  Conjectures.CircularSmallInsertionShapes4
+  Conjectures.CircularSmallInsertionTerminal
+  Conjectures.CircularSmallInsertionTranslation
+  Conjectures.CircularSmallInsertionViable1
+  Conjectures.CircularSmallInsertionViable2
+  Conjectures.CircularSmallInsertionViable3
+  Conjectures.CircularSmallInsertionViable4
+  Conjectures.CircularSmallInsertionViable5
+  Conjectures.CircularSmallInsertionViable6
+  Conjectures.CircularSmallInsertionViable7
+  Conjectures.CircularSmallInsertionViable8
+  Conjectures.CircularSmallInsertionViable9
+  Conjectures.CircularSmallInsertionWindows
+  Conjectures.CircularThreeBlockAdditional
+  Conjectures.CircularThreeBlockConnected
+  Conjectures.CircularThreeBlockPrefixes
   Conjectures.MeylenderThalmaierArea
   Conjectures.MeylenderThalmaierComparison
   Conjectures.MeylenderThalmaierCoverScale
@@ -43,6 +101,18 @@ modules=(
   Conjectures.CircularInsertionDegree53
   Conjectures.CircularInsertionDegree54
   Conjectures.CircularInsertionStoredBases
+  Conjectures.HeimNeuhauserPlanePartitionIndices000To031
+  Conjectures.HeimNeuhauserPlanePartitionIndices032To063
+  Conjectures.HeimNeuhauserPlanePartitionIndices064To095
+  Conjectures.HeimNeuhauserPlanePartitionIndices096To119
+  Conjectures.HeimNeuhauserPlanePartitionIndices120To143
+  Conjectures.HeimNeuhauserPlanePartitionIndices144To163
+  Conjectures.HeimNeuhauserPlanePartitionIndices164To183
+  Conjectures.HeimNeuhauserPlanePartitionIndices184To199
+  Conjectures.HeimNeuhauserPlanePartitionIndices200To214
+  Conjectures.HeimNeuhauserPlanePartitionIndices215To229
+  Conjectures.HeimNeuhauserPlanePartitionIndices230To239
+  Conjectures.HeimNeuhauserPlanePartitionIndices240To250
   Conjectures.HeimNeuhauserPlanePartitionDampingBounds
   Conjectures.HeimNeuhauserPlanePartitionGeometricDamping
   Conjectures.HeimNeuhauserPlanePartitionLargeRadius
@@ -81,19 +151,8 @@ modules=(
   Conjectures.HeimNeuhauserPlanePartitionCertificate
   Conjectures.HeimNeuhauserPlanePartitionChecks
   Conjectures.HeimNeuhauserPlanePartitionData
+  Conjectures.HeimNeuhauserPlanePartitionFastSum
   Conjectures.HeimNeuhauserPlanePartitionFinite
-  Conjectures.HeimNeuhauserPlanePartitionIndices000To031
-  Conjectures.HeimNeuhauserPlanePartitionIndices032To063
-  Conjectures.HeimNeuhauserPlanePartitionIndices064To095
-  Conjectures.HeimNeuhauserPlanePartitionIndices096To119
-  Conjectures.HeimNeuhauserPlanePartitionIndices120To143
-  Conjectures.HeimNeuhauserPlanePartitionIndices144To163
-  Conjectures.HeimNeuhauserPlanePartitionIndices164To183
-  Conjectures.HeimNeuhauserPlanePartitionIndices184To199
-  Conjectures.HeimNeuhauserPlanePartitionIndices200To214
-  Conjectures.HeimNeuhauserPlanePartitionIndices215To229
-  Conjectures.HeimNeuhauserPlanePartitionIndices230To239
-  Conjectures.HeimNeuhauserPlanePartitionIndices240To250
   Conjectures.HeimNeuhauserPlanePartitionRows
   Conjectures.HeimNeuhauserPlanePartitionScalar
   Conjectures.CircularInsertionBaseDisjoint
@@ -135,6 +194,7 @@ modules=(
   Conjectures.CircularInsertionDegree51
   Conjectures.CircularInsertionDegree55
   Conjectures.CircularInsertionDegree59
+  Conjectures.CircularTableRowBlocks
   Conjectures.CircularTableColoring
   Conjectures.CurgusMascioniQuadratic
   Conjectures.FMPCylindric
@@ -1453,6 +1513,7 @@ modules=(
   Conjectures.AlexanderssonParkingExcedanceCount
   Conjectures.AlexanderssonParkingExcedanceEnumeration
   Conjectures.AlexanderssonParkingExcedanceRoots
+  Conjectures.AlexanderssonParkingExcedanceTables
   Conjectures.AlexanderssonParkingExcedance
   Conjectures.HKMEhrhart
   Conjectures.HKMEhrhartLocalCount

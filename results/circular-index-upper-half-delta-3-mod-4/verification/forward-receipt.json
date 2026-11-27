@@ -1,0 +1,1285 @@
+{
+  "schema": "target-complete-closure-verification-v1",
+  "started_at": "2026-11-26T09:40:43.082933+00:00",
+  "finished_at": "2026-11-26T10:06:26.164613+00:00",
+  "root": "Conjectures.CircularThreeBlockAdditional",
+  "project_modules": [
+    "Conjectures.CircularIndexBase",
+    "Conjectures.CircularIndexCirculant",
+    "Conjectures.CircularIndexClassArithmetic",
+    "Conjectures.CircularIndexColoring",
+    "Conjectures.CircularIndexCounting",
+    "Conjectures.CircularIndexOptimality",
+    "Conjectures.CircularIndexReal",
+    "Conjectures.CircularInsertionBaseDisjoint",
+    "Conjectures.CircularInsertionBasePairs",
+    "Conjectures.CircularInsertionEdges",
+    "Conjectures.CircularInsertionPositions",
+    "Conjectures.CircularInsertionRotations",
+    "Conjectures.CircularInsertionSchedule",
+    "Conjectures.CircularInsertionSmallBases",
+    "Conjectures.CircularInsertionWindows",
+    "Conjectures.CircularSmallInsertionBlocks",
+    "Conjectures.CircularSmallInsertionCertificates",
+    "Conjectures.CircularSmallInsertionClassification",
+    "Conjectures.CircularSmallInsertionConflicts",
+    "Conjectures.CircularSmallInsertionExclusions",
+    "Conjectures.CircularSmallInsertionFamily",
+    "Conjectures.CircularSmallInsertionFixtures",
+    "Conjectures.CircularSmallInsertionForced",
+    "Conjectures.CircularSmallInsertionMatchings",
+    "Conjectures.CircularSmallInsertionPairings",
+    "Conjectures.CircularSmallInsertionPositive",
+    "Conjectures.CircularSmallInsertionProfiles1",
+    "Conjectures.CircularSmallInsertionProfiles2",
+    "Conjectures.CircularSmallInsertionProfiles3",
+    "Conjectures.CircularSmallInsertionProfiles4",
+    "Conjectures.CircularSmallInsertionProfiles5",
+    "Conjectures.CircularSmallInsertionProfiles6",
+    "Conjectures.CircularSmallInsertionProfiles7",
+    "Conjectures.CircularSmallInsertionProfiles8",
+    "Conjectures.CircularSmallInsertionProfiles9",
+    "Conjectures.CircularSmallInsertionSearch",
+    "Conjectures.CircularSmallInsertionShapes",
+    "Conjectures.CircularSmallInsertionShapes2",
+    "Conjectures.CircularSmallInsertionShapes3",
+    "Conjectures.CircularSmallInsertionShapes4",
+    "Conjectures.CircularSmallInsertionTerminal",
+    "Conjectures.CircularSmallInsertionTranslation",
+    "Conjectures.CircularSmallInsertionViable1",
+    "Conjectures.CircularSmallInsertionViable2",
+    "Conjectures.CircularSmallInsertionViable3",
+    "Conjectures.CircularSmallInsertionViable4",
+    "Conjectures.CircularSmallInsertionViable5",
+    "Conjectures.CircularSmallInsertionViable6",
+    "Conjectures.CircularSmallInsertionViable7",
+    "Conjectures.CircularSmallInsertionViable8",
+    "Conjectures.CircularSmallInsertionViable9",
+    "Conjectures.CircularSmallInsertionWindows",
+    "Conjectures.CircularThreeBlockAdditional",
+    "Conjectures.CircularThreeBlockBase",
+    "Conjectures.CircularThreeBlockConnected",
+    "Conjectures.CircularThreeBlockCross",
+    "Conjectures.CircularThreeBlockDeficit",
+    "Conjectures.CircularThreeBlockDegree",
+    "Conjectures.CircularThreeBlockEdges",
+    "Conjectures.CircularThreeBlockGraphs",
+    "Conjectures.CircularThreeBlockInjective",
+    "Conjectures.CircularThreeBlockIntervals",
+    "Conjectures.CircularThreeBlockPositions",
+    "Conjectures.CircularThreeBlockPrefixes",
+    "Conjectures.CircularThreeBlockSeparation",
+    "Conjectures.CircularThreeBlockTiles",
+    "Conjectures.CircularThreeBlockWindows"
+  ],
+  "required_endpoints": [
+    "CircularIndex.Insertion.Small.block_supports_disjoint",
+    "CircularIndex.Insertion.Small.feasible_five_with_disjoint_classes",
+    "CircularIndex.Insertion.Small.viable_two",
+    "CircularIndex.Insertion.Small.viable_eight",
+    "CircularIndex.Insertion.Small.viable_five",
+    "CircularIndex.Insertion.Small.viable_small",
+    "CircularIndex.Insertion.Small.Shapes.classify",
+    "CircularIndex.Insertion.Small.Shapes.count_window_pairs",
+    "CircularIndex.Insertion.Small.conflicts_two",
+    "CircularIndex.Insertion.Small.conflicts_eight",
+    "CircularIndex.Insertion.Small.no_forward_small",
+    "CircularIndex.Insertion.Small.forward_five_iff",
+    "CircularIndex.Insertion.Small.no_three_forward_small",
+    "CircularIndex.Insertion.Small.no_three_forward_five",
+    "CircularIndex.Insertion.Small.general_window",
+    "CircularIndex.Insertion.Small.forced_class",
+    "CircularIndex.Insertion.Small.forced_edges",
+    "CircularIndex.Insertion.Small.forced_window",
+    "CircularIndex.Insertion.Small.edge_swap",
+    "CircularIndex.Insertion.Small.matchings_complete",
+    "CircularIndex.Insertion.Small.viable_from_table",
+    "CircularIndex.Insertion.Small.forward_two",
+    "CircularIndex.Insertion.Small.forward_eight",
+    "CircularIndex.Insertion.Small.K1.candidate_lengths",
+    "CircularIndex.Insertion.Small.K2.candidate_lengths",
+    "CircularIndex.Insertion.Small.K3.candidate_lengths",
+    "CircularIndex.Insertion.Small.K4.candidate_lengths",
+    "CircularIndex.Insertion.Small.K5.candidate_lengths",
+    "CircularIndex.Insertion.Small.K6.candidate_lengths",
+    "CircularIndex.Insertion.Small.K7.candidate_lengths",
+    "CircularIndex.Insertion.Small.K8.candidate_lengths",
+    "CircularIndex.Insertion.Small.K9.candidate_lengths",
+    "CircularIndex.Insertion.Small.support_size",
+    "CircularIndex.Insertion.Small.support_nodup",
+    "CircularIndex.Insertion.Small.lengthMask_mem",
+    "CircularIndex.Insertion.Small.profiles_complete",
+    "CircularIndex.Insertion.Small.lengthSets_complete",
+    "CircularIndex.Insertion.Small.allowedMatchings_eq",
+    "CircularIndex.Insertion.Small.complements_complete",
+    "CircularIndex.Insertion.Small.viablePairs_complete",
+    "CircularIndex.Insertion.Small.Shapes.segment_mem",
+    "CircularIndex.Insertion.Small.Shapes.translate_mem",
+    "CircularIndex.Insertion.Small.Shapes.reflect_mem",
+    "CircularIndex.Insertion.Small.Shapes.disjoint_iff",
+    "CircularIndex.Insertion.Small.Shapes.supports_complete",
+    "CircularIndex.Insertion.Small.Shapes.pairs_complete",
+    "CircularIndex.Insertion.Small.Shapes.G2.pairs_eq",
+    "CircularIndex.Insertion.Small.Shapes.G2.checked",
+    "CircularIndex.Insertion.Small.Shapes.G3.pairs_eq",
+    "CircularIndex.Insertion.Small.Shapes.G3.checked",
+    "CircularIndex.Insertion.Small.Shapes.G4.pairs_eq",
+    "CircularIndex.Insertion.Small.Shapes.G4.checked",
+    "CircularIndex.Insertion.Small.no_terminal_base",
+    "CircularIndex.Insertion.Small.move_block",
+    "CircularIndex.Insertion.Small.overlap_iff",
+    "CircularIndex.Insertion.Small.disjoint_gap",
+    "CircularIndex.Insertion.Small.no_gap_triangle",
+    "CircularIndex.Insertion.Small.K1.viable",
+    "CircularIndex.Insertion.Small.K2.viable",
+    "CircularIndex.Insertion.Small.K3.viable",
+    "CircularIndex.Insertion.Small.K4.viable",
+    "CircularIndex.Insertion.Small.K5.viable",
+    "CircularIndex.Insertion.Small.K6.viable",
+    "CircularIndex.Insertion.Small.K7.viable",
+    "CircularIndex.Insertion.Small.K8.viable",
+    "CircularIndex.Insertion.Small.K9.viable",
+    "CircularIndex.Insertion.Small.shift_lt",
+    "CircularIndex.Insertion.Small.unturn_turn",
+    "CircularIndex.Insertion.Small.turn_unturn",
+    "CircularIndex.Insertion.Small.distance_turn",
+    "CircularIndex.Insertion.Small.support_lt",
+    "CircularIndex.Insertion.Small.pullback_partners",
+    "CircularIndex.Insertion.Small.admissible_pullback",
+    "CircularIndex.Insertion.Small.both_parities",
+    "CircularIndex.Insertion.Small.window_supplies",
+    "CircularIndex.Insertion.ThreeBlock.common_neighbor",
+    "CircularIndex.Insertion.ThreeBlock.graph_connected",
+    "CircularIndex.Insertion.ThreeBlock.Prefix.lift_reference",
+    "CircularIndex.Insertion.ThreeBlock.Prefix.keeps_blocks",
+    "CircularIndex.Insertion.ThreeBlock.Prefix.edges_retained",
+    "CircularIndex.Insertion.ThreeBlock.Prefix.degree_and_index"
+  ],
+  "source_sha256": {
+    "lean/Conjectures/CircularIndexBase.lean": "6fec8a6725b419ca5e30102d565481899564ff9d9e719d1e4cf77827a8df01dd",
+    "lean/Conjectures/CircularIndexCirculant.lean": "e6758bb9c9a34541d2e1b30446b64853a585aab57d0b5a2062a7a538e5bee368",
+    "lean/Conjectures/CircularIndexClassArithmetic.lean": "df444c47e78789603da8dcbbcab02485a7c13a53216a7b861e3a3c9daa6b7d75",
+    "lean/Conjectures/CircularIndexColoring.lean": "d925a1341f425da59e7b6916e36f581c4ef05daa353294dc68f6736da1685be7",
+    "lean/Conjectures/CircularIndexCounting.lean": "5354b07c1a05d6de1405fb6f868b118430af667914b6260d758c335d1d541b6e",
+    "lean/Conjectures/CircularIndexOptimality.lean": "e4c1315180c8dc8975142f0c380431f89dee36db0badf7ee2b76cfcd901f092f",
+    "lean/Conjectures/CircularIndexReal.lean": "b98526201e298e4f15a6db6c820d9bf04a9431b0ecb17c8c6e499b519bad1bcf",
+    "lean/Conjectures/CircularInsertionBaseDisjoint.lean": "15c5a73b27f8a71e4b57ca4a2c7d0018e29c4c37eb96066866f80113df7dc31a",
+    "lean/Conjectures/CircularInsertionBasePairs.lean": "afd4a8f7e6a65ae7eb3ebb86df45fa7c782d011c744f87b149995dcd90288c8f",
+    "lean/Conjectures/CircularInsertionEdges.lean": "01d5db44377e4ae3284ba2b7fb3624e4f055b347c7642a2847c690fbc4a89453",
+    "lean/Conjectures/CircularInsertionPositions.lean": "7e5173efdec19cccd83cc907e21c54ff8a4f27f0b1929eac160729c6dbd24441",
+    "lean/Conjectures/CircularInsertionRotations.lean": "f340ab11d879c902d33cb2a55bf0a7a5f83085aee0b76f3aac62825e5863393b",
+    "lean/Conjectures/CircularInsertionSchedule.lean": "c0914994acc5b661a33a07b50a76e2789aee58df5115e333d09f1b61ab8bdfd9",
+    "lean/Conjectures/CircularInsertionSmallBases.lean": "155c6890cebc5702e86658ab34d12303575438a3997bd25742173f19bc3e42de",
+    "lean/Conjectures/CircularInsertionWindows.lean": "0f154fe3750f2c025836f64c13c7a2e8498a9133876dec35824897dbe58a7dd7",
+    "lean/Conjectures/CircularSmallInsertionBlocks.lean": "35c8dc2ec6a6b68496236d9a4ce0d9ebd32bcf6452a59651ec31be86c4c44ba0",
+    "lean/Conjectures/CircularSmallInsertionCertificates.lean": "7df72775f4fc9a4f5852b76c79963171f70b36d5f2d73ecf4549d7e51266a384",
+    "lean/Conjectures/CircularSmallInsertionClassification.lean": "516f7558c9714d2ed5c929572f70c7724e494914e76472bcf014a15cc3b32529",
+    "lean/Conjectures/CircularSmallInsertionConflicts.lean": "59dd51986f1085e2d27e5cff8fe8e89d21a875c5c456303795b2a5f17ab6734e",
+    "lean/Conjectures/CircularSmallInsertionExclusions.lean": "abb017a9df50c26b05f0b0098ad0a427b1efc03d6954d2754bf34669644ebca6",
+    "lean/Conjectures/CircularSmallInsertionFamily.lean": "6790f0ac0b394ef10c9d193e45c383cbddd8e88a8ef7eeebb6022759d205ee38",
+    "lean/Conjectures/CircularSmallInsertionFixtures.lean": "12241063206d6e9fec0301966c6f6bd6c49690ed8528dcfce02f925a3441362d",
+    "lean/Conjectures/CircularSmallInsertionForced.lean": "0d386cfb7ce6d4c5510822c51c2f32b3fa789f8c7fe88256c3d5bbbf468dba52",
+    "lean/Conjectures/CircularSmallInsertionMatchings.lean": "482ce5cad90ad9b8b4923b63dfceec72a6a47fede9cc1b10b93b0c10d59c4dea",
+    "lean/Conjectures/CircularSmallInsertionPairings.lean": "30f2001ffb262d5f907ac09358fbc75a8f322afa58113f84d82aef336dbf87bc",
+    "lean/Conjectures/CircularSmallInsertionPositive.lean": "47a327bd009537be7c710d1366aff34f8f5c640a56ce572ebc2d18748ef5f43b",
+    "lean/Conjectures/CircularSmallInsertionProfiles1.lean": "cee2811f73fef11eff27a77e44b1cbdd4ba6bebac7c0773b3615cf35bc59d06b",
+    "lean/Conjectures/CircularSmallInsertionProfiles2.lean": "6dc9a5b85589a3462e29a7cb4cb6d9463243fada3b79b42117fbec5e6b454447",
+    "lean/Conjectures/CircularSmallInsertionProfiles3.lean": "1793ea3f975c328f0ccd645a1a47ac3234265d3fefda4ca8dd6df96e66ace995",
+    "lean/Conjectures/CircularSmallInsertionProfiles4.lean": "b43601fdb4397593fa3efcf44e2149fc02e6c981ea5c19534c0e770723ba173b",
+    "lean/Conjectures/CircularSmallInsertionProfiles5.lean": "7481394ccd34fffbc828ac2b290599e8fc862bdc99abacd5f206f01cc48f1c22",
+    "lean/Conjectures/CircularSmallInsertionProfiles6.lean": "6dd0b19a89081ef9e3531d29cc9d51d360cf4ad2ccc7079a22733da76d797571",
+    "lean/Conjectures/CircularSmallInsertionProfiles7.lean": "e030224a18a7b12c1389a0e9959db967929475fcc89ce1f261cd824fafdf3412",
+    "lean/Conjectures/CircularSmallInsertionProfiles8.lean": "1b9bf9eccf83f897b18f75e6bcd56a2e54cce2b7f3ca8855434ad2c71892cf96",
+    "lean/Conjectures/CircularSmallInsertionProfiles9.lean": "af482762711a6b4887edaa609d5b3b6c84049f79f56ae534366ed739bc7f77bb",
+    "lean/Conjectures/CircularSmallInsertionSearch.lean": "8a790579defa3887f1788cef80792a871df5f871e4de96094445dcce231306d1",
+    "lean/Conjectures/CircularSmallInsertionShapes.lean": "caa82be5038297f8bf3da4347073b1850fae978f1758d169cf36c28d56f4999b",
+    "lean/Conjectures/CircularSmallInsertionShapes2.lean": "c71d9d524589df72fcdac150e598d81754f0683033a53dcbecf3f7a544c3e9d8",
+    "lean/Conjectures/CircularSmallInsertionShapes3.lean": "a15702c782a27c61313e6e0700ddb5ee54649cc7e96daaf8e62a32419633eae4",
+    "lean/Conjectures/CircularSmallInsertionShapes4.lean": "17caf538a1b8358e42cfbc849a80eb248eaffc4ae1999d4f9bcffb19551f4015",
+    "lean/Conjectures/CircularSmallInsertionTerminal.lean": "42611325e77f12c48bfd53201672f81c686e29dc2520555fcbbebe1cc50cd9ea",
+    "lean/Conjectures/CircularSmallInsertionTranslation.lean": "d6145149b7bed2ec2af07dce4c7d97452561b306f5552000835676d33e0944d9",
+    "lean/Conjectures/CircularSmallInsertionViable1.lean": "caa8abe8f52d0fb56afadee5d0c5d625f4644d6da08d8a30c1215b6bf4cd8e89",
+    "lean/Conjectures/CircularSmallInsertionViable2.lean": "a716f9bf8bd0e68f7b9978553379341ff87d8839b5399c07288e4e6b6fba8035",
+    "lean/Conjectures/CircularSmallInsertionViable3.lean": "4720bbc081dc8f97509c453d7bcbbf53be3c20f03732eaae84483fa616ff11e4",
+    "lean/Conjectures/CircularSmallInsertionViable4.lean": "e43636ebd649a2dabe99b3eb7d3d0481953049d8e6304fb5928153ad8e5f8c64",
+    "lean/Conjectures/CircularSmallInsertionViable5.lean": "840a49459559b1d550f0bbc49ddaf70e4e8c68f732afd1968047b32b8f2e6e4c",
+    "lean/Conjectures/CircularSmallInsertionViable6.lean": "596fdb0e8f3c11af6604708cd3c58c9ac69656fd600756654604aae596097fe1",
+    "lean/Conjectures/CircularSmallInsertionViable7.lean": "1979064ee0b6093e2b31224ac43057519bb8e898d5a7a4a53dbf0ff5a5297376",
+    "lean/Conjectures/CircularSmallInsertionViable8.lean": "6d19145592fd5e0894e5f52801015d5f3c8174dfa65c60afa26c23969a407c6f",
+    "lean/Conjectures/CircularSmallInsertionViable9.lean": "9206fee5dfbc0a657574e988e2ad6f8cda6df309d90438c32441ae62730d11d3",
+    "lean/Conjectures/CircularSmallInsertionWindows.lean": "301805ba73fc88aa282006f7e2b5e749462c13b843fbd805feee9a61427909c9",
+    "lean/Conjectures/CircularThreeBlockAdditional.lean": "5c7502486d1ddb5cfeb3f6402b6fa8a9eec9c5cc44418c3f482016ac33806dbd",
+    "lean/Conjectures/CircularThreeBlockBase.lean": "ae69b7355149143a056837343e94e6c1273f697146bdb7d44590583d4b4b9970",
+    "lean/Conjectures/CircularThreeBlockConnected.lean": "3e9b5eac2f793ed7f45cb7b53b9d975ad0708a5f6c5e98c0eecdc9dd2fffe10c",
+    "lean/Conjectures/CircularThreeBlockCross.lean": "231cc636f6f50b108341a223d673ccba461a5bd9ad4c29bf1ed504708e22d883",
+    "lean/Conjectures/CircularThreeBlockDeficit.lean": "bea71c324a4badd5ed33cfc5c2d1c34e24128bfb72f29923c40a08cf55d1322f",
+    "lean/Conjectures/CircularThreeBlockDegree.lean": "c9937a5033d03e85b5dd7087c60c3166f2685e7e67484b14dee0927ff061cd22",
+    "lean/Conjectures/CircularThreeBlockEdges.lean": "7df956fbf7dcf305d1c68feb9086d2bd96d20e5c6f11c75e9afd1214258e6279",
+    "lean/Conjectures/CircularThreeBlockGraphs.lean": "e8acafd43a55342e3bbb5866c89ab402117c71e1cb3eede77e275be68f8cd59f",
+    "lean/Conjectures/CircularThreeBlockInjective.lean": "f351b85fe422a62929686d0b249fb76fae9fd1e23dd1cbab9ffdab9f2a0c111a",
+    "lean/Conjectures/CircularThreeBlockIntervals.lean": "3b3f8577a225492e48fc7b804ec5c6c358d0b29a868460ca6eee6a6a9da646d1",
+    "lean/Conjectures/CircularThreeBlockPositions.lean": "0f64f91ff083871d8072f1a97eb339d7cf6305e075e0adf740b70d61b4a19ecc",
+    "lean/Conjectures/CircularThreeBlockPrefixes.lean": "ac7db0d11117e7ba48193fdbe9b625d487a4cf63b09d08c29d0afc258efaf97f",
+    "lean/Conjectures/CircularThreeBlockSeparation.lean": "ce1757aaf0c3922fa31b27badc05f8a8ac4367f1e8bfcbd6bf4a77e12f5fdba6",
+    "lean/Conjectures/CircularThreeBlockTiles.lean": "93559761fbd5d9892afc58c0c1b071d499a7ba8498de851a91a271ec68677311",
+    "lean/Conjectures/CircularThreeBlockWindows.lean": "bad3dbf83847dfdda49a6075dd164af0c80153993e83c6a5341ac7c2ca21caf8"
+  },
+  "input_sha256": {
+    "lean/Conjectures/CircularIndexBase.lean": "6fec8a6725b419ca5e30102d565481899564ff9d9e719d1e4cf77827a8df01dd",
+    "lean/Conjectures/CircularIndexCirculant.lean": "e6758bb9c9a34541d2e1b30446b64853a585aab57d0b5a2062a7a538e5bee368",
+    "lean/Conjectures/CircularIndexClassArithmetic.lean": "df444c47e78789603da8dcbbcab02485a7c13a53216a7b861e3a3c9daa6b7d75",
+    "lean/Conjectures/CircularIndexColoring.lean": "d925a1341f425da59e7b6916e36f581c4ef05daa353294dc68f6736da1685be7",
+    "lean/Conjectures/CircularIndexCounting.lean": "5354b07c1a05d6de1405fb6f868b118430af667914b6260d758c335d1d541b6e",
+    "lean/Conjectures/CircularIndexOptimality.lean": "e4c1315180c8dc8975142f0c380431f89dee36db0badf7ee2b76cfcd901f092f",
+    "lean/Conjectures/CircularIndexReal.lean": "b98526201e298e4f15a6db6c820d9bf04a9431b0ecb17c8c6e499b519bad1bcf",
+    "lean/Conjectures/CircularInsertionBaseDisjoint.lean": "15c5a73b27f8a71e4b57ca4a2c7d0018e29c4c37eb96066866f80113df7dc31a",
+    "lean/Conjectures/CircularInsertionBasePairs.lean": "afd4a8f7e6a65ae7eb3ebb86df45fa7c782d011c744f87b149995dcd90288c8f",
+    "lean/Conjectures/CircularInsertionEdges.lean": "01d5db44377e4ae3284ba2b7fb3624e4f055b347c7642a2847c690fbc4a89453",
+    "lean/Conjectures/CircularInsertionPositions.lean": "7e5173efdec19cccd83cc907e21c54ff8a4f27f0b1929eac160729c6dbd24441",
+    "lean/Conjectures/CircularInsertionRotations.lean": "f340ab11d879c902d33cb2a55bf0a7a5f83085aee0b76f3aac62825e5863393b",
+    "lean/Conjectures/CircularInsertionSchedule.lean": "c0914994acc5b661a33a07b50a76e2789aee58df5115e333d09f1b61ab8bdfd9",
+    "lean/Conjectures/CircularInsertionSmallBases.lean": "155c6890cebc5702e86658ab34d12303575438a3997bd25742173f19bc3e42de",
+    "lean/Conjectures/CircularInsertionWindows.lean": "0f154fe3750f2c025836f64c13c7a2e8498a9133876dec35824897dbe58a7dd7",
+    "lean/Conjectures/CircularSmallInsertionBlocks.lean": "35c8dc2ec6a6b68496236d9a4ce0d9ebd32bcf6452a59651ec31be86c4c44ba0",
+    "lean/Conjectures/CircularSmallInsertionCertificates.lean": "7df72775f4fc9a4f5852b76c79963171f70b36d5f2d73ecf4549d7e51266a384",
+    "lean/Conjectures/CircularSmallInsertionClassification.lean": "516f7558c9714d2ed5c929572f70c7724e494914e76472bcf014a15cc3b32529",
+    "lean/Conjectures/CircularSmallInsertionConflicts.lean": "59dd51986f1085e2d27e5cff8fe8e89d21a875c5c456303795b2a5f17ab6734e",
+    "lean/Conjectures/CircularSmallInsertionExclusions.lean": "abb017a9df50c26b05f0b0098ad0a427b1efc03d6954d2754bf34669644ebca6",
+    "lean/Conjectures/CircularSmallInsertionFamily.lean": "6790f0ac0b394ef10c9d193e45c383cbddd8e88a8ef7eeebb6022759d205ee38",
+    "lean/Conjectures/CircularSmallInsertionFixtures.lean": "12241063206d6e9fec0301966c6f6bd6c49690ed8528dcfce02f925a3441362d",
+    "lean/Conjectures/CircularSmallInsertionForced.lean": "0d386cfb7ce6d4c5510822c51c2f32b3fa789f8c7fe88256c3d5bbbf468dba52",
+    "lean/Conjectures/CircularSmallInsertionMatchings.lean": "482ce5cad90ad9b8b4923b63dfceec72a6a47fede9cc1b10b93b0c10d59c4dea",
+    "lean/Conjectures/CircularSmallInsertionPairings.lean": "30f2001ffb262d5f907ac09358fbc75a8f322afa58113f84d82aef336dbf87bc",
+    "lean/Conjectures/CircularSmallInsertionPositive.lean": "47a327bd009537be7c710d1366aff34f8f5c640a56ce572ebc2d18748ef5f43b",
+    "lean/Conjectures/CircularSmallInsertionProfiles1.lean": "cee2811f73fef11eff27a77e44b1cbdd4ba6bebac7c0773b3615cf35bc59d06b",
+    "lean/Conjectures/CircularSmallInsertionProfiles2.lean": "6dc9a5b85589a3462e29a7cb4cb6d9463243fada3b79b42117fbec5e6b454447",
+    "lean/Conjectures/CircularSmallInsertionProfiles3.lean": "1793ea3f975c328f0ccd645a1a47ac3234265d3fefda4ca8dd6df96e66ace995",
+    "lean/Conjectures/CircularSmallInsertionProfiles4.lean": "b43601fdb4397593fa3efcf44e2149fc02e6c981ea5c19534c0e770723ba173b",
+    "lean/Conjectures/CircularSmallInsertionProfiles5.lean": "7481394ccd34fffbc828ac2b290599e8fc862bdc99abacd5f206f01cc48f1c22",
+    "lean/Conjectures/CircularSmallInsertionProfiles6.lean": "6dd0b19a89081ef9e3531d29cc9d51d360cf4ad2ccc7079a22733da76d797571",
+    "lean/Conjectures/CircularSmallInsertionProfiles7.lean": "e030224a18a7b12c1389a0e9959db967929475fcc89ce1f261cd824fafdf3412",
+    "lean/Conjectures/CircularSmallInsertionProfiles8.lean": "1b9bf9eccf83f897b18f75e6bcd56a2e54cce2b7f3ca8855434ad2c71892cf96",
+    "lean/Conjectures/CircularSmallInsertionProfiles9.lean": "af482762711a6b4887edaa609d5b3b6c84049f79f56ae534366ed739bc7f77bb",
+    "lean/Conjectures/CircularSmallInsertionSearch.lean": "8a790579defa3887f1788cef80792a871df5f871e4de96094445dcce231306d1",
+    "lean/Conjectures/CircularSmallInsertionShapes.lean": "caa82be5038297f8bf3da4347073b1850fae978f1758d169cf36c28d56f4999b",
+    "lean/Conjectures/CircularSmallInsertionShapes2.lean": "c71d9d524589df72fcdac150e598d81754f0683033a53dcbecf3f7a544c3e9d8",
+    "lean/Conjectures/CircularSmallInsertionShapes3.lean": "a15702c782a27c61313e6e0700ddb5ee54649cc7e96daaf8e62a32419633eae4",
+    "lean/Conjectures/CircularSmallInsertionShapes4.lean": "17caf538a1b8358e42cfbc849a80eb248eaffc4ae1999d4f9bcffb19551f4015",
+    "lean/Conjectures/CircularSmallInsertionTerminal.lean": "42611325e77f12c48bfd53201672f81c686e29dc2520555fcbbebe1cc50cd9ea",
+    "lean/Conjectures/CircularSmallInsertionTranslation.lean": "d6145149b7bed2ec2af07dce4c7d97452561b306f5552000835676d33e0944d9",
+    "lean/Conjectures/CircularSmallInsertionViable1.lean": "caa8abe8f52d0fb56afadee5d0c5d625f4644d6da08d8a30c1215b6bf4cd8e89",
+    "lean/Conjectures/CircularSmallInsertionViable2.lean": "a716f9bf8bd0e68f7b9978553379341ff87d8839b5399c07288e4e6b6fba8035",
+    "lean/Conjectures/CircularSmallInsertionViable3.lean": "4720bbc081dc8f97509c453d7bcbbf53be3c20f03732eaae84483fa616ff11e4",
+    "lean/Conjectures/CircularSmallInsertionViable4.lean": "e43636ebd649a2dabe99b3eb7d3d0481953049d8e6304fb5928153ad8e5f8c64",
+    "lean/Conjectures/CircularSmallInsertionViable5.lean": "840a49459559b1d550f0bbc49ddaf70e4e8c68f732afd1968047b32b8f2e6e4c",
+    "lean/Conjectures/CircularSmallInsertionViable6.lean": "596fdb0e8f3c11af6604708cd3c58c9ac69656fd600756654604aae596097fe1",
+    "lean/Conjectures/CircularSmallInsertionViable7.lean": "1979064ee0b6093e2b31224ac43057519bb8e898d5a7a4a53dbf0ff5a5297376",
+    "lean/Conjectures/CircularSmallInsertionViable8.lean": "6d19145592fd5e0894e5f52801015d5f3c8174dfa65c60afa26c23969a407c6f",
+    "lean/Conjectures/CircularSmallInsertionViable9.lean": "9206fee5dfbc0a657574e988e2ad6f8cda6df309d90438c32441ae62730d11d3",
+    "lean/Conjectures/CircularSmallInsertionWindows.lean": "301805ba73fc88aa282006f7e2b5e749462c13b843fbd805feee9a61427909c9",
+    "lean/Conjectures/CircularThreeBlockAdditional.lean": "5c7502486d1ddb5cfeb3f6402b6fa8a9eec9c5cc44418c3f482016ac33806dbd",
+    "lean/Conjectures/CircularThreeBlockBase.lean": "ae69b7355149143a056837343e94e6c1273f697146bdb7d44590583d4b4b9970",
+    "lean/Conjectures/CircularThreeBlockConnected.lean": "3e9b5eac2f793ed7f45cb7b53b9d975ad0708a5f6c5e98c0eecdc9dd2fffe10c",
+    "lean/Conjectures/CircularThreeBlockCross.lean": "231cc636f6f50b108341a223d673ccba461a5bd9ad4c29bf1ed504708e22d883",
+    "lean/Conjectures/CircularThreeBlockDeficit.lean": "bea71c324a4badd5ed33cfc5c2d1c34e24128bfb72f29923c40a08cf55d1322f",
+    "lean/Conjectures/CircularThreeBlockDegree.lean": "c9937a5033d03e85b5dd7087c60c3166f2685e7e67484b14dee0927ff061cd22",
+    "lean/Conjectures/CircularThreeBlockEdges.lean": "7df956fbf7dcf305d1c68feb9086d2bd96d20e5c6f11c75e9afd1214258e6279",
+    "lean/Conjectures/CircularThreeBlockGraphs.lean": "e8acafd43a55342e3bbb5866c89ab402117c71e1cb3eede77e275be68f8cd59f",
+    "lean/Conjectures/CircularThreeBlockInjective.lean": "f351b85fe422a62929686d0b249fb76fae9fd1e23dd1cbab9ffdab9f2a0c111a",
+    "lean/Conjectures/CircularThreeBlockIntervals.lean": "3b3f8577a225492e48fc7b804ec5c6c358d0b29a868460ca6eee6a6a9da646d1",
+    "lean/Conjectures/CircularThreeBlockPositions.lean": "0f64f91ff083871d8072f1a97eb339d7cf6305e075e0adf740b70d61b4a19ecc",
+    "lean/Conjectures/CircularThreeBlockPrefixes.lean": "ac7db0d11117e7ba48193fdbe9b625d487a4cf63b09d08c29d0afc258efaf97f",
+    "lean/Conjectures/CircularThreeBlockSeparation.lean": "ce1757aaf0c3922fa31b27badc05f8a8ac4367f1e8bfcbd6bf4a77e12f5fdba6",
+    "lean/Conjectures/CircularThreeBlockTiles.lean": "93559761fbd5d9892afc58c0c1b071d499a7ba8498de851a91a271ec68677311",
+    "lean/Conjectures/CircularThreeBlockWindows.lean": "bad3dbf83847dfdda49a6075dd164af0c80153993e83c6a5341ac7c2ca21caf8",
+    "lean/lean-toolchain": "ca5f1f601d34c49079e38d7e7041eb0f2a9c227fbc1df0f404820069a052330c",
+    "lean/lake-manifest.json": "02e7d705d4ea86c9cfdc22f5eceb2b5bbe5a2c14806c1f3b0f6f1c251c6f2953",
+    "lean/lakefile.toml": "609df590851cb55d2d2c52fd2037e463273a1a69d3c766a00d486cf81163a089",
+    "scripts/audit_lean_all_owned.py": "53c289baad523164bbef5561910fcdc44bc40efba2b8efe8e7212c30db3a663f",
+    "scripts/replay_lean.py": "ca27aa5f65ad92200842b797e39abf218b19403ae1f83996f7dc4b4d96970e85",
+    "scripts/verify_lean_target.py": "78f83c010458a176183863d3273b0ce7bd547f8000c13cf220e5c02cb96ae065"
+  },
+  "lean_toolchain": "leanprover/lean4:v4.35.0",
+  "manifest_sha256": "02e7d705d4ea86c9cfdc22f5eceb2b5bbe5a2c14806c1f3b0f6f1c251c6f2953",
+  "commands": [
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/cinna/solved-circular-extra-publication/lean/.lake/build/lib/lean/Conjectures/CircularIndexBase.olean",
+        "Conjectures/CircularIndexBase.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.CircularIndexBase.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/cinna/solved-circular-extra-publication/lean/.lake/build/lib/lean/Conjectures/CircularInsertionBasePairs.olean",
+        "Conjectures/CircularInsertionBasePairs.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.CircularInsertionBasePairs.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/cinna/solved-circular-extra-publication/lean/.lake/build/lib/lean/Conjectures/CircularInsertionRotations.olean",
+        "Conjectures/CircularInsertionRotations.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.CircularInsertionRotations.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/cinna/solved-circular-extra-publication/lean/.lake/build/lib/lean/Conjectures/CircularInsertionSmallBases.olean",
+        "Conjectures/CircularInsertionSmallBases.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.CircularInsertionSmallBases.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/cinna/solved-circular-extra-publication/lean/.lake/build/lib/lean/Conjectures/CircularSmallInsertionMatchings.olean",
+        "Conjectures/CircularSmallInsertionMatchings.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.CircularSmallInsertionMatchings.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/cinna/solved-circular-extra-publication/lean/.lake/build/lib/lean/Conjectures/CircularSmallInsertionSearch.olean",
+        "Conjectures/CircularSmallInsertionSearch.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.CircularSmallInsertionSearch.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/cinna/solved-circular-extra-publication/lean/.lake/build/lib/lean/Conjectures/CircularSmallInsertionWindows.olean",
+        "Conjectures/CircularSmallInsertionWindows.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.CircularSmallInsertionWindows.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/cinna/solved-circular-extra-publication/lean/.lake/build/lib/lean/Conjectures/CircularSmallInsertionFamily.olean",
+        "Conjectures/CircularSmallInsertionFamily.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.CircularSmallInsertionFamily.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/cinna/solved-circular-extra-publication/lean/.lake/build/lib/lean/Conjectures/CircularSmallInsertionShapes.olean",
+        "Conjectures/CircularSmallInsertionShapes.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.CircularSmallInsertionShapes.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/cinna/solved-circular-extra-publication/lean/.lake/build/lib/lean/Conjectures/CircularSmallInsertionShapes2.olean",
+        "Conjectures/CircularSmallInsertionShapes2.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.CircularSmallInsertionShapes2.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/cinna/solved-circular-extra-publication/lean/.lake/build/lib/lean/Conjectures/CircularSmallInsertionShapes3.olean",
+        "Conjectures/CircularSmallInsertionShapes3.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.CircularSmallInsertionShapes3.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/cinna/solved-circular-extra-publication/lean/.lake/build/lib/lean/Conjectures/CircularSmallInsertionShapes4.olean",
+        "Conjectures/CircularSmallInsertionShapes4.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.CircularSmallInsertionShapes4.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/cinna/solved-circular-extra-publication/lean/.lake/build/lib/lean/Conjectures/CircularSmallInsertionClassification.olean",
+        "Conjectures/CircularSmallInsertionClassification.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.CircularSmallInsertionClassification.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/cinna/solved-circular-extra-publication/lean/.lake/build/lib/lean/Conjectures/CircularSmallInsertionFixtures.olean",
+        "Conjectures/CircularSmallInsertionFixtures.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.CircularSmallInsertionFixtures.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/cinna/solved-circular-extra-publication/lean/.lake/build/lib/lean/Conjectures/CircularSmallInsertionProfiles1.olean",
+        "Conjectures/CircularSmallInsertionProfiles1.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.CircularSmallInsertionProfiles1.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/cinna/solved-circular-extra-publication/lean/.lake/build/lib/lean/Conjectures/CircularSmallInsertionPairings.olean",
+        "Conjectures/CircularSmallInsertionPairings.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.CircularSmallInsertionPairings.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/cinna/solved-circular-extra-publication/lean/.lake/build/lib/lean/Conjectures/CircularSmallInsertionViable1.olean",
+        "Conjectures/CircularSmallInsertionViable1.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.CircularSmallInsertionViable1.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/cinna/solved-circular-extra-publication/lean/.lake/build/lib/lean/Conjectures/CircularSmallInsertionProfiles2.olean",
+        "Conjectures/CircularSmallInsertionProfiles2.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.CircularSmallInsertionProfiles2.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/cinna/solved-circular-extra-publication/lean/.lake/build/lib/lean/Conjectures/CircularSmallInsertionViable2.olean",
+        "Conjectures/CircularSmallInsertionViable2.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.CircularSmallInsertionViable2.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/cinna/solved-circular-extra-publication/lean/.lake/build/lib/lean/Conjectures/CircularSmallInsertionProfiles3.olean",
+        "Conjectures/CircularSmallInsertionProfiles3.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.CircularSmallInsertionProfiles3.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/cinna/solved-circular-extra-publication/lean/.lake/build/lib/lean/Conjectures/CircularSmallInsertionViable3.olean",
+        "Conjectures/CircularSmallInsertionViable3.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.CircularSmallInsertionViable3.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/cinna/solved-circular-extra-publication/lean/.lake/build/lib/lean/Conjectures/CircularSmallInsertionProfiles4.olean",
+        "Conjectures/CircularSmallInsertionProfiles4.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.CircularSmallInsertionProfiles4.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/cinna/solved-circular-extra-publication/lean/.lake/build/lib/lean/Conjectures/CircularSmallInsertionViable4.olean",
+        "Conjectures/CircularSmallInsertionViable4.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.CircularSmallInsertionViable4.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/cinna/solved-circular-extra-publication/lean/.lake/build/lib/lean/Conjectures/CircularSmallInsertionProfiles5.olean",
+        "Conjectures/CircularSmallInsertionProfiles5.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.CircularSmallInsertionProfiles5.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/cinna/solved-circular-extra-publication/lean/.lake/build/lib/lean/Conjectures/CircularSmallInsertionViable5.olean",
+        "Conjectures/CircularSmallInsertionViable5.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.CircularSmallInsertionViable5.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/cinna/solved-circular-extra-publication/lean/.lake/build/lib/lean/Conjectures/CircularSmallInsertionProfiles6.olean",
+        "Conjectures/CircularSmallInsertionProfiles6.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.CircularSmallInsertionProfiles6.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/cinna/solved-circular-extra-publication/lean/.lake/build/lib/lean/Conjectures/CircularSmallInsertionViable6.olean",
+        "Conjectures/CircularSmallInsertionViable6.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.CircularSmallInsertionViable6.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/cinna/solved-circular-extra-publication/lean/.lake/build/lib/lean/Conjectures/CircularSmallInsertionProfiles7.olean",
+        "Conjectures/CircularSmallInsertionProfiles7.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.CircularSmallInsertionProfiles7.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/cinna/solved-circular-extra-publication/lean/.lake/build/lib/lean/Conjectures/CircularSmallInsertionViable7.olean",
+        "Conjectures/CircularSmallInsertionViable7.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.CircularSmallInsertionViable7.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/cinna/solved-circular-extra-publication/lean/.lake/build/lib/lean/Conjectures/CircularSmallInsertionProfiles8.olean",
+        "Conjectures/CircularSmallInsertionProfiles8.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.CircularSmallInsertionProfiles8.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/cinna/solved-circular-extra-publication/lean/.lake/build/lib/lean/Conjectures/CircularSmallInsertionViable8.olean",
+        "Conjectures/CircularSmallInsertionViable8.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.CircularSmallInsertionViable8.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/cinna/solved-circular-extra-publication/lean/.lake/build/lib/lean/Conjectures/CircularSmallInsertionProfiles9.olean",
+        "Conjectures/CircularSmallInsertionProfiles9.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.CircularSmallInsertionProfiles9.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/cinna/solved-circular-extra-publication/lean/.lake/build/lib/lean/Conjectures/CircularSmallInsertionViable9.olean",
+        "Conjectures/CircularSmallInsertionViable9.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.CircularSmallInsertionViable9.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/cinna/solved-circular-extra-publication/lean/.lake/build/lib/lean/Conjectures/CircularSmallInsertionCertificates.olean",
+        "Conjectures/CircularSmallInsertionCertificates.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.CircularSmallInsertionCertificates.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/cinna/solved-circular-extra-publication/lean/.lake/build/lib/lean/Conjectures/CircularSmallInsertionForced.olean",
+        "Conjectures/CircularSmallInsertionForced.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.CircularSmallInsertionForced.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/cinna/solved-circular-extra-publication/lean/.lake/build/lib/lean/Conjectures/CircularSmallInsertionTranslation.olean",
+        "Conjectures/CircularSmallInsertionTranslation.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.CircularSmallInsertionTranslation.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/cinna/solved-circular-extra-publication/lean/.lake/build/lib/lean/Conjectures/CircularSmallInsertionConflicts.olean",
+        "Conjectures/CircularSmallInsertionConflicts.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.CircularSmallInsertionConflicts.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/cinna/solved-circular-extra-publication/lean/.lake/build/lib/lean/Conjectures/CircularSmallInsertionPositive.olean",
+        "Conjectures/CircularSmallInsertionPositive.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.CircularSmallInsertionPositive.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/cinna/solved-circular-extra-publication/lean/.lake/build/lib/lean/Conjectures/CircularSmallInsertionExclusions.olean",
+        "Conjectures/CircularSmallInsertionExclusions.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.CircularSmallInsertionExclusions.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/cinna/solved-circular-extra-publication/lean/.lake/build/lib/lean/Conjectures/CircularSmallInsertionBlocks.olean",
+        "Conjectures/CircularSmallInsertionBlocks.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.CircularSmallInsertionBlocks.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/cinna/solved-circular-extra-publication/lean/.lake/build/lib/lean/Conjectures/CircularSmallInsertionTerminal.olean",
+        "Conjectures/CircularSmallInsertionTerminal.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.CircularSmallInsertionTerminal.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/cinna/solved-circular-extra-publication/lean/.lake/build/lib/lean/Conjectures/CircularThreeBlockIntervals.olean",
+        "Conjectures/CircularThreeBlockIntervals.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.CircularThreeBlockIntervals.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/cinna/solved-circular-extra-publication/lean/.lake/build/lib/lean/Conjectures/CircularThreeBlockCross.olean",
+        "Conjectures/CircularThreeBlockCross.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.CircularThreeBlockCross.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/cinna/solved-circular-extra-publication/lean/.lake/build/lib/lean/Conjectures/CircularThreeBlockBase.olean",
+        "Conjectures/CircularThreeBlockBase.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.CircularThreeBlockBase.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/cinna/solved-circular-extra-publication/lean/.lake/build/lib/lean/Conjectures/CircularThreeBlockSeparation.olean",
+        "Conjectures/CircularThreeBlockSeparation.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.CircularThreeBlockSeparation.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/cinna/solved-circular-extra-publication/lean/.lake/build/lib/lean/Conjectures/CircularInsertionPositions.olean",
+        "Conjectures/CircularInsertionPositions.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.CircularInsertionPositions.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/cinna/solved-circular-extra-publication/lean/.lake/build/lib/lean/Conjectures/CircularThreeBlockPositions.olean",
+        "Conjectures/CircularThreeBlockPositions.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.CircularThreeBlockPositions.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/cinna/solved-circular-extra-publication/lean/.lake/build/lib/lean/Conjectures/CircularThreeBlockTiles.olean",
+        "Conjectures/CircularThreeBlockTiles.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.CircularThreeBlockTiles.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/cinna/solved-circular-extra-publication/lean/.lake/build/lib/lean/Conjectures/CircularInsertionBaseDisjoint.olean",
+        "Conjectures/CircularInsertionBaseDisjoint.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.CircularInsertionBaseDisjoint.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/cinna/solved-circular-extra-publication/lean/.lake/build/lib/lean/Conjectures/CircularInsertionEdges.olean",
+        "Conjectures/CircularInsertionEdges.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.CircularInsertionEdges.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/cinna/solved-circular-extra-publication/lean/.lake/build/lib/lean/Conjectures/CircularInsertionWindows.olean",
+        "Conjectures/CircularInsertionWindows.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.CircularInsertionWindows.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/cinna/solved-circular-extra-publication/lean/.lake/build/lib/lean/Conjectures/CircularThreeBlockEdges.olean",
+        "Conjectures/CircularThreeBlockEdges.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.CircularThreeBlockEdges.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/cinna/solved-circular-extra-publication/lean/.lake/build/lib/lean/Conjectures/CircularThreeBlockWindows.olean",
+        "Conjectures/CircularThreeBlockWindows.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.CircularThreeBlockWindows.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/cinna/solved-circular-extra-publication/lean/.lake/build/lib/lean/Conjectures/CircularThreeBlockInjective.olean",
+        "Conjectures/CircularThreeBlockInjective.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.CircularThreeBlockInjective.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/cinna/solved-circular-extra-publication/lean/.lake/build/lib/lean/Conjectures/CircularIndexCirculant.olean",
+        "Conjectures/CircularIndexCirculant.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.CircularIndexCirculant.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/cinna/solved-circular-extra-publication/lean/.lake/build/lib/lean/Conjectures/CircularIndexClassArithmetic.olean",
+        "Conjectures/CircularIndexClassArithmetic.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.CircularIndexClassArithmetic.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/cinna/solved-circular-extra-publication/lean/.lake/build/lib/lean/Conjectures/CircularIndexColoring.olean",
+        "Conjectures/CircularIndexColoring.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.CircularIndexColoring.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/cinna/solved-circular-extra-publication/lean/.lake/build/lib/lean/Conjectures/CircularIndexCounting.olean",
+        "Conjectures/CircularIndexCounting.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.CircularIndexCounting.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/cinna/solved-circular-extra-publication/lean/.lake/build/lib/lean/Conjectures/CircularIndexReal.olean",
+        "Conjectures/CircularIndexReal.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.CircularIndexReal.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/cinna/solved-circular-extra-publication/lean/.lake/build/lib/lean/Conjectures/CircularIndexOptimality.olean",
+        "Conjectures/CircularIndexOptimality.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.CircularIndexOptimality.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/cinna/solved-circular-extra-publication/lean/.lake/build/lib/lean/Conjectures/CircularInsertionSchedule.olean",
+        "Conjectures/CircularInsertionSchedule.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.CircularInsertionSchedule.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/cinna/solved-circular-extra-publication/lean/.lake/build/lib/lean/Conjectures/CircularThreeBlockGraphs.olean",
+        "Conjectures/CircularThreeBlockGraphs.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.CircularThreeBlockGraphs.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/cinna/solved-circular-extra-publication/lean/.lake/build/lib/lean/Conjectures/CircularThreeBlockDeficit.olean",
+        "Conjectures/CircularThreeBlockDeficit.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.CircularThreeBlockDeficit.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/cinna/solved-circular-extra-publication/lean/.lake/build/lib/lean/Conjectures/CircularThreeBlockDegree.olean",
+        "Conjectures/CircularThreeBlockDegree.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.CircularThreeBlockDegree.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/cinna/solved-circular-extra-publication/lean/.lake/build/lib/lean/Conjectures/CircularThreeBlockConnected.olean",
+        "Conjectures/CircularThreeBlockConnected.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.CircularThreeBlockConnected.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/cinna/solved-circular-extra-publication/lean/.lake/build/lib/lean/Conjectures/CircularThreeBlockPrefixes.olean",
+        "Conjectures/CircularThreeBlockPrefixes.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.CircularThreeBlockPrefixes.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "-o",
+        "/home/cinna/solved-circular-extra-publication/lean/.lake/build/lib/lean/Conjectures/CircularThreeBlockAdditional.olean",
+        "Conjectures/CircularThreeBlockAdditional.lean"
+      ],
+      "exit_code": 0,
+      "log": "Conjectures.CircularThreeBlockAdditional.compile.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DwarningAsError=true",
+        "/home/cinna/.local/state/solved-circular-certificates/extra-main/TargetAudit.lean"
+      ],
+      "exit_code": 0,
+      "log": "audit.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "python3",
+        "/home/cinna/solved-circular-extra-publication/scripts/replay_lean.py",
+        "--root",
+        "Conjectures.CircularThreeBlockAdditional",
+        "--per-module"
+      ],
+      "exit_code": 0,
+      "log": "replay.log"
+    }
+  ],
+  "all_owned_audit": {
+    "allowed_axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "declarations": 2394,
+    "modules": 67,
+    "private_declarations": 542,
+    "raw_declarations": 2394,
+    "required": 81,
+    "tag": "passed",
+    "theorems": 2014
+  },
+  "full_repository_gate": "not run by this target-scoped helper",
+  "status": "PASS"
+}

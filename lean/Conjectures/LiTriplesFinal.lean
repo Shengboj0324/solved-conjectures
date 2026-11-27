@@ -353,11 +353,20 @@ theorem goodTripleSets_hasPM :
 
 set_option maxRecDepth 400000 in
 set_option maxHeartbeats 0 in
-theorem path_triple_classify :
-    ∀ a b c : Fin 31, a ≠ b → b ≠ c → a ≠ c → Li.T.Adj a b → Li.T.Adj b c →
+/-- The same classification with the adjacency tests first. The decision then
+visits only the 60 oriented edges before choosing `c`, which keeps the kernel within
+the CI memory cap. -/
+theorem path_triple_classify_adj :
+    ∀ a b : Fin 31, Li.T.Adj a b → ∀ c : Fin 31, Li.T.Adj b c → a ≠ c →
       hasPM (Finset.univ \ ({a, b, c} : Finset (Fin 31))) = true →
       ({a, b, c} : Finset (Fin 31)) ∈ goodTripleSets := by
   decide
+
+theorem path_triple_classify :
+    ∀ a b c : Fin 31, a ≠ b → b ≠ c → a ≠ c → Li.T.Adj a b → Li.T.Adj b c →
+      hasPM (Finset.univ \ ({a, b, c} : Finset (Fin 31))) = true →
+      ({a, b, c} : Finset (Fin 31)) ∈ goodTripleSets :=
+  fun a b c _ _ hac hab hbc hpm => path_triple_classify_adj a b hab c hbc hac hpm
 
 /-! ## Walks staying inside a vertex set -/
 

@@ -61,7 +61,37 @@ theorem rows2_checked : residueCheck 2 9 41 2 inverse retained=true := by decide
 
 theorem rows3_checked : residueCheck 2 9 41 3 inverse retained=true := by decide +kernel
 
-theorem rows4_checked : residueCheck 2 9 41 4 inverse retained=true := by decide +kernel
+/-! The four-element rows are checked in six pieces, split by the sum of the
+support modulo six. One decision over all of them exceeds the CI memory cap. -/
+
+theorem rows4_part0 : ∀ s∈(boundedSupports 41 4).filter (fun s => s.sum id % 6=0),
+    PairNormalized 41 inverse s → rowCheck 2 9 41 retained s=true := by decide +kernel
+
+theorem rows4_part1 : ∀ s∈(boundedSupports 41 4).filter (fun s => s.sum id % 6=1),
+    PairNormalized 41 inverse s → rowCheck 2 9 41 retained s=true := by decide +kernel
+
+theorem rows4_part2 : ∀ s∈(boundedSupports 41 4).filter (fun s => s.sum id % 6=2),
+    PairNormalized 41 inverse s → rowCheck 2 9 41 retained s=true := by decide +kernel
+
+theorem rows4_part3 : ∀ s∈(boundedSupports 41 4).filter (fun s => s.sum id % 6=3),
+    PairNormalized 41 inverse s → rowCheck 2 9 41 retained s=true := by decide +kernel
+
+theorem rows4_part4 : ∀ s∈(boundedSupports 41 4).filter (fun s => s.sum id % 6=4),
+    PairNormalized 41 inverse s → rowCheck 2 9 41 retained s=true := by decide +kernel
+
+theorem rows4_part5 : ∀ s∈(boundedSupports 41 4).filter (fun s => s.sum id % 6=5),
+    PairNormalized 41 inverse s → rowCheck 2 9 41 retained s=true := by decide +kernel
+
+theorem rows4_checked : residueCheck 2 9 41 4 inverse retained=true :=
+  residueCheck_of_sum_chunks (by decide) 6 (by decide) fun i hi => by
+    match i, hi with
+    | 0, _ => exact rows4_part0
+    | 1, _ => exact rows4_part1
+    | 2, _ => exact rows4_part2
+    | 3, _ => exact rows4_part3
+    | 4, _ => exact rows4_part4
+    | 5, _ => exact rows4_part5
+    | _+6, h => omega
 
 
 theorem all_rows_checked (r : ℕ) (hr : 0<r) (hbound : r≤4) :
