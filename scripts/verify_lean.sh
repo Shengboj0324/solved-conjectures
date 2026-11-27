@@ -1513,6 +1513,7 @@ modules=(
   Conjectures.AlexanderssonParkingExcedanceCount
   Conjectures.AlexanderssonParkingExcedanceEnumeration
   Conjectures.AlexanderssonParkingExcedanceRoots
+  Conjectures.AlexanderssonParkingExcedanceTables
   Conjectures.AlexanderssonParkingExcedance
   Conjectures.HKMEhrhart
   Conjectures.HKMEhrhartLocalCount

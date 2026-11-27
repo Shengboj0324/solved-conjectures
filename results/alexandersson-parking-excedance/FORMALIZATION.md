@@ -15,13 +15,14 @@ The executable table computes the marked counts. Lean checks each intermediate
 table from the preceding one using the same recurrence, then checks the
 length-17 marked row and its conversion from powers of `X - 1` to the
 published coefficient row. This bounds peak replay memory without changing
-the theorem or using a native-code trust assumption. The negative Laguerre value at `-1/5` then gives the nonreal root of the
+the theorem or using a native-code trust assumption. The table checks sit in their own module, which imports only natural-number factorials. Its smaller import baseline keeps the largest check within the `-M4500` memory cap that `lake build` applies on Linux runners. The negative Laguerre value at `-1/5` then gives the nonreal root of the
 literal enumerator.
 
 - [Word model](../../lean/Conjectures/AlexanderssonParkingExcedanceWords.lean)
 - [Counting recurrence](../../lean/Conjectures/AlexanderssonParkingExcedanceCount.lean)
 - [Parking-word bijection](../../lean/Conjectures/AlexanderssonParkingExcedanceEnumeration.lean)
 - [Laguerre certificate](../../lean/Conjectures/AlexanderssonParkingExcedanceRoots.lean)
+- [Table certificates](../../lean/Conjectures/AlexanderssonParkingExcedanceTables.lean)
 - [Final theorem](../../lean/Conjectures/AlexanderssonParkingExcedance.lean)
 
 The word model and Laguerre certificate reuse Cinna Davis’s research
